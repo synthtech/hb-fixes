@@ -138,9 +138,11 @@
 		/*transition: opacity 0.1s cubic-bezier(0.86, 0, 0.07, 1) 0s;*/
 		transition: opacity 0.1s linear 0s;	/*speed up transition to reduce glitches*/
 	}
-	/*glitches are most likely caused by having the transition on .watched-series
+	/*
+	glitches are most likely caused by having the transition on .watched-series
 	should only activate on :hover
-	glitch doesn't affect plan to watch items*/
+	glitch doesn't affect plan to watch items
+	*/
 	.quick-update .watched-series:nth-of-type(1) .overlay-panel {
 		opacity: 0;	/*hide overlay on first item*/
 	}
@@ -148,22 +150,22 @@
 	    	opacity: 1;	/*show overlay on hover*/
 	}
 	/*.quick-update .watched-series.plan-to-watch {
-	    opacity: 1;
+		opacity: 1;
 	}
 	.quick-update .watched-series.plan-to-watch .responsive-image {
-	    opacity: 0.4;
+		opacity: 0.4;
 	}
 	.quick-update .watched-series.plan-to-watch:hover .responsive-image {
-	    opacity: 1;
+		opacity: 1;
 	}
 	.quick-update .watched-series.plan-to-watch:hover .overlay-panel {
-	    opacity: 1;
+		opacity: 1;
 	}*/
 	.quick-update .series-slider .fa-angle-left {
 		left: -30px;	/*temp position fix*/
 	}
 	.quick-update .series-slider .fa-angle-right {
-	    right: -30px;	/*temp position fix*/
+		right: -30px;	/*temp position fix*/
 	}
 	.quick-update .series-slider .arrow-nav {
 		color: transparent;	/*hide nav arrows*/
