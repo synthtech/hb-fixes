@@ -208,7 +208,7 @@
 	.profile-navigation .inline-list .nav-link a:before,
 	.profile-navigation .update-panel .genre-list .nav-link a:before,
 	.update-panel .profile-navigation .genre-list .nav-link a:before {
-		/*border-bottom-color: transparent;*/	/*underline on active tab won't go away*/
+		content: unset;
 	}
 	.profile-navigation .inline-list .nav-link .active,
 	.profile-navigation .update-panel .genre-list .nav-link .active,
