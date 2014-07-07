@@ -141,7 +141,6 @@
 	/*
 	glitches are most likely caused by having the transition on .watched-series
 	should only activate on :hover
-	glitch doesn't affect plan to watch items
 	*/
 	.quick-update .watched-series:nth-of-type(1) .overlay-panel {
 		opacity: 0;	/*hide overlay on first item*/
