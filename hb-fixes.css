@@ -1,9 +1,9 @@
 @-moz-document url-prefix(http://forums.hummingbird.me/) {
 	@font-face {
-	  font-family: 'Lato';
-	  font-style: normal;
-	  font-weight: 400;
-	  src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 	}
 	body {
 		font-family: 'Lato' !important;
@@ -12,39 +12,39 @@
 		font-family: 'Lato' !important;
 	}
 	#main-outlet {
-		background-color: #E0E0E0 !important;
+		background-color: #E0E0E0 !important;	/*makes difference between content and background more apparent*/
 	}
-    #poster-expansion .bio {
-        max-height: none;
-    }
-    .d-header {
-        height: auto;
-    }
-    .d-dropdown {
-    	margin-top: 4px;
-    	right: -3px;
-    }
-    #site-map-dropdown {
-    	height: auto;
-    }
-    .d-dropdown li {
-	    padding: 2px;
+	#poster-expansion .bio {
+		max-height: none;	/*fixes bio height*/
+	}
+	.d-header {
+		height: auto;	/*fixes header height*/
+	}
+	.d-dropdown {
+		margin-top: 4px;
+		right: -3px;
+	}
+	#site-map-dropdown {
+		height: auto;
+	}
+	.d-dropdown li {
+		padding: 2px;
 	}
 	.d-dropdown li:not(.category):not(.heading) a:hover {
 		background-color: transparent !important;
 	}
-    #site-map-dropdown.d-dropdown .heading a:hover {
-    	background-color: transparent;
-    }
-    .category-dropdown-menu {
-	    max-height: none;
+	#site-map-dropdown.d-dropdown .heading a:hover {
+		background-color: transparent;
+	}
+	.category-dropdown-menu {
+		max-height: none;	/*makes whole category list visible*/
 	}
 	.list-controls .category-dropdown-menu a.badge-category {
 		margin-bottom: initial;
 	}
 	.embedded-posts .topic-avatar .avatar {
-	    width: 45px;
-	    height: 45px;
+		width: 45px;	/*resizes avatar in embedded posts (when viewing OP in a reply)*/
+		height: 45px;
 	}
 	.embedded-posts .topic-meta-data h5 {
 		left: auto;
@@ -53,96 +53,99 @@
 		padding-top: 0px !important;
 	}
 	.discourse-no-touch .post-cloak .post-actions {
-	    transition: opacity 0.1s linear 0s;
+		transition: opacity 0.1s linear 0s;	/*speed up transitions on post actions*/
 	}
 	nav.post-controls button {
-	    transition: all 0.1s linear 0s;
+		transition: all 0.1s linear 0s;		/*same as above*/
 	}
 	.dropdown-menu li a div span:nth-of-type(2) {
-		display: none;
+		display: none;	/*hides unecessary description of topic tracking option*/
 	}
-	.dropdown-menu {
+	.dropdown-menu {	/*reformatted topic tracking dropdown*/
 		width: auto;
 		min-width: initial;
 		padding: initial !important;
 		margin-top: -2px;
 	}
 	.dropdown-menu a {
-	    padding: 10px !important;
+		padding: 10px !important;
 	}
 	ol.category-breadcrumb {
-		margin-top: 5px;
+		margin-top: 5px;	/*centers category list dropdown*/
 	}
 	.list-controls .btn {
-		margin-top: 5px;
+		margin-top: 5px;	/*centers create topic button*/
 	}
 	.user-cover {
-		height: auto;
+		height: auto;	/*fixes cover photo stretch issue*/
 		margin-top: -63px;
 	}
 	.user-main .user-stream .item {
-	    padding: 20px 15px 15px 20px;
+		padding: 20px 15px 15px 20px;	/*fix padding in the activity feed*/
 	}
 	.profile-navigation .inline-list .nav-link > a.active {
-	    color: #EC8661;
-	    border-bottom: 1px solid #EC8661;
+		color: #EC8661;		/*create consistent active tab across profiles*/
+		border-bottom: 1px solid #EC8661;
 	}
 	.profile-navigation .inline-list .nav-link > a {
 		font-family: 'Lato';
-		padding: 13px 20px;
+		padding: 13px 20px;	/*fixed padding on tabs*/
 	}
 	.profile-navigation .inline-list .nav-link > a:hover {
-		color: #EC8661
+		color: #EC8661		/*changed hover colour*/
 	}
 	.extra-info-wrapper .star {
-		top: initial;
+		top: initial;		/*fix star position*/
 	}
 	.extra-info-wrapper .topic-link {
 		/*color: #C8C8C8 !important;*/	/*tried to change colour of "Loading topic..."*/
 	}
 	.extra-info-wrapper a.topic-link {
-		margin-top: -3px;
+		margin-top: -3px;	/*centered topic name*/
 	}
 	.d-header .title {
 		height: auto;
 	}
 	.logo-small {
-		margin-top: 3px;
+		margin-top: 3px;	/*centered small home icon*/
 	}
 }
 @-moz-document url-prefix(http://hummingbird.me/) {
 	@font-face {
-	  font-family: 'Lato';
-	  font-style: normal;
-	  font-weight: 400;
-	  src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 	}
 	body {
 		font-family: 'Lato' !important;
-		background-color: #E0E0E0 !important;
+		background-color: #E0E0E0 !important;	/*slightly darker grey - same as forum*/
 	}
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		font-family: 'Lato' !important;
 	}
 	.update-panel li a.remove-post {
-		color: #999999 !important;
+		color: #999999 !important;	/*make remove post have a muted colour*/
 	}
 	.update-panel li a.remove-post:hover {
-		color: #EC8661 !important;
+		color: #EC8661 !important;	/*hover makes it orange again*/
 	}
 	.hb-nav .searchbar .search-field {
-		margin-left: 20px;
-		border: none;
+		margin-left: 20px;	/*on hover the shadow covers more to the left*/
+		border: none;	/*removes odd underline*/
 	}
 	.quick-update .watched-series .overlay-panel {
 		/*transition: opacity 0.1s cubic-bezier(0.86, 0, 0.07, 1) 0s;*/
-	    transition: opacity 0.1s linear 0s;
+		transition: opacity 0.1s linear 0s;	/*speed up transition to reduce glitches*/
 	}
+	/*glitches are most likely caused by having the transition on .watched-series
+	should only activate on :hover
+	glitch doesn't affect plan to watch items*/
 	.quick-update .watched-series:nth-of-type(1) .overlay-panel {
-		opacity: 0;
+		opacity: 0;	/*hide overlay on first item*/
 	}
 	.quick-update .watched-series:nth-of-type(1):hover .overlay-panel {
-	    opacity: 1;
+	    	opacity: 1;	/*show overlay on hover*/
 	}
 	/*.quick-update .watched-series.plan-to-watch {
 	    opacity: 1;
@@ -157,19 +160,19 @@
 	    opacity: 1;
 	}*/
 	.quick-update .series-slider .fa-angle-left {
-		left: -30px;	/*temp fix*/
+		left: -30px;	/*temp position fix*/
 	}
 	.quick-update .series-slider .fa-angle-right {
-	    right: -30px;	/*temp fix*/
+	    right: -30px;	/*temp position fix*/
 	}
 	.quick-update .series-slider .arrow-nav {
-		color: transparent;
+		color: transparent;	/*hide nav arrows*/
 	}
 	.quick-update .series-slider .arrow-nav.inactive {
-		color: transparent;
+		color: transparent;	/*hide inactive nav arrows*/
 	}
 	.quick-update .series-slider .arrow-nav:hover {
-		transition: opacity 0.1s linear 0s;
+		transition: opacity 0.1s linear 0s;	/*fast transition*/	
 	}
 	.genre-tab .badge {
 		font-family: 'Lato';
@@ -184,7 +187,7 @@
 		font-family: 'Lato';
 	}
 	.dropdown-menu {
-		min-width: auto;
+		min-width: initial;	/*tweaks anime/manga library dropdown*/
 		margin: initial;
 	}
 	.panel-divider {
@@ -195,27 +198,26 @@
 	}
 	.library-dropdown .personal-notes {
 		height: auto;
-		resize: vertical;
+		resize: vertical;	/*might be useful for long notes*/
 	}
 	.library-search {
-		height: auto;
+		height: auto;	/*makes library search bar thinner*/
 		font-family: 'Lato';
 	}
 	.profile-navigation .inline-list .nav-link a:before,
 	.profile-navigation .update-panel .genre-list .nav-link a:before,
 	.update-panel .profile-navigation .genre-list .nav-link a:before {
-		/*border-bottom-color: transparent;*/	/*underline won't go away*/
-		/*text-decoration: none !important;*/
+		/*border-bottom-color: transparent;*/	/*underline on active tab won't go away*/
 	}
 	.profile-navigation .inline-list .nav-link .active,
 	.profile-navigation .update-panel .genre-list .nav-link .active,
 	.update-panel .profile-navigation .genre-list .nav-link .active {
-		border-bottom: 1px solid #EC8661;
+		border-bottom: 1px solid #EC8661;	/*adds small border to active tab*/
 	}
 	.profile-navigation .inline-list .nav-link > a,
 	.profile-navigation .update-panel .genre-list .nav-link > a,
 	.update-panel .profile-navigation .genre-list .nav-link > a {
-		padding: 11px 20px;
+		padding: 11px 20px;	/*fixes tab padding*/
 		font-family: 'Lato';
 	}
 	.anime-breakdown-panel .breakdown-genrelist li span {
