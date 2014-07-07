@@ -7,6 +7,7 @@
 	}
 	body {
 		font-family: 'Lato' !important;
+		background-color: #E0E0E0 !important;
 	}
 	body input, body button, body select, body textarea {
 		font-family: 'Lato' !important;
