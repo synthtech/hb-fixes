@@ -157,6 +157,9 @@
 	.quick-update .series-slider .arrow-nav:hover {
 		transition: opacity 0.1s linear 0s;	/*fast transition*/	
 	}
+	.responsive-image {
+		border-radius: 4px;
+	}
 	.genre-tab .badge {
 		font-family: 'Lato';
 	}
