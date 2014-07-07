@@ -1,0 +1,227 @@
+@-moz-document url-prefix(http://forums.hummingbird.me/) {
+	@font-face {
+	  font-family: 'Lato';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+	}
+	body {
+		font-family: 'Lato' !important;
+	}
+	body input, body button, body select, body textarea {
+		font-family: 'Lato' !important;
+	}
+	#main-outlet {
+		background-color: #E0E0E0 !important;
+	}
+    #poster-expansion .bio {
+        max-height: none;
+    }
+    .d-header {
+        height: auto;
+    }
+    .d-dropdown {
+    	margin-top: 4px;
+    	right: -3px;
+    }
+    #site-map-dropdown {
+    	height: auto;
+    }
+    .d-dropdown li {
+	    padding: 2px;
+	}
+	.d-dropdown li:not(.category):not(.heading) a:hover {
+		background-color: transparent !important;
+	}
+    #site-map-dropdown.d-dropdown .heading a:hover {
+    	background-color: transparent;
+    }
+    .category-dropdown-menu {
+	    max-height: none;
+	}
+	.list-controls .category-dropdown-menu a.badge-category {
+		margin-bottom: initial;
+	}
+	.embedded-posts .topic-avatar .avatar {
+	    width: 45px;
+	    height: 45px;
+	}
+	.embedded-posts .topic-meta-data h5 {
+		left: auto;
+	}
+	.embedded-posts .top .topic-body {	/*not working*/
+		padding-top: 0px !important;
+	}
+	.discourse-no-touch .post-cloak .post-actions {
+	    transition: opacity 0.1s linear 0s;
+	}
+	nav.post-controls button {
+	    transition: all 0.1s linear 0s;
+	}
+	.dropdown-menu li a div span:nth-of-type(2) {
+		display: none;
+	}
+	.dropdown-menu {
+		width: auto;
+		min-width: initial;
+		padding: initial !important;
+		margin-top: -2px;
+	}
+	.dropdown-menu a {
+	    padding: 10px !important;
+	}
+	ol.category-breadcrumb {
+		margin-top: 5px;
+	}
+	.list-controls .btn {
+		margin-top: 5px;
+	}
+	.user-cover {
+		height: auto;
+		margin-top: -63px;
+	}
+	.user-main .user-stream .item {
+	    padding: 20px 15px 15px 20px;
+	}
+	.profile-navigation .inline-list .nav-link > a.active {
+	    color: #EC8661;
+	    border-bottom: 1px solid #EC8661;
+	}
+	.profile-navigation .inline-list .nav-link > a {
+		font-family: 'Lato';
+		padding: 13px 20px;
+	}
+	.profile-navigation .inline-list .nav-link > a:hover {
+		color: #EC8661
+	}
+	.extra-info-wrapper .star {
+		top: initial;
+	}
+	.extra-info-wrapper .topic-link {
+		/*color: #C8C8C8 !important;*/	/*tried to change colour of "Loading topic..."*/
+	}
+	.extra-info-wrapper a.topic-link {
+		margin-top: -3px;
+	}
+	.d-header .title {
+		height: auto;
+	}
+	.logo-small {
+		margin-top: 3px;
+	}
+}
+@-moz-document url-prefix(http://hummingbird.me/) {
+	@font-face {
+	  font-family: 'Lato';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+	}
+	body {
+		font-family: 'Lato' !important;
+		background-color: #E0E0E0 !important;
+	}
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: 'Lato' !important;
+	}
+	.update-panel li a.remove-post {
+		color: #999999 !important;
+	}
+	.update-panel li a.remove-post:hover {
+		color: #EC8661 !important;
+	}
+	.hb-nav .searchbar .search-field {
+		margin-left: 20px;
+		border: none;
+	}
+	.quick-update .watched-series .overlay-panel {
+		/*transition: opacity 0.1s cubic-bezier(0.86, 0, 0.07, 1) 0s;*/
+	    transition: opacity 0.1s linear 0s;
+	}
+	.quick-update .watched-series:nth-of-type(1) .overlay-panel {
+		opacity: 0;
+	}
+	.quick-update .watched-series:nth-of-type(1):hover .overlay-panel {
+	    opacity: 1;
+	}
+	/*.quick-update .watched-series.plan-to-watch {
+	    opacity: 1;
+	}
+	.quick-update .watched-series.plan-to-watch .responsive-image {
+	    opacity: 0.4;
+	}
+	.quick-update .watched-series.plan-to-watch:hover .responsive-image {
+	    opacity: 1;
+	}
+	.quick-update .watched-series.plan-to-watch:hover .overlay-panel {
+	    opacity: 1;
+	}*/
+	.quick-update .series-slider .fa-angle-left {
+		left: -30px;	/*temp fix*/
+	}
+	.quick-update .series-slider .fa-angle-right {
+	    right: -30px;	/*temp fix*/
+	}
+	.quick-update .series-slider .arrow-nav {
+		color: transparent;
+	}
+	.quick-update .series-slider .arrow-nav.inactive {
+		color: transparent;
+	}
+	.quick-update .series-slider .arrow-nav:hover {
+		transition: opacity 0.1s linear 0s;
+	}
+	.genre-tab .badge {
+		font-family: 'Lato';
+	}
+	.top-buttons .top-button {
+		font-family: 'Lato';
+	}
+	.hb-nav .dropdown {
+		font-family: 'Lato';
+	}
+	#recent-toggle {
+		font-family: 'Lato';
+	}
+	.dropdown-menu {
+		min-width: auto;
+		margin: initial;
+	}
+	.panel-divider {
+		font-family: 'Lato';
+	}
+	.library-filter {
+		font-family: 'Lato';
+	}
+	.library-dropdown .personal-notes {
+		height: auto;
+		resize: vertical;
+	}
+	.library-search {
+		height: auto;
+		font-family: 'Lato';
+	}
+	.profile-navigation .inline-list .nav-link a:before,
+	.profile-navigation .update-panel .genre-list .nav-link a:before,
+	.update-panel .profile-navigation .genre-list .nav-link a:before {
+		/*border-bottom-color: transparent;*/	/*underline won't go away*/
+		/*text-decoration: none !important;*/
+	}
+	.profile-navigation .inline-list .nav-link .active,
+	.profile-navigation .update-panel .genre-list .nav-link .active,
+	.update-panel .profile-navigation .genre-list .nav-link .active {
+		border-bottom: 1px solid #EC8661;
+	}
+	.profile-navigation .inline-list .nav-link > a,
+	.profile-navigation .update-panel .genre-list .nav-link > a,
+	.update-panel .profile-navigation .genre-list .nav-link > a {
+		padding: 11px 20px;
+		font-family: 'Lato';
+	}
+	.anime-breakdown-panel .breakdown-genrelist li span {
+		font-family: 'Lato';
+	}
+	/*.user-cover .cover-overlay {
+		background: none;
+	}*/
+}
