@@ -80,6 +80,7 @@
 	.user-cover {
 		height: auto;	/*fixes cover photo stretch issue*/
 		margin-top: -63px;
+		background-repeat: no-repeat;	/*stops placeholder from repeating*/
 	}
 	.user-main .user-stream .item {
 		padding: 20px 15px 15px 20px;	/*fix padding in the activity feed*/
