@@ -278,4 +278,29 @@
 	.trailer .play-icon {
 		/*top: 6%;*/	/*if so change offset of play icon*/
 	}
+	/*attempt to format franchise*/
+	/*
+	.rounded-block .franchise-show div:nth-child(2) .series-title h4 {
+		border-bottom: none !important;
+		margin-top: auto !important;
+		margin-bottom: auto !important;
+		padding-bottom: 2px !important;
+	}
+	.rounded-block .franchise-show div:nth-child(2) .series-metadata ul {
+		font-size: 13px !important;
+	}
+	.rounded-block .franchise-show div:nth-child(2) div:first-of-type {
+		font-size: 14px !important;
+	}
+	*/
+	.franchise-show {
+		padding-left: initial;	/*removes unnecessary padding*/
+		padding-right: initial;
+	}
+	.tab-pane .rounded-block {
+		border: none;	/*removes divider*/
+	}
+	.tab-pane .rounded-block:hover {
+		border: none;
+	}
 }
