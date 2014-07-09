@@ -18,9 +18,6 @@
 	#poster-expansion .bio {
 		max-height: none;	/*fixes bio height*/
 	}
-	.d-header {
-		height: auto;	/*fixes header height*/
-	}
 	.d-dropdown {
 		margin-top: 4px;
 		right: -3px;
@@ -250,6 +247,7 @@
 	}
 	.bg-image-wrapper.series {
 		opacity: 0.2;	/*made it slightly more visible*/
+		background-position: 50% 0px !important;	/*some covers were being pushed up*/
 	}
 	.wrapper-fade {
 		background: none;
@@ -275,7 +273,7 @@
 		width: 100%;
 	}
 	.trailer img {
-		/*youtube thumb should use mqdefault.jpg*/
+		/*youtube thumb should use mqdefault.jpg (has no black bars)*/
 	}
 	.trailer .play-icon {
 		/*top: 6%;*/	/*if so change offset of play icon*/
