@@ -101,6 +101,7 @@
 	}
 	.extra-info-wrapper .topic-link {
 		/*color: #C8C8C8 !important;*/	/*tried to change colour of "Loading topic..."*/
+		/*display: inline-block;*/
 	}
 	.extra-info-wrapper a.topic-link {
 		margin-top: -3px;	/*centered topic name*/
@@ -122,6 +123,7 @@
 	body {
 		font-family: 'Lato' !important;
 		background-color: #E0E0E0 !important;	/*slightly darker grey - same as forum*/
+		text-rendering: optimizelegibility !important;
 	}
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		font-family: 'Lato' !important;
@@ -145,10 +147,10 @@
 	should only activate on :hover
 	*/
 	.quick-update .series-slider .fa-angle-left {
-		left: -30px;	/*temp position fix*/
+		left: -30px;
 	}
 	.quick-update .series-slider .fa-angle-right {
-		right: -30px;	/*temp position fix*/
+		right: -30px;
 	}
 	.quick-update .series-slider .arrow-nav {
 		color: transparent;	/*hide nav arrows*/
@@ -205,13 +207,77 @@
 	.profile-navigation .inline-list .nav-link > a,
 	.profile-navigation .update-panel .genre-list .nav-link > a,
 	.update-panel .profile-navigation .genre-list .nav-link > a {
-		padding: 11px 20px;	/*fixes tab padding*/
+		padding: 11px 20px;		/*fixes tab padding*/
 		font-family: 'Lato';
 	}
 	.anime-breakdown-panel .breakdown-genrelist li span {
 		font-family: 'Lato';
 	}
-	/*.user-cover .cover-overlay {
+	.user-cover .cover-overlay {
+		/*background: none;*/	/*todo: use css gradient instead of img overlay*/
+	}
+	a:active {
+		text-decoration: none !important;	/*2nd attempt to remove weird underline*/
+	}
+	a:visited {
+		text-decoration: none !important;
+	}
+	.review-content .youtube-frame .youtube-background {
+		background: none;	/*remove dark frame around video review*/
+	}
+	.review-content .youtube-frame iframe {
+		max-width: initial;		/*unset width*/
+		border-radius: initial;
+		border: none;	/*remove border*/
+	}
+	.actor:before {
+		content: unset;		/*remove dots between VAs*/
+	}
+	.review-listing .reviewer-name .subtext {
+		display: none;	/*remove "review by" text*/
+	}
+	.social-buttons .twitter-share-button {
+		margin-bottom: -6px;	/*centers button on anime pages*/
+	}
+	.review-breakdown {
+		margin-bottom: 15px;	/*adds some whitespace to bottom of review*/
+	}
+	.review-content {
+		font-size: initial;		/*uses default size in reviews*/
+	}
+	.back-to-anime {
+		left: -15px;	/*moves link to the left*/
+	}
+	.bg-image-wrapper.series {
+		opacity: 0.2;	/*made it slightly more visible*/
+	}
+	.wrapper-fade {
 		background: none;
-	}*/
+		/*uses gradient instead of an img so colour can be changed easily*/
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(224,224,224,1) 100%);
+		top: 390px;		/*adjust gradient position*/
+	}
+	.series-description {
+		font-size: initial;		/*description size made smaller*/
+	}
+	/*series of adjustments to trailer modal*/
+	.modal-dialog {
+		margin: 10% auto;
+	}
+	.modal-content {
+		border-radius: 3px;
+		background-color: #E0E0E0;
+	}
+	.modal-body {
+		padding: 5px 5px 0px 5px;
+	}
+	.modal-body iframe {
+		width: 100%;
+	}
+	.trailer img {
+		/*youtube thumb should use mqdefault.jpg*/
+	}
+	.trailer .play-icon {
+		/*top: 6%;*/	/*if so change offset of play icon*/
+	}
 }
