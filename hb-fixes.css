@@ -395,12 +395,38 @@
 	.min-height-wrapper div.container:nth-child(4) {
 		padding-bottom: 30px;	/*adds some space to follow pages*/
 	}
-	/*transparent test*/
+	/*transparent test start*/
+	/*test cover - https://i.minus.com/ibkm478MN0BZCs.png*/
 	.series-panel {
-		background-color: transparent;
+		background-color: rgba(255,255,255,0.2);
 	}
 	.series-content {
 		min-height: initial;
+		background-color: rgba(255,255,255,0.4);
+	}
+	.review-listing .review {
 		background-color: transparent;
 	}
+	.nav-tabs > li.active > a,
+	.nav-tabs > li.active > a:hover,
+	.nav-tabs > li.active > a:focus {
+		background-color: transparent;
+	}
+	.casting .character {
+		background-color: transparent;
+	}
+	.casting .voice-actor {
+		background-color: transparent;
+	}
+	.info-tabs .dropdown-menu {
+		background-color: rgba(255,255,255,0.6);
+	}
+	/*transparency test end*/
+	/*.quick-update {
+		background: none;
+	}*/
+	/*use full screen width*/
+	/*.container, .profile-content, .user-dashboard, .library-container {
+	    width: 100%;
+	}*/
 }
