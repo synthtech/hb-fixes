@@ -282,6 +282,13 @@
 		/*uses gradient instead of an img so colour can be changed easily*/
 		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(224,224,224,1) 100%);
 		top: 400px;		/*adjust gradient position*/
+
+		/*bigger fade*/
+		/*height: 300px;
+		top: 300px;*/
+		/*even bigger fade*/
+		/*height: 400px;
+		top: 200px;*/
 	}
 	.series-description {
 		font-size: initial;		/*description size made smaller*/
@@ -389,10 +396,11 @@
 		padding-bottom: 30px;	/*adds some space to follow pages*/
 	}
 	/*transparent test*/
-	/*.series-sidebar {
-		background: none !important;
+	.series-panel {
+		background-color: transparent;
 	}
 	.series-content {
-		background: none !important;
-	}*/
+		min-height: initial;
+		background-color: transparent;
+	}
 }
