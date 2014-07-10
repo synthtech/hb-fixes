@@ -109,6 +109,9 @@
 	.logo-small {
 		margin-top: 3px;	/*centered small home icon*/
 	}
+	div.container.posts {
+		padding-bottom: 30px !important;	/*adds some space to the bottom of all pages*/
+	}
 }
 @-moz-document url-prefix(http://hummingbird.me/) {
 	@font-face {
@@ -124,6 +127,7 @@
 	}
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		font-family: 'Lato' !important;
+		text-rendering: optimizelegibility !important;
 	}
 	.update-panel li a.remove-post {
 		color: #999999 !important;	/*make remove post have a muted colour*/
@@ -194,7 +198,8 @@
 	.profile-navigation .inline-list .nav-link a:before,
 	.profile-navigation .update-panel .genre-list .nav-link a:before,
 	.update-panel .profile-navigation .genre-list .nav-link a:before {
-		content: unset;
+		content: unset;		/*removes broken hover effect*/
+		transition: max-width 0.3s ease 0s;		/*faster hover transition*/
 	}
 	.profile-navigation .inline-list .nav-link .active,
 	.profile-navigation .update-panel .genre-list .nav-link .active,
@@ -302,5 +307,34 @@
 	}
 	.tab-pane .rounded-block:hover {
 		border: none;
+	}
+	.hb-nav .notification-dropdown .user-info small {
+		font-family: 'Lato';
+	}
+	.upload-cover {
+		font-family: 'Lato';
+		font-size: 12px !important;
+	}
+	.user-cover-options .upload-cover:hover {
+		color: #F89774;		/*add hover colour for 'upload cover' button*/
+		border-color: #F89774;
+	}
+	a {
+		transition: none;	/*link transition feels laggy*/
+	}
+	/*series of notification tweaks*/
+	.hb-nav .user-area .dropdown-menu li a:hover {
+		color: #EC8661 !important;
+	}
+	.hb-nav .notification-dropdown li a:hover {
+		color: inherit !important;
+		background-color: #F5F5F5;
+	}
+	.hb-nav .notification-dropdown li:last-child a {
+		background-color: initial;
+	}
+	.hb-nav .notification-dropdown li:last-child a:hover {
+		color: #EC8661 !important;
+		background-color: initial;
 	}
 }
