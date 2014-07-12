@@ -60,9 +60,8 @@
 		padding-left: 0px;		/*removes padding*/
 		width: 87%;			/*should fill the empty space*/
 	}
-	.embedded-posts .topic-body iframe {
+	.embedded-posts .topic-body p iframe {
 		width: 100%;		/*expand width on YT videos*/
-		/*padding-top: 10px;*/		/*add some spacing*/
 		margin-top: 1em;
 	}
 	.embedded-posts .quote {
@@ -158,7 +157,7 @@
 		margin-top: 1em;		/*fixes img spacing within p*/
 		margin-bottom: 1em;
 	}
-	.cooked iframe {
+	.cooked p iframe {
 		margin-top: 1em;		/*fixes iframe (video) spacing*/
 		margin-bottom: 1em;
 	}
@@ -181,9 +180,7 @@
 
 	a.mention {
 		background: none !important;		/*removes weird highlight on mention*/
-	}
-	a.mention {
-		color: #525A65;		/*use default link colour*/
+		color: #EC8661;			/*use default link colour*/
 	}
 	/*embedded posts (replies,replies to) aren't being 'cooked'*/
 	.topic-body img:not(.avatar) {
@@ -486,12 +483,10 @@
 	    width: 100%;
 	}*/
 
-	/*possible fix for quick update placeholder*/
 	.update-loading {
-		/*height: 90% !important;
-		line-height: 90% !important;*/
-		bottom: -12px !important;
-		top: -12px !important;
+		/*height needs to be adjusted on placeholder*/
+		background-color: #BDBDBD !important;
+		color: #FFFFFF !important;
 	}
 
 	/*fix for #153 (fixed in #156 - waiting for next deploy)*/
