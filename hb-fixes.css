@@ -1,3 +1,4 @@
+/*Applies only to Discourse forums*/
 @-moz-document url-prefix(http://forums.hummingbird.me/) {
 	@font-face {
 		font-family: 'Lato';
@@ -13,7 +14,7 @@
 		font-family: 'Lato' !important;
 	}
 	#main-outlet {
-		background-color: #E0E0E0 !important;	/*makes difference between content and background more apparent*/
+		background-color: #E0E0E0 !important;	/*changes actual bg colour*/
 	}
 	#poster-expansion .bio {
 		max-height: none;	/*fixes bio height*/
@@ -30,7 +31,7 @@
 	}
 	#site-map-dropdown.d-dropdown li:not(.category):not(.heading) a:hover {
 		background-color: #F5F5F5 !important;	/*replaces yellow highlight with grey*/
-		/*very glitchy*/
+		/*still buggy*/
 	}
 	#site-map-dropdown.d-dropdown .heading a:hover {
 		background-color: transparent;
@@ -39,20 +40,36 @@
 		background-color: #F5F5F5 !important;
 	}
 	.category-dropdown-menu {
-		max-height: none;	/*makes whole category list visible*/
+		max-height: none;		/*makes whole category list visible*/
 	}
 	.list-controls .category-dropdown-menu a.badge-category {
 		margin-bottom: initial;
 	}
 	.embedded-posts .topic-avatar .avatar {
-		width: 45px;	/*resizes avatar in embedded posts (when viewing OP in a reply)*/
+		width: 45px;		/*resizes avatar in embedded posts*/
 		height: 45px;
 	}
 	.embedded-posts .topic-meta-data h5 {
 		left: auto;
 	}
-	.embedded-posts .top .topic-body {	/*not working*/
-		padding-top: 0px !important;
+	section.ember-view.embedded-posts.top.topic-body.offset2 {
+		padding-top: 0px !important;		/*removes unneeded padding*/
+		padding-bottom: 0px !important;
+	}
+	.embedded-posts .topic-body {
+		padding-left: 0px;		/*removes padding*/
+		width: 87%;			/*should fill the empty space*/
+	}
+	.embedded-posts .topic-body iframe {
+		width: 100%;		/*expand width on YT videos*/
+		/*padding-top: 10px;*/		/*add some spacing*/
+		margin-top: 1em;
+	}
+	.embedded-posts .quote {
+		margin-top: 1em !important;
+	}
+	.embedded-posts .row {
+		padding-top: 0px;
 	}
 	.discourse-no-touch .post-cloak .post-actions {
 		transition: opacity 0.1s linear 0s;	/*speed up transitions on post actions*/
@@ -134,7 +151,47 @@
 	#topic-list th {
 		text-align: center;
 	}
+	#topic-progress .bg {
+	    border-right: 1px solid transparent;		/*hide divider*/
+	}
+	.cooked p a img:not(.thumbnail) {
+		margin-top: 1em;		/*fixes img spacing within p*/
+		margin-bottom: 1em;
+	}
+	.cooked iframe {
+		margin-top: 1em;		/*fixes iframe (video) spacing*/
+		margin-bottom: 1em;
+	}
+	#poster-expansion {
+		margin-top: 25px;		/*move bio down*/
+		/*margin-left: -20px;*/
+		box-shadow: 2px 2px 10px #9e9e9e;		/*darker shadow*/
+	}
+
+	/*speculating avatar fix - both resize to 20x20*/
+	/*https://github.com/vikhyat/discourse-hummingbird/blob/master/assets/javascripts/custom_avatar.js*/
+	.quote .title .avatar {		/*broken*/
+		/*http://static.hummingbird.me/users/avatars/000/033/573/40/6dzUBBp.gif?1403876230*/
+		/*requests 40x40*/
+	}
+	.reply-to-tab .avatar {		/*proper*/
+		/*http://static.hummingbird.me/users/avatars/000/033/573/small/6dzUBBp.jpg?1403876230*/
+		/*gives 50x50*/
+	}
+
+	a.mention {
+		background: none !important;		/*removes weird highlight on mention*/
+	}
+	a.mention {
+		color: #525A65;		/*use default link colour*/
+	}
+	/*embedded posts (replies,replies to) aren't being 'cooked'*/
+	.topic-body img:not(.avatar) {
+		margin-top: 1em;		/*img spacing fix*/
+		/*margin-bottom: 1em;*/
+	}
 }
+/*Applies only to the main HB site*/
 @-moz-document url-prefix(http://hummingbird.me/) {
 	@font-face {
 		font-family: 'Lato';
@@ -144,7 +201,7 @@
 	}
 	body {
 		font-family: 'Lato' !important;
-		background-color: #E0E0E0 !important;	/*slightly darker grey - same as forum*/
+		background-color: #E0E0E0 !important;	/*slightly darker grey*/
 		text-rendering: optimizelegibility !important;
 	}
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -152,23 +209,19 @@
 		text-rendering: optimizelegibility !important;
 	}
 	.update-panel li a.remove-post {
-		color: #999999 !important;	/*make remove post have a muted colour*/
+		color: #999999 !important;		/*make remove post have a muted colour*/
 	}
 	.update-panel li a.remove-post:hover {
-		color: #EC8661 !important;	/*hover makes it orange again*/
+		color: #EC8661 !important;		/*hover makes it orange again*/
 	}
 	.hb-nav .searchbar .search-field {
-		margin-left: 20px;	/*on hover the shadow covers more to the left*/
-		border: none;	/*removes odd underline*/
+		margin-left: 20px;		/*on hover the shadow covers more to the left*/
+		border: none;		/*removes odd underline*/
 	}
 	.quick-update .watched-series .overlay-panel {
 		/*transition: opacity 0.1s cubic-bezier(0.86, 0, 0.07, 1) 0s;*/
 		transition: opacity 0.1s linear 0s;	/*speed up transition to reduce glitches*/
 	}
-	/*
-	glitches are most likely caused by having the transition on .watched-series
-	should only activate on :hover
-	*/
 	.quick-update .series-slider .fa-angle-left {
 		left: -30px;
 	}
@@ -176,13 +229,13 @@
 		right: -30px;
 	}
 	.quick-update .series-slider .arrow-nav {
-		color: transparent;	/*hide nav arrows*/
+		color: transparent;		/*hide nav arrows*/
 	}
 	.quick-update .series-slider .arrow-nav.inactive {
-		color: transparent;	/*hide inactive nav arrows*/
+		color: transparent;		/*hide inactive nav arrows*/
 	}
 	.quick-update .series-slider .arrow-nav:hover {
-		transition: opacity 0.1s linear 0s;	/*fast transition*/	
+		transition: opacity 0.1s linear 0s;		/*fast transition*/	
 	}
 	.responsive-image {
 		border-radius: 4px;
@@ -200,7 +253,7 @@
 		font-family: 'Lato';
 	}
 	.dropdown-menu {
-		min-width: initial;	/*tweaks anime/manga library dropdown*/
+		min-width: initial;		/*tweaks anime/manga library dropdown*/
 		margin: initial;
 	}
 	.panel-divider {
@@ -211,27 +264,27 @@
 	}
 	.library-dropdown .personal-notes {
 		height: auto;
-		resize: vertical;	/*might be useful for long notes*/
+		resize: vertical;		/*might be useful for long notes*/
 	}
 	.library-search {
-		height: auto;	/*makes library search bar thinner*/
+		height: auto;		/*makes library search bar thinner*/
 		font-family: 'Lato';
 	}
 	.profile-navigation .inline-list .nav-link a:before,
 	.profile-navigation .update-panel .genre-list .nav-link a:before,
 	.update-panel .profile-navigation .genre-list .nav-link a:before {
-		content: unset;		/*removes broken hover effect*/
-		transition: max-width 0.3s ease 0s;		/*faster hover transition*/
+		content: unset;			/*removes broken hover effect*/
+		transition: max-width 0.3s ease 0s;			/*faster hover transition*/
 	}
 	.profile-navigation .inline-list .nav-link .active,
 	.profile-navigation .update-panel .genre-list .nav-link .active,
 	.update-panel .profile-navigation .genre-list .nav-link .active {
-		border-bottom: 1px solid #EC8661;	/*adds small border to active tab*/
+		border-bottom: 1px solid #EC8661;		/*adds small border to active tab*/
 	}
 	.profile-navigation .inline-list .nav-link > a,
 	.profile-navigation .update-panel .genre-list .nav-link > a,
 	.update-panel .profile-navigation .genre-list .nav-link > a {
-		padding: 11px 20px;		/*fixes tab padding*/
+		padding: 11px 20px;			/*fixes tab padding*/
 		font-family: 'Lato';
 	}
 	.anime-breakdown-panel .breakdown-genrelist li span {
@@ -241,41 +294,41 @@
 		/*background: none;*/	/*todo: use css gradient instead of img overlay*/
 	}
 	a:active {
-		text-decoration: none !important;	/*2nd attempt to remove weird underline*/
+		/*text-decoration: none !important;*/	/*2nd attempt to remove weird underline*/
 	}
 	a:visited {
-		text-decoration: none !important;
+		/*text-decoration: none !important;*/
 	}
 	.review-content .youtube-frame .youtube-background {
-		background: none;	/*remove dark frame around video review*/
+		background: none;		/*remove dark frame around video review*/
 	}
 	.review-content .youtube-frame iframe {
 		max-width: initial;		/*unset width*/
 		border-radius: initial;
-		border: none;	/*remove border*/
+		border: none;		/*remove border*/
 	}
 	.actor:before {
-		content: unset;		/*remove dots between VAs*/
+		content: unset;		/*remove dots in VA section*/
 	}
 	.review-listing .reviewer-name .subtext {
-		display: none;	/*remove "review by" text*/
+		display: none;		/*remove "review by" text*/
 	}
 	.social-buttons .twitter-share-button {
-		margin-bottom: -6px;	/*centers button on anime pages*/
+		margin-bottom: -6px;		/*centers button on anime pages*/
 	}
 	.review-breakdown {
-		margin-bottom: 15px;	/*adds some whitespace to bottom of review*/
+		margin-bottom: 15px;		/*adds some whitespace to bottom of review*/
 	}
 	.review-content {
-		font-size: initial;		/*uses default size in reviews*/
+		font-size: initial;			/*uses default size in reviews*/
 	}
 	.back-to-anime {
-		left: -15px;	/*moves link to the left*/
+		left: -15px;		/*moves link to the left*/
 	}
 	.bg-image-wrapper.series {
-		opacity: 0.2;	/*made it slightly more visible*/
-		background-position: 50% 0px !important;	/*some covers were being pushed up*/
-		margin-top: 0px;	/*remove offset*/
+		opacity: 0.2;		/*made it slightly more visible*/
+		background-position: 50% 0px !important;	/*custom offset breaks fade effect*/
+		margin-top: 0px;	/*remove default offset*/
 	}
 	.wrapper-fade {
 		background: none;
@@ -286,6 +339,7 @@
 		/*bigger fade*/
 		/*height: 300px;
 		top: 300px;*/
+
 		/*even bigger fade*/
 		/*height: 400px;
 		top: 200px;*/
@@ -294,7 +348,7 @@
 		font-size: initial;		/*description size made smaller*/
 	}
 	/*series of adjustments to trailer modal*/
-	/*breaks edit modal - needs its own class*/
+	/*breaks edit modal - eventually needs its own class*/
 	.modal-dialog {
 		margin: 10% auto;
 	}
@@ -334,7 +388,7 @@
 	}
 	*/
 	.franchise-show {
-		padding-left: initial;	/*removes unnecessary padding*/
+		padding-left: initial;		/*removes unnecessary padding*/
 		padding-right: initial;
 	}
 	.tab-pane .rounded-block {
@@ -387,16 +441,16 @@
 	}
 	/*library needs a 'collapse all' feature*/
 	#library-sections {
-		padding-bottom: 0px;	/*removes space at bottom*/
+		padding-bottom: 0px;		/*removes space at bottom*/
 	}
 	.profile-navigation {
 		margin-bottom: 0px;
 	}
 	.min-height-wrapper div.container:nth-child(4) {
-		padding-bottom: 30px;	/*adds some space to follow pages*/
+		padding-bottom: 30px;		/*adds some space to follow pages*/
 	}
+
 	/*transparent test start*/
-	/*test cover - https://i.minus.com/ibkm478MN0BZCs.png*/
 	.series-panel {
 		background-color: rgba(255,255,255,0.2);
 	}
@@ -422,11 +476,26 @@
 		background-color: rgba(255,255,255,0.6);
 	}
 	/*transparency test end*/
-	/*.quick-update {
+
+	/*removes quick update bg colour*/
+	.quick-update {
 		background: none;
-	}*/
+	}
 	/*use full screen width*/
 	/*.container, .profile-content, .user-dashboard, .library-container {
 	    width: 100%;
 	}*/
+
+	/*possible fix for quick update placeholder*/
+	.update-loading {
+		/*height: 90% !important;
+		line-height: 90% !important;*/
+		bottom: -12px !important;
+		top: -12px !important;
+	}
+
+	/*fix for #153 (fixed in #156 - waiting for next deploy)*/
+	.series-content {
+		overflow: auto;
+	}
 }
