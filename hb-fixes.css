@@ -6,7 +6,7 @@
 		font-weight: 400;
 		src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 	}
-	body {
+	html, body {
 		font-family: 'Lato' !important;
 		background-color: #E0E0E0 !important;
 	}
@@ -29,7 +29,7 @@
 	.d-dropdown li {
 		padding: 2px;	/*minimal padding*/
 	}
-	#site-map-dropdown.d-dropdown li:not(.category):not(.heading) a:hover {
+	.d-dropdown li:not(.category):not(.heading) a:hover {
 		background-color: #F5F5F5 !important;	/*replaces yellow highlight with grey*/
 		/*still buggy*/
 	}
@@ -69,6 +69,12 @@
 	}
 	.embedded-posts .row {
 		padding-top: 0px;
+	}
+	.embedded-posts a.lightbox {
+		max-width: 87%;
+	}
+	.embedded-posts a.lightbox img {
+		height: auto;
 	}
 	.discourse-no-touch .post-cloak .post-actions {
 		transition: opacity 0.1s linear 0s;	/*speed up transitions on post actions*/
@@ -153,17 +159,64 @@
 	#topic-progress .bg {
 	    border-right: 1px solid transparent;		/*hide divider*/
 	}
-	.cooked p a img:not(.thumbnail) {
-		margin-top: 1em;		/*fixes img spacing within p*/
+
+	/*fix img and iframe spacing start*/
+	/*p elements are already spaced, but the content inside them are not*/
+	/*.cooked p img:not(.emoji) {
+		margin-top: 1em;
 		margin-bottom: 1em;
 	}
-	.cooked p iframe {
-		margin-top: 1em;		/*fixes iframe (video) spacing*/
+	.cooked p a img {
+		margin-top: 1em;
 		margin-bottom: 1em;
+	}*/
+	.cooked a:first-child img {
+		margin-top: 1em;
 	}
+	/*.cooked p img:first-child {
+		margin-top: 0em;
+	}
+	.cooked p img:last-child {
+		margin-bottom: 0em;
+	}
+	.cooked p a:first-child img {
+		margin-top: 0em;
+	}
+	.cooked p a:last-child img {
+		margin-bottom: 0em;
+	}*/
+	.cooked a.lightbox img {
+		margin-top: 0em;
+	}
+	/*.cooked p iframe {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}*/
+	.cooked p iframe:first-child {
+		margin-top: 0em;
+	}
+	.cooked p iframe:last-child {
+		margin-bottom: 0em;
+	}
+	.cooked iframe:first-child {
+		margin-top: 1em;
+	}
+
+	/*embedded posts (replies,replies to) aren't being "cooked"*/
+	/*.embedded-posts .reply .topic-body p img:not(.avatar) {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}*/
+	.embedded-posts .reply .topic-body a:nth-child(2) img:not(.avatar) {
+		margin-top: 1em;
+	}
+	.embedded-posts .reply .topic-body iframe:nth-child(2) {
+		margin-top: 1em;
+	}
+	/*fix img and iframe spacing end*/
+
 	#poster-expansion {
 		margin-top: 25px;		/*move bio down*/
-		/*margin-left: -20px;*/
 		box-shadow: 2px 2px 10px #9e9e9e;		/*darker shadow*/
 	}
 
@@ -182,10 +235,36 @@
 		background: none !important;		/*removes weird highlight on mention*/
 		color: #EC8661;			/*use default link colour*/
 	}
-	/*embedded posts (replies,replies to) aren't being 'cooked'*/
-	.topic-body img:not(.avatar) {
-		margin-top: 1em;		/*img spacing fix*/
-		/*margin-bottom: 1em;*/
+	.meta {
+		font-size: 12px;
+	}
+	.meta .informations {
+		color: #FFF;		/*use default colour*/
+		font-size: 12px;
+		margin: 5px;
+	}
+	.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+		width: auto;		/*reduce image preview close hitbox*/
+	}
+	.mfp-close {
+		width: auto;
+		height: auto;
+	}
+	#post-cloak-1 #post_1 .topic-avatar {
+		border-top: none;		/*removes divider on first post*/
+	}
+	#post-cloak-1 #post_1 .topic-body {
+		border-top: none;		/*same as above*/
+	}
+	/*css "hacks" to remove dotted outline*/
+	a {
+		outline: 0;		/*remove outline on usernames*/
+	}
+	video { 
+		outline: 0;		/*remove webm outline*/
+	}
+	input::-moz-focus-inner { 
+		border: 0;		/*remove image outline (firefox only)*/
 	}
 }
 /*Applies only to the main HB site*/
@@ -196,7 +275,7 @@
 		font-weight: 400;
 		src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 	}
-	body {
+	html, body {
 		font-family: 'Lato' !important;
 		background-color: #E0E0E0 !important;	/*slightly darker grey*/
 		text-rendering: optimizelegibility !important;
@@ -216,8 +295,11 @@
 		border: none;		/*removes odd underline*/
 	}
 	.quick-update .watched-series .overlay-panel {
-		/*transition: opacity 0.1s cubic-bezier(0.86, 0, 0.07, 1) 0s;*/
-		transition: opacity 0.1s linear 0s;	/*speed up transition to reduce glitches*/
+		transition: opacity 0.1s linear 0s;		/*speed up transition to reduce glitches*/
+		background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));	/*adjust gradient*/
+	}
+	.quick-update .series-title {
+		white-space: normal;		/*wrap titles instead*/
 	}
 	.quick-update .series-slider .fa-angle-left {
 		left: -30px;
@@ -290,11 +372,8 @@
 	.user-cover .cover-overlay {
 		/*background: none;*/	/*todo: use css gradient instead of img overlay*/
 	}
-	a:active {
-		/*text-decoration: none !important;*/	/*2nd attempt to remove weird underline*/
-	}
-	a:visited {
-		/*text-decoration: none !important;*/
+	a:focus {
+		text-decoration: none !important;	/*finally fixes weird underline on profile nav*/
 	}
 	.review-content .youtube-frame .youtube-background {
 		background: none;		/*remove dark frame around video review*/
@@ -476,7 +555,7 @@
 
 	/*removes quick update bg colour*/
 	.quick-update {
-		background: none;
+		/*background: none;*/
 	}
 	/*use full screen width*/
 	/*.container, .profile-content, .user-dashboard, .library-container {
@@ -485,12 +564,22 @@
 
 	.update-loading {
 		/*height needs to be adjusted on placeholder*/
-		background-color: #BDBDBD !important;
-		color: #FFFFFF !important;
+		/*background-color: #BDBDBD !important;
+		color: #FFFFFF !important;*/
 	}
 
 	/*fix for #153 (fixed in #156 - waiting for next deploy)*/
 	.series-content {
 		overflow: auto;
+	}
+
+	/*tweaks for forum widgets*/
+	.community-widget-panel .panel-body .latest-post-list .latest-post:hover,
+	.community-widget-panel .update-panel .latest-post-list .latest-post:hover {
+		background-color: #FAFAFA;
+	}
+	.community-widget-panel .panel-body .latest-post-list .latest-post-title a:hover,
+	.community-widget-panel .update-panel .latest-post-list .latest-post-title a:hover {
+		color: #424242;
 	}
 }
