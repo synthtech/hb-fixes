@@ -178,11 +178,11 @@
 	}
 	.cooked p img:last-child {
 		margin-bottom: 0em;
-	}
+	}*/
 	.cooked p a:first-child img {
 		margin-top: 0em;
 	}
-	.cooked p a:last-child img {
+	/*.cooked p a:last-child img {
 		margin-bottom: 0em;
 	}*/
 	.cooked a.lightbox img {
@@ -195,9 +195,9 @@
 	.cooked p iframe:first-child {
 		margin-top: 0em;
 	}
-	.cooked p iframe:last-child {
+	/*.cooked p iframe:last-child {
 		margin-bottom: 0em;
-	}
+	}*/
 	.cooked iframe:first-child {
 		margin-top: 1em;
 	}
@@ -257,11 +257,8 @@
 		border-top: none;		/*same as above*/
 	}
 	/*css "hacks" to remove dotted outline*/
-	a {
-		outline: 0;		/*remove outline on usernames*/
-	}
-	video { 
-		outline: 0;		/*remove webm outline*/
+	a, video, audio {
+		outline: 0;		/*remove outline on links, videos, and audio*/
 	}
 	input::-moz-focus-inner { 
 		border: 0;		/*remove image outline (firefox only)*/
@@ -568,7 +565,7 @@
 		color: #FFFFFF !important;*/
 	}
 
-	/*fix for #153 (fixed in #156 - waiting for next deploy)*/
+	/*fix for #153 (waiting for #156)*/
 	.series-content {
 		overflow: auto;
 	}
@@ -581,5 +578,17 @@
 	.community-widget-panel .panel-body .latest-post-list .latest-post-title a:hover,
 	.community-widget-panel .update-panel .latest-post-list .latest-post-title a:hover {
 		color: #424242;
+	}
+
+	/*waiting for #158*/
+	/*fix for #157*/
+	.review-listing .review-summary {
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	/*addon to #157*/
+	.review-breakdown .summary-block p {
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
