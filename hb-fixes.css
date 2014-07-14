@@ -61,7 +61,6 @@
 		width: 87%;			/*should fill the empty space*/
 	}
 	.embedded-posts .topic-body p iframe {
-		width: 100%;		/*expand width on YT videos*/
 		margin-top: 1em;
 	}
 	.embedded-posts .quote {
@@ -590,5 +589,9 @@
 	.review-breakdown .summary-block p {
 		overflow: hidden;
 		text-overflow: ellipsis;
+	}
+
+	.user-cover {
+		height: 304px;		/*should fix horizontal stretch on profile*/
 	}
 }
