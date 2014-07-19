@@ -82,6 +82,9 @@
 	    width: auto;		/*images were being stretched*/
 	    max-width: 100%;		/*and they were overflowing*/
 	}
+	.embedded-posts .spoiler img {
+	    max-width: 100%;		/*same as above*/
+	}
 	.discourse-no-touch .post-cloak .post-actions {
 		transition: opacity 0.1s linear 0s;	/*speed up transitions on post actions*/
 	}
@@ -281,6 +284,43 @@
 	}
 	#notifications-dropdown.d-dropdown li a:hover {
 		background-color: transparent !important;
+	}
+	.hb-nav .nav > li > .dropdown-menu {
+		border-bottom-left-radius: 0px;		/*square corners on navbar*/
+		border-bottom-right-radius: 0px;
+	}
+	.nav-stacked .active > a,
+	.nav-stacked .active .fa-chevron-right {
+		background-color: #F89774;		/*change active tab colour*/
+	}
+	.user-preferences #pagedown-editor {
+		width: auto;		/*widen bio editor*/
+	}
+	body #pagedown-editor {
+		width: auto;		/*same as above*/
+		border: none;		/*remove useless border*/
+		padding: unset;		/*remove left side offset*/
+	}
+	/*tweaks for profile sidebar colouring*/
+	.nav-stacked > li > a:hover {
+		background-color: #AAAAAA;
+		color: #FFF;
+	}
+	.nav-stacked > li > a:hover,
+	.nav-stacked > li > a:hover .fa-chevron-right {
+		background-color: #AAAAAA;
+		color: #FFF;
+	}
+	.nav-stacked .active > a:hover,
+	.nav-stacked .active > a:hover .fa-chevron-right {
+	    color: #FFF;
+	    background-color: #F89774;
+	}
+	.btn-danger {
+		background-color: #F89774;
+	}
+	.btn-danger:hover {
+		background-color: #F67A4D;
 	}
 }
 /*Applies only to the main HB site*/
@@ -584,8 +624,8 @@
 		color: #FFFFFF !important;*/
 
 		/*only works on my resolution*/
-		height: 1462.3% !important;
-		line-height: 1462.3% !important;
+		/*height: 1462.3% !important;
+		line-height: 1462.3% !important;*/
 	}
 
 	/*tweaks for forum widgets*/
@@ -600,6 +640,45 @@
 
 	/*fixes stretch only on my resolution*/
 	.user-cover {
-		height: 304px;
+		/*height: 304px;*/
+	}
+
+	.info-tabs {
+		padding-left: 0px;		/*remove padding on anime info container*/
+		padding-right: 0px;
+	}
+	.review-listing {
+		padding-left: 0px;		/*same as above for reviews container*/
+		padding-right: 0px;
+	}
+
+	/*a test for colouring likes and dislikes on reviews*/
+	.reader-actions .reader-vote .recommend a.active,
+	.reader-actions .reader-vote .recommend a:hover {
+		color: #2baf2b;
+		border-color: #2baf2b;
+	}
+	.reader-actions .reader-vote .dislike a.active,
+	.reader-actions .reader-vote .dislike a:hover {
+		color: #e84e40;
+		border-color: #e84e40;
+	}
+	/*fix follow button on reviews*/
+	.follow-button {
+		background-color: #F89774 !important;
+		color: #FFF !important;
+		font-family: 'Lato';
+	}
+	.follow-button:hover {
+		background-color: #F67A4D !important;
+	}
+
+	.series-content .btn-primary {
+		background-color: #F89774;		/*change colour of "Create review" button*/
+		border: none;
+	}
+	.series-content .btn-primary:hover {
+		background-color: #F67A4D;
+		border: none;
 	}
 }
