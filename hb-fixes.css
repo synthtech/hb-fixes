@@ -88,22 +88,26 @@
 		height: auto;
 	}
 	.embedded-posts p img {
-	    width: auto;		/*images were being stretched*/
+	    height: auto;		/*images were being stretched*/
 	    max-width: 100%;		/*and they were overflowing*/
 	}
 	.embedded-posts .spoiler img {
 	    max-width: 100%;		/*same as above*/
 	}
+	.embedded-posts a img {
+	    height: auto;
+	    max-width: 100%;
+	}
 	.discourse-no-touch .post-cloak .post-actions {
-		transition: opacity 0.1s linear 0s;	/*speed up transitions on post actions*/
+		transition: opacity 0.1s linear 0s;		/*speed up transitions on post actions*/
 	}
 	nav.post-controls button {
 		transition: all 0.1s linear 0s;		/*same as above*/
 	}
 	.dropdown-menu li a div span:nth-of-type(2) {
-		display: none;	/*hides unecessary description of topic tracking option*/
+		display: none;		/*hides unecessary description of topic tracking option*/
 	}
-	.dropdown-menu {	/*reformatted topic tracking dropdown*/
+	.dropdown-menu {		/*reformatted topic tracking dropdown*/
 		width: auto;
 		min-width: initial;
 		padding: initial !important;
@@ -113,10 +117,10 @@
 		padding: 10px !important;
 	}
 	ol.category-breadcrumb {
-		margin-top: 5px;	/*centers category list dropdown*/
+		margin-top: 5px;		/*centers category list dropdown*/
 	}
 	.list-controls .btn {
-		margin-top: 5px;	/*centers create topic button*/
+		margin-top: 5px;		/*centers create topic button*/
 	}
 	/*fixed*/
 	/*.user-cover {
@@ -125,7 +129,7 @@
 		background-repeat: no-repeat;
 	}*/
 	.user-main .user-stream .item {
-		padding: 20px 15px 15px 20px;	/*fix padding in the activity feed*/
+		padding: 20px 15px 15px 20px;		/*fix padding in the activity feed*/
 	}
 	.profile-navigation .inline-list .nav-link > a.active {
 		color: #EC8661;		/*create consistent active tab across profiles*/
@@ -684,22 +688,25 @@
 		color: #e84e40;
 		border-color: #e84e40;
 	}
-	/*fix follow button on reviews*/
+
 	.follow-button {
-		background-color: #F89774 !important;
+		background-color: #F89774 !important;		/*fix follow button on reviews*/
 		color: #FFF !important;
 		font-family: 'Lato';
 	}
 	.follow-button:hover {
-		background-color: #F67A4D !important;
+		background-color: #F67A4D !important;		/*same as above*/
 	}
-
 	.series-content .btn-primary {
 		background-color: #F89774;		/*change colour of "Create review" button*/
 		border: none;
 	}
 	.series-content .btn-primary:hover {
-		background-color: #F67A4D;
+		background-color: #F67A4D;		/*same as above*/
 		border: none;
+	}
+	.review-breakdown .score-block .score,
+	.review-breakdown .score-block .decimal-score {
+		text-shadow: 2px 4px 6px #A94831;		/*replaces weird shadow on review scores*/
 	}
 }
