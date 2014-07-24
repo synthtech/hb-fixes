@@ -87,14 +87,15 @@
 	.embedded-posts a.lightbox img {
 		height: auto;
 	}
-	.embedded-posts p img {
+	.embedded-posts p img:not(.emoji) {
+		width: auto;
 	    height: auto;		/*images were being stretched*/
 	    max-width: 100%;		/*and they were overflowing*/
 	}
-	.embedded-posts .spoiler img {
+	.embedded-posts .spoiler img:not(.emoji) {
 	    max-width: 100%;		/*same as above*/
 	}
-	.embedded-posts a img {
+	.embedded-posts a img:not(.emoji) {
 	    height: auto;
 	    max-width: 100%;
 	}
@@ -222,6 +223,9 @@
 		margin-bottom: 0em;
 	}*/
 	.cooked iframe:first-child {
+		margin-top: 1em;
+	}
+	.cooked div.lazyYT:first-child {
 		margin-top: 1em;
 	}
 
@@ -648,7 +652,7 @@
 		/*background-color: #BDBDBD !important;
 		color: #FFFFFF !important;*/
 
-		/*only works on my resolution*/
+		/*only works on my resolution - should be fixed soon*/
 		/*height: 1462.3% !important;
 		line-height: 1462.3% !important;*/
 	}
