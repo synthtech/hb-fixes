@@ -339,6 +339,9 @@
 	.btn-danger:hover {
 		background-color: #F67A4D;
 	}
+	.user-cover {
+		background-size: cover;		/*fixes cover placeholder positioning*/
+	}
 }
 /*Applies only to the main HB site*/
 @-moz-document url-prefix(http://hummingbird.me/) {
@@ -667,9 +670,10 @@
 		color: #424242;
 	}
 
-	/*fixes stretch only on my resolution*/
+	/*temporary stretch fix*/
 	.user-cover {
 		/*height: 304px;*/
+		/*height: 28em;*/
 	}
 
 	.info-tabs {
@@ -713,4 +717,12 @@
 	.review-breakdown .score-block .decimal-score {
 		text-shadow: 2px 4px 6px #A94831;		/*replaces weird shadow on review scores*/
 	}
+
+	/*permanent fix*/
+	/*.user-cover {
+		height: auto;
+	}
+	.user-cover .cover-photo {
+		width: 100%;
+	}*/
 }
