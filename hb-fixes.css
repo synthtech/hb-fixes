@@ -87,15 +87,21 @@
 	.embedded-posts a.lightbox img {
 		height: auto;
 	}
-	.embedded-posts p img:not(.emoji) {
+	/*.embedded-posts p img:not(.emoji) {
 		width: auto;
-	    height: auto;		/*images were being stretched*/
-	    max-width: 100%;		/*and they were overflowing*/
+	    height: auto;
+	    max-width: 100%;
 	}
 	.embedded-posts .spoiler img:not(.emoji) {
-	    max-width: 100%;		/*same as above*/
+	    max-width: 100%;
 	}
 	.embedded-posts a img:not(.emoji) {
+	    height: auto;
+	    max-width: 100%;
+	}*/
+	.embedded-posts img:not(.thumbnail):not(.emoji):not(.avatar) {
+	    max-height: 500px;		/*found no maximum being set on images*/
+	    width: auto;
 	    height: auto;
 	    max-width: 100%;
 	}
@@ -228,6 +234,9 @@
 	.cooked div.lazyYT:first-child {
 		margin-top: 1em;
 	}
+	.cooked div.lazyYT iframe {
+		margin-top: 0em;
+	}
 
 	/*embedded posts (replies,replies to) aren't being "cooked"*/
 	/*.embedded-posts .reply .topic-body p img:not(.avatar) {
@@ -245,6 +254,7 @@
 	#poster-expansion {
 		margin-top: 25px;		/*move bio down*/
 		box-shadow: 2px 2px 10px #9e9e9e;		/*darker shadow - needs some work*/
+		margin-left: -100px;		/*temporary fix for weird positioning*/
 	}
 
 	/*speculating avatar fix - both resize to 20x20*/
@@ -341,6 +351,18 @@
 	}
 	.user-cover {
 		background-size: cover;		/*fixes cover placeholder positioning*/
+		width: 100%;
+		max-height: 10%;
+	}
+	.gutter {
+		width: auto;		/*fixes space on right side*/
+	}
+	.lazyYT-title {
+		background-color: rgba(0,0,0,0.8);		/*adds bar to title*/
+		padding: 8px 0px 8px 12px;
+		margin-left: -12px;
+		width: 468px;
+		margin-top: -10px;
 	}
 }
 /*Applies only to the main HB site*/
@@ -725,4 +747,9 @@
 	.user-cover .cover-photo {
 		width: 100%;
 	}*/
+
+	.broadcast {
+		/*position: absolute;*/		/*fixes broadcast on anime pages*/
+		/*z-index: 1;*/		/*keeps it on top*/
+	}
 }
