@@ -350,9 +350,8 @@
 		background-color: #F67A4D;
 	}
 	.user-cover {
-		background-size: cover;		/*fixes cover placeholder positioning*/
-		width: 100%;
-		max-height: 10%;
+		/*background-size: cover;*/		/*fixes cover placeholder positioning*/
+		background-image: none;		/*remove placeholder since it doesn't format properly*/
 	}
 	.gutter {
 		width: auto;		/*fixes space on right side*/
