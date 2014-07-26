@@ -231,6 +231,9 @@
 	.cooked div.lazyYT iframe {
 		margin-top: 0em;
 	}
+	.cooked .onebox:first-child {
+		margin-top: 1em;
+	}
 
 	/*embedded posts (replies,replies to) aren't being "cooked"*/
 	/*.embedded-posts .reply .topic-body p img:not(.avatar) {
