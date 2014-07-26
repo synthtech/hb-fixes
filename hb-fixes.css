@@ -357,9 +357,10 @@
 		width: 468px;
 		margin-top: -10px !important;
 
-		/*might need this if title is too long*/
-		/*overflow: hidden;
-		text-overflow: ellipsis;*/
+		/*fixes long title names*/
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
 /*Applies only to the main HB site*/
