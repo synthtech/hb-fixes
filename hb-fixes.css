@@ -365,6 +365,11 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+	#poster-expansion h3 {
+		overflow: hidden;		/*fixes location overflow in user card*/
+	    white-space: pre;
+	    text-overflow: ellipsis;
+	}
 }
 /*Applies only to the main HB site*/
 @-moz-document url-prefix(http://hummingbird.me/) {
@@ -749,8 +754,31 @@
 		width: 100%;
 	}*/
 
-	.broadcast {
+	.blotter {
 		/*position: absolute;*/		/*fixes broadcast on anime pages*/
 		/*z-index: 1;*/		/*keeps it on top*/
+	}
+
+	/*an attempt to fix search formatting*/
+	.search-dropdown {
+		border-radius: 0px !important;
+		width: 390px !important;
+		margin-left: 0px;
+		margin-top: 10px;
+		max-width: 400px !important;
+	}
+	.search-dropdown .search-result {
+		width: 390px !important;
+		max-width: 400px !important;
+	}
+	.search-dropdown .search-result a {
+		padding-right: 20px !important;
+		padding-left: 20px !important;
+	}
+	input.search-field:focus {
+		margin-top: 14px !important;
+		/*margin-left: -35px !important;*/
+		width: 350px !important;
+		max-width: 400px !important;
 	}
 }
