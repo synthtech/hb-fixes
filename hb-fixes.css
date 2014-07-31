@@ -521,12 +521,13 @@
 		opacity: 0.2;		/*made it slightly more visible*/
 		background-position: 50% 0px !important;	/*custom offset breaks fade effect*/
 		margin-top: 0px;	/*remove default offset*/
+		height: 500px;		/*fix height causing image to be stretched*/
 	}
 	.wrapper-fade {
 		background: none;
-		/*uses gradient instead of an img so colour can be changed easily*/
+		/*uses gradient instead of an img so bg colour can be changed easily*/
 		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(224,224,224,1) 100%);
-		top: 400px;		/*adjust gradient position*/
+		top: 350px;		/*adjust gradient position*/
 
 		/*bigger fade*/
 		/*height: 300px;
@@ -780,5 +781,9 @@
 		/*margin-left: -35px !important;*/
 		width: 350px !important;
 		max-width: 400px !important;
+	}
+
+	.bg-image {
+		/*padding-top: 500px;*/		/*adjust padding on anime page cover*/
 	}
 }
