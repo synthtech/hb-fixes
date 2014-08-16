@@ -465,6 +465,11 @@
 		height: auto;		/*makes library search bar thinner*/
 		font-family: 'Lato';
 	}
+	.profile-navigation .inline-list .nav-link,
+	.profile-navigation .update-panel .genre-list .nav-link,
+	.update-panel .profile-navigation .genre-list .nav-link {
+		float: left;		/*fixes small offset*/
+	}
 	.profile-navigation .inline-list .nav-link a:before,
 	.profile-navigation .update-panel .genre-list .nav-link a:before,
 	.update-panel .profile-navigation .genre-list .nav-link a:before {
@@ -765,7 +770,7 @@
 		border-radius: 0px !important;
 		width: 390px !important;
 		margin-left: 0px;
-		margin-top: 10px;
+		margin-top: 0px;
 		max-width: 400px !important;
 	}
 	.search-dropdown .search-result {
@@ -785,5 +790,11 @@
 
 	.bg-image {
 		/*padding-top: 500px;*/		/*adjust padding on anime page cover*/
+	}
+	.search-container-head {
+		display: none;		/*hide header on search results page*/
+	}
+	.search-container .search-container-body {
+		border-radius: 5px;		/*round page corners*/
 	}
 }
