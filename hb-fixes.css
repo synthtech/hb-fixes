@@ -835,7 +835,7 @@
 		background-color: transparent;		/*adds bg transparency to VA links*/
 	}
 	.series-header .middle-column .info-tabs .slider .actor:before {
-		content: unset;		/*remove dots in VA section*/
+		content: none;		/*remove dots in VA section*/
 	}
 
 	.series-header .middle-column .info-tabs .slider:last-of-type .span:first-child strong {
