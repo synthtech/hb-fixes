@@ -458,7 +458,8 @@
 		font-family: 'Lato';
 	}
 	.library-dropdown .personal-notes {
-		height: auto;
+		height: 45px;			/*default height*/
+		min-height: 45px;		/*sets absolute minimum height*/
 		resize: vertical;		/*might be useful for long notes*/
 	}
 	.library-search {
@@ -504,47 +505,31 @@
 		border-radius: initial;
 		border: none;		/*remove border*/
 	}
-	.actor:before {
-		content: unset;		/*remove dots in VA section*/
-	}
 	.review-listing .reviewer-name .subtext {
 		display: none;		/*remove "review by" text*/
 	}
-	.social-buttons .twitter-share-button {
-		margin-bottom: -6px;		/*centers button on anime pages*/
-	}
 	.review-breakdown {
-		margin-bottom: 15px;		/*adds some whitespace to bottom of review*/
+		margin-bottom: 30px;		/*adds some whitespace to bottom of review*/
 	}
 	.review-content {
 		font-size: initial;			/*uses default size in reviews*/
 	}
 	.back-to-anime {
 		left: -15px;		/*moves link to the left*/
+		margin-top: 30px;		/*adjusts extra space on top of new reviews*/
 	}
 	.bg-image-wrapper.series {
 		opacity: 0.2;		/*made it slightly more visible*/
 		background-position: 50% 0px !important;	/*custom offset breaks fade effect*/
-		margin-top: 0px;	/*remove default offset*/
-		height: 500px;		/*fix height causing image to be stretched*/
+		/*margin-top: 0px;*/	/*remove default offset*/
+		/*height: 500px;*/		/*fix height causing image to be stretched*/
 	}
-	.wrapper-fade {
+	/*.wrapper-fade {
 		background: none;
-		/*uses gradient instead of an img so bg colour can be changed easily*/
 		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(224,224,224,1) 100%);
-		top: 350px;		/*adjust gradient position*/
+		top: 350px;
+	}*/
 
-		/*bigger fade*/
-		/*height: 300px;
-		top: 300px;*/
-
-		/*even bigger fade*/
-		/*height: 400px;
-		top: 200px;*/
-	}
-	.series-description {
-		font-size: initial;		/*description size made smaller*/
-	}
 	/*series of adjustments to trailer modal*/
 	/*breaks edit modal - eventually needs its own class*/
 	.modal-dialog {
@@ -564,13 +549,8 @@
 	.modal-body iframe {
 		width: 100%;
 	}
-	.trailer img {
-		/*youtube thumb should use mqdefault.jpg (has no black bars)*/
-	}
-	.trailer .play-icon {
-		/*top: 45px;*/	/*estimated offset*/
-	}
-	/*attempt to format franchise*/
+
+	/*attempt to format franchise - (remove this)*/
 	/*
 	.rounded-block .franchise-show div:nth-child(2) .series-title h4 {
 		border-bottom: none !important;
@@ -585,16 +565,18 @@
 		font-size: 14px !important;
 	}
 	*/
-	.franchise-show {
-		padding-left: initial;		/*removes unnecessary padding*/
+
+	/*.franchise-show {
+		padding-left: initial;
 		padding-right: initial;
 	}
 	.tab-pane .rounded-block {
-		border: none;	/*removes divider*/
+		border: none;
 	}
 	.tab-pane .rounded-block:hover {
 		border: none;
-	}
+	}*/
+
 	.hb-nav .notification-dropdown .user-info small {
 		font-family: 'Lato';
 	}
@@ -649,6 +631,8 @@
 	}
 
 	/*transparent test start*/
+	/*most of this is now implemented*/
+	/*
 	.series-panel {
 		background-color: rgba(255,255,255,0.2);
 	}
@@ -673,6 +657,7 @@
 	.info-tabs .dropdown-menu {
 		background-color: rgba(255,255,255,0.6);
 	}
+	*/
 	/*transparency test end*/
 
 	/*removes quick update bg colour*/
@@ -796,5 +781,71 @@
 	}
 	.search-container .search-container-body {
 		border-radius: 5px;		/*round page corners*/
+	}
+
+	/*hide ad placeholders start*/
+	div.feed-head-advert {
+		display: none;
+	}
+	div.feed-sm-sidebar-advert {
+		display: none;
+	}
+	div.feed-sidebar-advert {
+		display: none;
+	}
+	div.anime-page-advert {
+		display: none;
+	}
+	/*hide ad placeholders end*/
+
+	.quick-update .overlay-panel .series-title a {
+		color: #FFF;		/*fix title colouring bug*/
+	}
+	.quick-update .overlay-panel .series-title a:hover {
+		color: #FFF;		/*same as above*/
+	}
+	.panel, .community-widget-panel, .story, .user-about-panel, .anime-breakdown-panel,
+	.photos-videos, .favorite-anime, .status-update-panel, .follow-panel {
+		border-radius: 3px;		/*adjust corners on follow card*/
+	}
+	.min-height-wrapper .container:first-of-type {
+		padding-top: 10px;		/*add some space to top of follow container*/
+	}
+	.profile-content {
+		margin-top: 15px;		/*increase top space on profile feed*/
+	}
+	.library-container {
+		padding-top: 15px;		/*increase top space in library*/
+	}
+	.series-reviews {
+		padding-bottom: 30px;		/*adds space to bottom of new anime page*/
+	}
+	.series-gallery {
+		padding-bottom: 30px;		/*same as above*/
+	}
+	.series-reviews .review-listing a:last-child .review {
+		border-bottom: 1px solid transparent;		/*remove divider on last review listing*/
+	}
+	.reader-actions .reader-vote .recommend a,
+	.reader-actions .reader-vote .dislike a {
+		border-color: #333;		/*fixes recommend button border colour*/
+	}
+	.series-header .middle-column .info-tabs .slider .character,
+	.series-header .middle-column .info-tabs .slider .voice-actor {
+		background-color: transparent;		/*adds bg transparency to VA links*/
+	}
+	.series-header .middle-column .info-tabs .slider .actor:before {
+		content: unset;		/*remove dots in VA section*/
+	}
+
+	.series-header .middle-column .info-tabs .slider:last-of-type .span:first-child strong {
+		color: #E5E5E5 !important;		/*changes colour of text in studio tab (not working)*/
+	}
+	.series-header .middle-column .info-tabs .tab-pane .rounded-block.franchise-show:last-of-type {
+		border: none !important;		/*remove divider from the last show in franchise (not working)*/
+	}
+
+	.series-header .middle-column .info-tabs .nav-tabs li > a {
+		font-family: 'Lato';
 	}
 }
