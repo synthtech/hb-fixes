@@ -15,6 +15,12 @@
 		src: local('Lato Regular'), local('Lato-Regular'), url(http://a.pomf.se/qhucai.woff) format('woff');
 		text-rendering: optimizeLegibility !important;
 	}
+	/*
+		follow 			#F89774
+		follow hover 	#F67A4D
+		unfollow 		#999999
+		unfollow hover 	#737373
+	*/
 	html, body {
 		font-family: 'Lato' !important;
 		background-color: #E0E0E0 !important;
@@ -162,12 +168,7 @@
 	div.container.posts {
 		padding-bottom: 30px !important;	/*adds some space to the bottom of all pages*/
 	}
-	/*
-	follow 			#F89774
-	follow hover 	#F67A4D
-	unfollow 		#999999
-	unfollow hover 	#737373
-	*/
+
 	.follow-button {
 		border: none;
 		border-radius: 2px;
@@ -381,11 +382,6 @@
 		src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 	}*/
 	/*Lato 2.0*/
-	/*
-	Lato Regular: http://a.pomf.se/qhucai.woff
-	LatoLatin Regular: http://a.pomf.se/xbxtfs.woff
-	Lato Light: http://a.pomf.se/afguth.woff
-	*/
 	@font-face {
 		font-family: 'Lato';
 		font-style: normal;
@@ -393,6 +389,17 @@
 		src: local('Lato Regular'), local('Lato-Regular'), url(http://a.pomf.se/qhucai.woff) format('woff');
 		text-rendering: optimizeLegibility !important;
 	}
+	/*
+		Lato Regular: http://a.pomf.se/qhucai.woff
+		LatoLatin Regular: http://a.pomf.se/xbxtfs.woff
+		Lato Light: http://a.pomf.se/afguth.woff
+	*/
+	/*
+		follow 			#F89774
+		follow hover 	#F67A4D
+		unfollow 		#999999
+		unfollow hover 	#737373
+	*/
 	html, body {
 		font-family: 'Lato' !important;
 		background-color: #E0E0E0 !important;	/*slightly darker grey*/
@@ -609,12 +616,7 @@
 	.hummingbird-header-1 .notification-block .single-notification {
 		font-family: 'Lato';
 	}
-	/*
-	follow 			#F89774
-	follow hover 	#F67A4D
-	unfollow 		#999999
-	unfollow hover 	#737373
-	*/
+
 	.library-table {
 		width: 100%;
 		/*a horizontal ad should be placed on top instead*/
@@ -660,24 +662,10 @@
 	*/
 	/*transparency test end*/
 
-	/*removes quick update bg colour*/
-	.quick-update {
-		/*background: none;*/
-	}
 	/*use full screen width*/
 	/*.container, .profile-content, .user-dashboard, .library-container {
 	    width: 100%;
 	}*/
-
-	.update-loading {
-		/*height needs to be adjusted on placeholder*/
-		/*background-color: #BDBDBD !important;
-		color: #FFFFFF !important;*/
-
-		/*only works on my resolution - should be fixed soon*/
-		/*height: 1462.3% !important;
-		line-height: 1462.3% !important;*/
-	}
 
 	/*tweaks for forum widgets*/
 	.community-widget-panel .panel-body .latest-post-list .latest-post:hover,
@@ -837,14 +825,10 @@
 	.series-header .middle-column .info-tabs .slider .actor:before {
 		content: none;		/*remove dots in VA section*/
 	}
-
-	.series-header .middle-column .info-tabs .slider:last-of-type .span:first-child strong {
-		color: #E5E5E5 !important;		/*changes colour of text in studio tab (not working)*/
+	.series-header .middle-column .info-tabs .tab-pane .rounded-block.franchise-show:nth-last-of-type(4) {
+		border: none;		/*remove divider from the last show in franchise (not working)*/
+		margin-bottom: 0px;		/*remove extra space*/
 	}
-	.series-header .middle-column .info-tabs .tab-pane .rounded-block.franchise-show:last-of-type {
-		border: none !important;		/*remove divider from the last show in franchise (not working)*/
-	}
-
 	.series-header .middle-column .info-tabs .nav-tabs li > a {
 		font-family: 'Lato';
 	}
@@ -867,5 +851,14 @@
 	.feed-events .single-event .event-info p a:hover {
 		color: #333333;		/*same as above*/
 		font-weight: 700;
+	}
+	.series-header .middle-column .info-tabs .tab-pane .slider .rounded-block:last-of-type {
+		border: none;		/*remove divider on last quote*/
+		margin-bottom: 0px;		/*remove extra space*/
+	}
+	.series-header .middle-column .info-tabs .slider .btn,
+	.series-header .middle-column .info-tabs .slider .right-column .top-buttons .top-button,
+	.series-header .right-column .top-buttons .middle-column .info-tabs .slider .top-button {
+		margin-bottom: 0px;		/*remove space under quote view all button*/
 	}
 }
