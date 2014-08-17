@@ -848,4 +848,24 @@
 	.series-header .middle-column .info-tabs .nav-tabs li > a {
 		font-family: 'Lato';
 	}
+	.user-feed .story .comment-replies .view-more a {
+		color: #999999;		/*change colour of show more button for replies*/
+	}
+	.user-feed .story .comment-replies .view-more a:hover {
+		color: #EC8661;		/*same as above*/
+	}
+	.panel-heading .edit-panel a {
+		color: #999999;		/*change colour of edit icon*/
+	}
+	.panel-heading .edit-panel a:hover {
+		color: #EC8661;		/*same as above*/
+	}
+	.feed-events .single-event .event-info p a {
+		color: #333333;		/*change colour of username on feed events*/
+		font-weight: 700;	/*bold name*/
+	}
+	.feed-events .single-event .event-info p a:hover {
+		color: #333333;		/*same as above*/
+		font-weight: 700;
+	}
 }
