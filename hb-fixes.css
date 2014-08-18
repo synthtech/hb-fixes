@@ -92,6 +92,11 @@
 	}
 	.embedded-posts a.lightbox img {
 		height: auto;
+		width: 100% !important;
+	}
+	.embedded-posts a.lightbox .meta {
+		bottom: auto;
+		margin-top: -29px;
 	}
 	/*.embedded-posts p img:not(.emoji) {
 		width: auto;
@@ -371,6 +376,7 @@
 	    white-space: pre;
 	    text-overflow: ellipsis;
 	}
+
 }
 /*Applies only to the main HB site*/
 @-moz-document url-prefix(http://hummingbird.me/) {
