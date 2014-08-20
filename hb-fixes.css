@@ -376,7 +376,14 @@
 	    white-space: pre;
 	    text-overflow: ellipsis;
 	}
-
+	.category-notification-menu .dropdown-menu {
+		top: 37px;		/*adjust topic tracking dropdown position*/
+		right: -1px;
+	}
+	.dropdown-menu {
+		border-radius: 0px;
+		border: none;
+	}
 }
 /*Applies only to the main HB site*/
 @-moz-document url-prefix(http://hummingbird.me/) {
