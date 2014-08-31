@@ -1,27 +1,21 @@
-/*Applies only to Discourse forums*/
+/*Applies only to the forums (Discourse)*/
 @-moz-document url-prefix(http://forums.hummingbird.me/) {
-	/*Lato 1.0 hosted by Google*/
+	/*Lato 2.0*/
 	@font-face {
 		font-family: 'Lato';
 		font-style: normal;
 		font-weight: 400;
-		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v8/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
 		text-rendering: optimizeLegibility !important;
 	}
-	/*Lato 2.0*/
-	/*@font-face {
-		font-family: 'Lato';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Lato Regular'), local('Lato-Regular'), url(http://a.pomf.se/qhucai.woff) format('woff');
-		text-rendering: optimizeLegibility !important;
-	}
-	
+
+	/*
 		follow 			#F89774
 		follow hover 	#F67A4D
 		unfollow 		#999999
 		unfollow hover 	#737373
 	*/
+
 	html, body {
 		font-family: 'Lato' !important;
 		background-color: #E0E0E0 !important;
@@ -386,35 +380,26 @@
 		border: none;
 	}
 }
-/*Applies only to the main HB site*/
+
+
+/*Applies only to the main site*/
 @-moz-document url-prefix(http://hummingbird.me/) {
-	/*Lato 1.0 hosted by Google*/
+	/*Lato 2.0*/
 	@font-face {
 		font-family: 'Lato';
 		font-style: normal;
 		font-weight: 400;
-		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v8/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
-		text-rendering: optimizeLegibility !important;
-	}
-	/*Lato 2.0*/
-	/*@font-face {
-		font-family: 'Lato';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Lato Regular'), local('Lato-Regular'), url(http://a.pomf.se/qhucai.woff) format('woff');
+		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
 		text-rendering: optimizeLegibility !important;
 	}
 
-		Lato Regular: http://a.pomf.se/qhucai.woff
-		LatoLatin Regular: http://a.pomf.se/xbxtfs.woff
-		Lato Light: http://a.pomf.se/afguth.woff
-	*/
 	/*
 		follow 			#F89774
 		follow hover 	#F67A4D
 		unfollow 		#999999
 		unfollow hover 	#737373
 	*/
+
 	html, body {
 		font-family: 'Lato' !important;
 		background-color: #E0E0E0 !important;	/*slightly darker grey*/
