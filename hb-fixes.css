@@ -864,4 +864,8 @@
 	.series-header .right-column .top-buttons .middle-column .info-tabs .slider .top-button {
 		margin-bottom: 0px;		/*remove space under quote view all button*/
 	}
+	.series-reviews .review-listing .review-summary {
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }
