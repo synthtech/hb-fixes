@@ -382,6 +382,22 @@
 	.user-main .about {
 	    background-color: transparent;
 	}
+	/*.badge-category[href] {
+	    color: #FFF !important;
+	}*/
+	img {
+		color: transparent;		/*hides alt text if img not loaded*/
+		background-color: transparent;
+	}
+	.moderator .topic-body {
+		background-color: transparent;
+	}
+	.ember-view.topic-post.moderator {
+		background-color: #FFF9C4;
+	}
+	.user-main .user-stream .item.moderator-action {
+	    background-color: #FFF9C4;
+	}
 }
 
 
