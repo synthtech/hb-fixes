@@ -868,4 +868,8 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+	.inline-list li,
+	.update-panel .genre-list li {
+		padding-right: 0px;
+	}
 }
