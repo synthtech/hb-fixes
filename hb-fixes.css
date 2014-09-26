@@ -872,4 +872,32 @@
 	.update-panel .genre-list li {
 		padding-right: 0px;
 	}
+	.library-dropdown .genres li:after {
+		padding: 0px 3px;
+	}
+	.list-group-item .list-item-right .list-item-type,
+	.library-filter .list-item-right .list-item-type {
+		width: 50px;
+	}
+	.list-group-item .list-item-right .list-item-score,
+	.library-filter .list-item-right .list-item-score {
+		min-width: 90px;
+	}
+	.list-group-item .list-item-left span.anime-label span.label,
+	.library-filter .list-item-left span.anime-label span.label {
+		display: inline;
+	}
+	img {
+		color: transparent;		/*hides alt text if img not loaded*/
+		background-color: transparent;
+	}
+	.follow-bubbles li .user-bubble {
+		min-height: 69px;
+	}
+	.update-panel .view-more {
+		margin-left: 25%;
+	}
+	.update-panel .comment-text {
+		max-height: none;
+	}
 }
