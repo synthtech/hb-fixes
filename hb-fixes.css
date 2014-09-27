@@ -916,4 +916,22 @@
 	.update-panel .comment-text {
 		max-height: none;
 	}
+	.series-header .middle-column .info-tabs .nav-tabs li.active > a {
+		/*border-bottom: 1px solid #4B5360;*/
+		border-bottom: 1px solid transparent;
+	}
+	.series-header .middle-column .info-tabs .nav-tabs li.active > a:hover {
+		border-bottom: 1px solid transparent;
+	}
+	.series-header {
+		overflow: visible;
+	}
+	/*.dropdown-menu > li > a:hover {
+		border: none;
+		font-weight: normal;
+	}*/
+	.series-header .condensed .right-column {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
 }
