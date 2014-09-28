@@ -382,9 +382,7 @@
 	.user-main .about {
 	    background-color: transparent;
 	}
-	/*.badge-category[href] {
-	    color: #FFF !important;
-	}*/
+
 	img {
 		color: transparent;		/*hides alt text if img not loaded*/
 		background-color: transparent;
@@ -428,6 +426,13 @@
 	}
 	.badge-notification.new-posts {
 		background-color: #6CF;
+	}
+
+	a.badge-category {
+	    color: #FFF !important;
+	}
+	a.badge-category.home {
+		color: #222 !important;
 	}
 }
 
