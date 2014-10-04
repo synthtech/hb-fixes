@@ -1013,4 +1013,8 @@
 		padding-right: 0px;
 		padding-left: 22px;
 	}
+
+	.rating-column:hover .rating-value {
+		background-color: #EC8661;
+	}
 }
