@@ -1,7 +1,4 @@
-/*Applies only to the forums (Discourse)*/
-@-moz-document url-prefix(http://forums.hummingbird.me/),
-url-prefix(https://forums.hummingbird.me/) {
-	/*Lato 2.0*/
+@-moz-document url-prefix(http://forums.hummingbird.me/), url-prefix(https://forums.hummingbird.me/) {
 	@font-face {
 		font-family: 'Lato';
 		font-style: normal;
@@ -9,14 +6,6 @@ url-prefix(https://forums.hummingbird.me/) {
 		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
 		text-rendering: optimizeLegibility !important;
 	}
-
-	/*
-		follow 			#F89774
-		follow hover 	#F67A4D
-		unfollow 		#999999
-		unfollow hover 	#737373
-	*/
-
 	html, body {
 		font-family: 'Lato' !important;
 		background-color: #E0E0E0 !important;
@@ -25,10 +14,10 @@ url-prefix(https://forums.hummingbird.me/) {
 		font-family: 'Lato' !important;
 	}
 	#main-outlet {
-		background-color: #E0E0E0 !important;	/*changes actual bg colour*/
+		background-color: #E0E0E0 !important;
 	}
 	#poster-expansion .bio {
-		max-height: none;	/*fixes bio height*/
+		max-height: none;
 	}
 	.d-dropdown {
 		margin-top: 4px;
@@ -38,11 +27,10 @@ url-prefix(https://forums.hummingbird.me/) {
 		height: auto;
 	}
 	.d-dropdown li {
-		padding: 2px;	/*minimal padding*/
+		padding: 2px;
 	}
 	.d-dropdown li:not(.category):not(.heading) a:hover {
-		background-color: #F5F5F5 !important;	/*replaces yellow highlight with grey*/
-		/*still buggy*/
+		background-color: #F5F5F5 !important;
 	}
 	#site-map-dropdown.d-dropdown .heading a:hover {
 		background-color: transparent;
@@ -51,28 +39,28 @@ url-prefix(https://forums.hummingbird.me/) {
 		background-color: #F5F5F5 !important;
 	}
 	.category-dropdown-menu {
-		max-height: none;		/*makes whole category list visible*/
+		max-height: none;
 	}
 	.list-controls .category-dropdown-menu a.badge-category {
 		margin-bottom: initial;
 	}
 	.embedded-posts .topic-avatar {
-		margin: 0px;		/*a recent update breaks embedded posts*/
+		margin: 0px;
 	}
 	.embedded-posts .topic-avatar .avatar {
-		width: 45px;		/*resizes avatar in embedded posts*/
+		width: 45px;
 		height: 45px;
 	}
 	.embedded-posts .topic-meta-data h5 {
 		left: auto;
 	}
 	section.ember-view.embedded-posts.top.topic-body.offset2 {
-		padding-top: 0px !important;		/*removes unneeded padding*/
+		padding-top: 0px !important;
 		padding-bottom: 0px !important;
 	}
 	.embedded-posts .topic-body {
-		padding-left: 0px;		/*removes padding*/
-		width: 87%;			/*should fill the empty space*/
+		padding-left: 0px;
+		width: 87%;
 	}
 	.embedded-posts .topic-body p iframe {
 		margin-top: 1em;
@@ -94,34 +82,16 @@ url-prefix(https://forums.hummingbird.me/) {
 		bottom: auto;
 		margin-top: -29px;
 	}
-	/*.embedded-posts p img:not(.emoji) {
-		width: auto;
-	    height: auto;
-	    max-width: 100%;
-	}
-	.embedded-posts .spoiler img:not(.emoji) {
-	    max-width: 100%;
-	}
-	.embedded-posts a img:not(.emoji) {
-	    height: auto;
-	    max-width: 100%;
-	}*/
 	.embedded-posts img:not(.thumbnail):not(.emoji):not(.avatar) {
-	    max-height: 500px;		/*found no maximum being set on images*/
+	    max-height: 500px;
 	    width: auto;
 	    height: auto;
 	    max-width: 100%;
 	}
-	.discourse-no-touch .post-cloak .post-actions {
-		/*transition: opacity 0.1s linear 0s;*/		/*speed up transitions on post actions*/
-	}
-	nav.post-controls button {
-		/*transition: all 0.1s linear 0s;*/		/*same as above*/
-	}
 	.dropdown-menu li a div span:nth-of-type(2) {
-		display: none;		/*hides unecessary description of topic tracking option*/
+		display: none;
 	}
-	.dropdown-menu {		/*reformatted topic tracking dropdown*/
+	.dropdown-menu {
 		width: auto;
 		min-width: initial;
 		padding: initial !important;
@@ -131,43 +101,39 @@ url-prefix(https://forums.hummingbird.me/) {
 		padding: 10px !important;
 	}
 	ol.category-breadcrumb {
-		margin-top: 5px;		/*centers category list dropdown*/
+		margin-top: 5px;
 	}
 	.list-controls .btn {
-		margin-top: 5px;		/*centers create topic button*/
+		margin-top: 5px;
 	}
 	.user-main .user-stream .item {
-		padding: 20px 15px 15px 20px;		/*fix padding in the activity feed*/
+		padding: 20px 15px 15px 20px;
 	}
 	.profile-navigation .inline-list .nav-link > a.active {
-		color: #EC8661;		/*create consistent active tab across profiles*/
+		color: #EC8661;
 		border-bottom: 1px solid #EC8661;
 	}
 	.profile-navigation .inline-list .nav-link > a {
 		font-family: 'Lato';
-		padding: 13px 20px;		/*fixed padding on tabs*/
+		padding: 13px 20px;
 	}
 	.profile-navigation .inline-list .nav-link > a:hover {
-		color: #EC8661		/*changed hover colour*/
+		color: #EC8661;
 	}
 	.extra-info-wrapper .star {
-		top: initial;		/*fix star position*/
-	}
-	.extra-info-wrapper .topic-link {
-		/*color: #C8C8C8 !important;*/	/*tried to change colour of "Loading topic..."*/
-		/*display: inline-block;*/
+		top: initial;
 	}
 	.extra-info-wrapper a.topic-link {
-		margin-top: -3px;	/*centered topic name*/
+		margin-top: -3px;
 	}
 	.d-header .title {
 		height: auto;
 	}
 	.logo-small {
-		margin-top: 3px;	/*centered small home icon*/
+		margin-top: 3px;
 	}
 	div.container.posts {
-		padding-bottom: 30px !important;	/*adds some space to the bottom of all pages*/
+		padding-bottom: 30px !important;
 	}
 
 	.follow-button {
@@ -183,47 +149,21 @@ url-prefix(https://forums.hummingbird.me/) {
 		text-align: center;
 	}
 	#topic-progress .bg {
-	    border-right: 1px solid transparent;		/*hide divider*/
+	    border-right: 1px solid transparent;
 	}
 
-	/*fix img and iframe spacing start*/
-	/*p elements are already spaced, but the content inside them are not*/
-	/*.cooked p img:not(.emoji) {
-		margin-top: 1em;
-		margin-bottom: 1em;
-	}
-	.cooked p a img {
-		margin-top: 1em;
-		margin-bottom: 1em;
-	}*/
 	.cooked a:first-child img {
 		margin-top: 1em;
 	}
-	/*.cooked p img:first-child {
-		margin-top: 0em;
-	}
-	.cooked p img:last-child {
-		margin-bottom: 0em;
-	}*/
 	.cooked p a:first-child img {
 		margin-top: 0em;
 	}
-	/*.cooked p a:last-child img {
-		margin-bottom: 0em;
-	}*/
 	.cooked a.lightbox img {
 		margin-top: 0em;
 	}
-	/*.cooked p iframe {
-		margin-top: 1em;
-		margin-bottom: 1em;
-	}*/
 	.cooked p iframe:first-child {
 		margin-top: 0em;
 	}
-	/*.cooked p iframe:last-child {
-		margin-bottom: 0em;
-	}*/
 	.cooked iframe:first-child {
 		margin-top: 1em;
 	}
@@ -237,95 +177,74 @@ url-prefix(https://forums.hummingbird.me/) {
 		margin-top: 1em;
 	}
 
-	/*embedded posts (replies,replies to) aren't being "cooked"*/
-	/*.embedded-posts .reply .topic-body p img:not(.avatar) {
-		margin-top: 1em;
-		margin-bottom: 1em;
-	}*/
 	.embedded-posts .reply .topic-body a:nth-child(2) img:not(.avatar) {
 		margin-top: 1em;
 	}
 	.embedded-posts .reply .topic-body iframe:nth-child(2) {
 		margin-top: 1em;
 	}
-	/*fix img and iframe spacing end*/
-
-	#poster-expansion {
-		/*box-shadow: 2px 2px 10px #9e9e9e;*/		/*darker shadow - needs some work*/
-	}
-
-	/*speculating avatar fix - both resize to 20x20*/
-	/*https://github.com/vikhyat/discourse-hummingbird/blob/master/assets/javascripts/custom_avatar.js*/
-	.quote .title .avatar {		/*broken*/
-		/*http://static.hummingbird.me/users/avatars/000/033/573/40/6dzUBBp.gif?1403876230*/
-		/*requests 40x40*/
-	}
-	.reply-to-tab .avatar {		/*proper*/
-		/*http://static.hummingbird.me/users/avatars/000/033/573/small/6dzUBBp.jpg?1403876230*/
-		/*gives 50x50*/
-	}
 
 	a.mention {
-		background: none !important;		/*removes weird highlight on mention*/
-		color: #EC8661;			/*use default link colour*/
+		background: none !important;
+		color: #EC8661;	
 	}
 	.meta {
 		font-size: 12px;
 	}
 	.meta .informations {
-		color: #FFF;		/*use default colour*/
+		color: #FFF;
 		font-size: 12px;
 		margin: 5px;
 	}
 	.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
-		width: auto;		/*reduce image preview close hitbox*/
+		width: auto;
 	}
 	.mfp-close {
 		width: auto;
 		height: auto;
 	}
 	#post-cloak-1 #post_1 .topic-avatar {
-		border-top: none;		/*removes divider on first post*/
+		border-top: none;
 	}
 	#post-cloak-1 #post_1 .topic-body {
-		border-top: none;		/*same as above*/
+		border-top: none;
 	}
-	/*css "hacks" to remove dotted outline*/
+
 	a, video, audio {
-		outline: 0;		/*remove outline on links, videos, and audio*/
+		outline: 0;
 	}
 	input::-moz-focus-inner { 
-		border: 0;		/*remove image outline (firefox only)*/
+		border: 0;
 	}
 	.wmd-button {
-		font-family: FontAwesome !important;		/*custom font was breaking it*/
+		font-family: FontAwesome !important;
 	}
 	.control-group.pref-avatar {
-		display: none;		/*hide broken edit avatar button*/
+		display: none;
 	}
 	.control-group.pref-password {
-		display: none;		/*hide broken edit password button*/
+		display: none;
 	}
 	#notifications-dropdown.d-dropdown li a:hover {
 		background-color: transparent !important;
 	}
 	.hb-nav .nav > li > .dropdown-menu {
-		border-bottom-left-radius: 0px;		/*square corners on navbar*/
+		border-bottom-left-radius: 0px;
 		border-bottom-right-radius: 0px;
 	}
 	.nav-stacked .active > a,
 	.nav-stacked .active .fa-chevron-right {
-		background-color: #F89774;		/*change active tab colour*/
+		background-color: #F89774;
 	}
 	.user-preferences #pagedown-editor {
-		width: auto;		/*widen bio editor*/
+		width: auto;
 	}
 	body #pagedown-editor {
-		width: auto;		/*same as above*/
-		border: none;		/*remove useless border*/
-		padding: unset;		/*remove left side offset*/
+		width: auto;
+		border: none;
+		padding: unset;
 	}
-	/*tweaks for profile sidebar colouring*/
+
 	.nav-stacked > li > a:hover {
 		background-color: #AAAAAA;
 		color: #FFF;
@@ -348,32 +267,29 @@ url-prefix(https://forums.hummingbird.me/) {
 	}
 
 	.user-cover {
-		/*background-size: cover;*/		/*fixes cover placeholder positioning*/
-		background-image: none;		/*remove placeholder since it doesn't format properly*/
+		background-image: none;
 	}
 	.gutter {
-		float: right;		/*should be fixed soon*/
+		float: right;
 		padding-right: 5px;
 	}
 	.lazyYT-title {
-		background-color: rgba(0,0,0,0.8);		/*adds bar to title*/
+		background-color: rgba(0,0,0,0.8);
 		padding: 8px 0px 8px 12px !important;
 		margin-left: -12px !important;
 		width: 468px;
 		margin-top: -10px !important;
-
-		/*fixes long title names*/
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
 	#poster-expansion h3 {
-		overflow: hidden;		/*fixes location overflow in user card*/
+		overflow: hidden;
 	    white-space: pre;
 	    text-overflow: ellipsis;
 	}
 	.category-notification-menu .dropdown-menu {
-		top: 37px;		/*adjust topic tracking dropdown position*/
+		top: 37px;
 		right: -1px;
 	}
 	.dropdown-menu {
@@ -385,7 +301,7 @@ url-prefix(https://forums.hummingbird.me/) {
 	}
 
 	img {
-		color: transparent;		/*hides alt text if img not loaded*/
+		color: transparent;
 		background-color: transparent;
 	}
 	.moderator .topic-body {
@@ -398,7 +314,6 @@ url-prefix(https://forums.hummingbird.me/) {
 	    background-color: #FFF9C4;
 	}
 
-	/*temp fix*/
 	.user-cover {
 		height: auto;
 		margin-top: -63px;
@@ -443,11 +358,7 @@ url-prefix(https://forums.hummingbird.me/) {
 	}
 }
 
-
-/*Applies only to the main site*/
-@-moz-document url-prefix(http://hummingbird.me/),
-url-prefix(https://hummingbird.me/) {
-	/*Lato 2.0*/
+@-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
 	@font-face {
 		font-family: 'Lato';
 		font-style: normal;
@@ -455,37 +366,28 @@ url-prefix(https://hummingbird.me/) {
 		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
 		text-rendering: optimizeLegibility !important;
 	}
-
-	/*
-		follow 			#F89774
-		follow hover 	#F67A4D
-		unfollow 		#999999
-		unfollow hover 	#737373
-	*/
-
 	html, body {
 		font-family: 'Lato' !important;
-		background-color: #E0E0E0 !important;	/*slightly darker grey*/
+		background-color: #E0E0E0 !important;
 	}
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		font-family: 'Lato' !important;
 	}
 	.update-panel li a.remove-post {
-		color: #999999 !important;		/*make remove post have a muted colour*/
+		color: #999999 !important;
 	}
 	.update-panel li a.remove-post:hover {
-		color: #EC8661 !important;		/*hover makes it orange again*/
+		color: #EC8661 !important;
 	}
 	.hb-nav .searchbar .search-field {
-		margin-left: 20px;		/*on hover the shadow covers more to the left*/
-		border: none;		/*removes odd underline*/
+		margin-left: 20px;
+		border: none;
 	}
 	.quick-update .watched-series .overlay-panel {
-		/*transition: opacity 0.1s linear 0s;*/		/*speed up transition to reduce glitches*/
-		background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));	/*adjust gradient*/
+		background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 	}
 	.quick-update .series-title {
-		white-space: normal;		/*wrap titles instead*/
+		white-space: normal;
 	}
 	.quick-update .series-slider .fa-angle-left {
 		left: -30px;
@@ -494,13 +396,10 @@ url-prefix(https://hummingbird.me/) {
 		right: -30px;
 	}
 	.quick-update .series-slider .arrow-nav {
-		color: transparent;		/*hide nav arrows*/
+		color: transparent;
 	}
 	.quick-update .series-slider .arrow-nav.inactive {
-		color: transparent;		/*hide inactive nav arrows*/
-	}
-	.quick-update .series-slider .arrow-nav:hover {
-		/*transition: opacity 0.1s linear 0s;*/		/*fast transition*/	
+		color: transparent;
 	}
 	.responsive-image {
 		border-radius: 4px;
@@ -518,7 +417,7 @@ url-prefix(https://hummingbird.me/) {
 		font-family: 'Lato';
 	}
 	.dropdown-menu {
-		min-width: initial;		/*tweaks anime/manga library dropdown*/
+		min-width: initial;
 		margin: initial;
 		border: none;
 		padding: 0px;
@@ -530,80 +429,67 @@ url-prefix(https://hummingbird.me/) {
 		font-family: 'Lato';
 	}
 	.library-dropdown .personal-notes {
-		height: 45px;			/*default height*/
-		min-height: 45px;		/*sets absolute minimum height*/
-		resize: vertical;		/*might be useful for long notes*/
+		height: 45px;
+		min-height: 45px;
+		resize: vertical;
 	}
 	.library-search {
-		height: auto;		/*makes library search bar thinner*/
+		height: auto;
 		font-family: 'Lato';
 	}
 	.profile-navigation .inline-list .nav-link,
 	.profile-navigation .update-panel .genre-list .nav-link,
 	.update-panel .profile-navigation .genre-list .nav-link {
-		float: left;		/*fixes small offset*/
+		float: left;
 	}
 	.profile-navigation .inline-list .nav-link a:before,
 	.profile-navigation .update-panel .genre-list .nav-link a:before,
 	.update-panel .profile-navigation .genre-list .nav-link a:before {
-		content: unset;			/*removes broken hover effect*/
-		/*transition: max-width 0.3s ease 0s;*/			/*faster hover transition*/
+		content: unset;
 	}
 	.profile-navigation .inline-list .nav-link .active,
 	.profile-navigation .update-panel .genre-list .nav-link .active,
 	.update-panel .profile-navigation .genre-list .nav-link .active {
-		border-bottom: 1px solid #EC8661;		/*adds small border to active tab*/
+		border-bottom: 1px solid #EC8661;
 	}
 	.profile-navigation .inline-list .nav-link > a,
 	.profile-navigation .update-panel .genre-list .nav-link > a,
 	.update-panel .profile-navigation .genre-list .nav-link > a {
-		padding: 11px 20px;			/*fixes tab padding*/
+		padding: 11px 20px;
 		font-family: 'Lato';
 	}
 	.anime-breakdown-panel .breakdown-genrelist li span {
 		font-family: 'Lato';
 	}
-	.user-cover .cover-overlay {
-		/*background: none;*/	/*todo: use css gradient instead of img overlay*/
-	}
 	a:focus {
-		text-decoration: none !important;	/*finally fixes weird underline on profile nav*/
+		text-decoration: none !important;
 	}
 	.review-content .youtube-frame .youtube-background {
-		background: none;		/*remove dark frame around video review*/
+		background: none;
 	}
 	.review-content .youtube-frame iframe {
-		max-width: initial;		/*unset width*/
+		max-width: initial;
 		border-radius: initial;
-		border: none;		/*remove border*/
+		border: none;
 	}
 	.review-listing .reviewer-name .subtext {
-		display: none;		/*remove "review by" text*/
+		display: none;
 	}
 	.review-breakdown {
-		margin-bottom: 30px;		/*adds some whitespace to bottom of review*/
+		margin-bottom: 30px;
 	}
 	.review-content {
-		font-size: initial;			/*uses default size in reviews*/
+		font-size: initial;
 	}
 	.back-to-anime {
-		left: -15px;		/*moves link to the left*/
-		margin-top: 30px;		/*adjusts extra space on top of new reviews*/
+		left: -15px;
+		margin-top: 30px;
 	}
 	.bg-image-wrapper.series {
-		opacity: 0.2;		/*made it slightly more visible*/
-		background-position: 50% 0px !important;	/*custom offset breaks fade effect*/
-		/*margin-top: 0px;*/	/*remove default offset*/
-		/*height: 500px;*/		/*fix height causing image to be stretched*/
+		opacity: 0.2;
+		background-position: 50% 0px !important;
 	}
-	/*.wrapper-fade {
-		background: none;
-		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(224,224,224,1) 100%);
-		top: 350px;
-	}*/
 
-	/*series of adjustments to trailer modal*/
-	/*breaks edit modal - eventually needs its own class*/
 	.modal-dialog {
 		margin: 10% auto;
 	}
@@ -613,41 +499,12 @@ url-prefix(https://hummingbird.me/) {
 		border: none;
 		box-shadow: none;
 	}
-	/*yt trailer url should start with "//www." so http or https can be used*/
-	/*yt urls should also be appended with "?autoplay=1"*/
 	.modal-body {
 		padding: 5px 5px 0px 5px;
 	}
 	.modal-body iframe {
 		width: 100%;
 	}
-
-	/*attempt to format franchise - (remove this)*/
-	/*
-	.rounded-block .franchise-show div:nth-child(2) .series-title h4 {
-		border-bottom: none !important;
-		margin-top: auto !important;
-		margin-bottom: auto !important;
-		padding-bottom: 2px !important;
-	}
-	.rounded-block .franchise-show div:nth-child(2) .series-metadata ul {
-		font-size: 13px !important;
-	}
-	.rounded-block .franchise-show div:nth-child(2) div:first-of-type {
-		font-size: 14px !important;
-	}
-	*/
-
-	/*.franchise-show {
-		padding-left: initial;
-		padding-right: initial;
-	}
-	.tab-pane .rounded-block {
-		border: none;
-	}
-	.tab-pane .rounded-block:hover {
-		border: none;
-	}*/
 
 	.hb-nav .notification-dropdown .user-info small {
 		font-family: 'Lato';
@@ -657,13 +514,10 @@ url-prefix(https://hummingbird.me/) {
 		font-size: 12px !important;
 	}
 	.user-cover-options .upload-cover:hover {
-		color: #F89774;		/*add hover colour for 'upload cover' button*/
+		color: #F89774;
 		border-color: #F89774;
 	}
-	a {
-		/*transition: none;*/	/*link transition feels laggy*/
-	}
-	/*series of notification tweaks*/
+
 	.hb-nav .user-area .dropdown-menu li a:hover {
 		color: #EC8661 !important;
 	}
@@ -684,55 +538,17 @@ url-prefix(https://hummingbird.me/) {
 
 	.library-table {
 		width: 100%;
-		/*a horizontal ad should be placed on top instead*/
 	}
-	/*library needs a 'collapse all' feature*/
 	#library-sections {
-		padding-bottom: 0px;		/*removes space at bottom*/
+		padding-bottom: 0px;
 	}
 	.profile-navigation {
 		margin-bottom: 0px;
 	}
 	.min-height-wrapper div.container:nth-child(4) {
-		padding-bottom: 30px;		/*adds some space to follow pages*/
+		padding-bottom: 30px;
 	}
 
-	/*transparent test start*/
-	/*most of this is now implemented*/
-	/*
-	.series-panel {
-		background-color: rgba(255,255,255,0.2);
-	}
-	.series-content {
-		min-height: initial;
-		background-color: rgba(255,255,255,0.4);
-	}
-	.review-listing .review {
-		background-color: transparent;
-	}
-	.nav-tabs > li.active > a,
-	.nav-tabs > li.active > a:hover,
-	.nav-tabs > li.active > a:focus {
-		background-color: transparent;
-	}
-	.casting .character {
-		background-color: transparent;
-	}
-	.casting .voice-actor {
-		background-color: transparent;
-	}
-	.info-tabs .dropdown-menu {
-		background-color: rgba(255,255,255,0.6);
-	}
-	*/
-	/*transparency test end*/
-
-	/*use full screen width*/
-	/*.container, .profile-content, .user-dashboard, .library-container {
-	    width: 100%;
-	}*/
-
-	/*tweaks for forum widgets*/
 	.community-widget-panel .panel-body .latest-post-list .latest-post:hover,
 	.community-widget-panel .update-panel .latest-post-list .latest-post:hover {
 		background-color: #FAFAFA;
@@ -742,22 +558,15 @@ url-prefix(https://hummingbird.me/) {
 		color: #424242;
 	}
 
-	/*temporary stretch fix*/
-	.user-cover {
-		/*height: 304px;*/
-		/*height: 28em;*/
-	}
-
 	.info-tabs {
-		padding-left: 0px;		/*remove padding on anime info container*/
+		padding-left: 0px;
 		padding-right: 0px;
 	}
 	.review-listing {
-		padding-left: 0px;		/*same as above for reviews container*/
+		padding-left: 0px;
 		padding-right: 0px;
 	}
 
-	/*a test for colouring likes and dislikes on reviews*/
 	.reader-actions .reader-vote .recommend a.active,
 	.reader-actions .reader-vote .recommend a:hover {
 		color: #2baf2b;
@@ -770,40 +579,26 @@ url-prefix(https://hummingbird.me/) {
 	}
 
 	.follow-button {
-		background-color: #F89774 !important;		/*fix follow button on reviews*/
+		background-color: #F89774 !important;
 		color: #FFF !important;
 		font-family: 'Lato';
 	}
 	.follow-button:hover {
-		background-color: #F67A4D !important;		/*same as above*/
+		background-color: #F67A4D !important;
 	}
 	.series-content .btn-primary {
-		background-color: #F89774;		/*change colour of "Create review" button*/
+		background-color: #F89774;
 		border: none;
 	}
 	.series-content .btn-primary:hover {
-		background-color: #F67A4D;		/*same as above*/
+		background-color: #F67A4D;
 		border: none;
 	}
 	.review-breakdown .score-block .score,
 	.review-breakdown .score-block .decimal-score {
-		text-shadow: 2px 4px 6px #A94831;		/*replaces weird shadow on review scores*/
+		text-shadow: 2px 4px 6px #A94831;
 	}
 
-	/*permanent fix*/
-	/*.user-cover {
-		height: auto;
-	}
-	.user-cover .cover-photo {
-		width: 100%;
-	}*/
-
-	.blotter {
-		/*position: absolute;*/		/*fixes broadcast on anime pages*/
-		/*z-index: 1;*/		/*keeps it on top*/
-	}
-
-	/*an attempt to fix search formatting*/
 	.search-dropdown {
 		border-radius: 0px !important;
 		width: 390px !important;
@@ -821,22 +616,17 @@ url-prefix(https://hummingbird.me/) {
 	}
 	input.search-field:focus {
 		margin-top: 14px !important;
-		/*margin-left: -35px !important;*/
 		width: 350px !important;
 		max-width: 400px !important;
 	}
 
-	.bg-image {
-		/*padding-top: 500px;*/		/*adjust padding on anime page cover*/
-	}
 	.search-container-head {
-		display: none;		/*hide header on search results page*/
+		display: none;
 	}
 	.search-container .search-container-body {
-		border-radius: 5px;		/*round page corners*/
+		border-radius: 5px;
 	}
 
-	/*hide ad placeholders start*/
 	div.feed-head-advert {
 		display: none;
 	}
@@ -849,82 +639,81 @@ url-prefix(https://hummingbird.me/) {
 	div.anime-page-advert {
 		display: none;
 	}
-	/*hide ad placeholders end*/
 
 	.quick-update .overlay-panel .series-title a {
-		color: #FFF;		/*fix title colouring bug*/
+		color: #FFF;
 	}
 	.quick-update .overlay-panel .series-title a:hover {
-		color: #FFF;		/*same as above*/
+		color: #FFF;
 	}
 	.panel, .community-widget-panel, .story, .user-about-panel, .anime-breakdown-panel,
 	.photos-videos, .favorite-anime, .status-update-panel, .follow-panel {
-		border-radius: 3px;		/*adjust corners on follow card*/
+		border-radius: 3px;
 	}
 	.min-height-wrapper .container:first-of-type {
-		padding-top: 10px;		/*add some space to top of follow container*/
+		padding-top: 10px;
 	}
 	.profile-content {
-		margin-top: 15px;		/*increase top space on profile feed*/
+		margin-top: 15px;
 	}
 	.library-container {
-		padding-top: 15px;		/*increase top space in library*/
+		padding-top: 15px;
 	}
 	.series-reviews {
-		padding-bottom: 30px;		/*adds space to bottom of new anime page*/
+		padding-bottom: 30px;
 	}
 	.series-gallery {
-		padding-bottom: 30px;		/*same as above*/
+		padding-bottom: 30px;
 	}
 	.series-reviews .review-listing a:last-child .review {
-		border-bottom: 1px solid transparent;		/*remove divider on last review listing*/
+		border-bottom: 1px solid transparent;
 	}
 	.reader-actions .reader-vote .recommend a,
 	.reader-actions .reader-vote .dislike a {
-		border-color: #333;		/*fixes recommend button border colour*/
+		border-color: #333;
 	}
 	.series-header .middle-column .info-tabs .slider .character,
 	.series-header .middle-column .info-tabs .slider .voice-actor {
-		background-color: transparent;		/*adds bg transparency to VA links*/
+		background-color: transparent;
 	}
 	.series-header .middle-column .info-tabs .slider .actor:before {
-		content: none;		/*remove dots in VA section*/
+		content: none;
 	}
 	.series-header .middle-column .info-tabs .tab-pane .rounded-block.franchise-show:nth-last-of-type(4) {
-		border: none;		/*remove divider from the last show in franchise (not working)*/
-		margin-bottom: 0px;		/*remove extra space*/
+		border: none;
+		margin-bottom: 0px;
 	}
 	.series-header .middle-column .info-tabs .nav-tabs li > a {
 		font-family: 'Lato';
 	}
 	.user-feed .story .comment-replies .view-more a {
-		color: #999999;		/*change colour of show more button for replies*/
+		color: #999999;
 	}
 	.user-feed .story .comment-replies .view-more a:hover {
-		color: #EC8661;		/*same as above*/
+		color: #EC8661;
 	}
 	.panel-heading .edit-panel a {
-		color: #999999;		/*change colour of edit icon*/
+		color: #999999;
 	}
 	.panel-heading .edit-panel a:hover {
-		color: #EC8661;		/*same as above*/
+		color: #EC8661;
 	}
 	.feed-events .single-event .event-info p a {
-		color: #333333;		/*change colour of username on feed events*/
-		font-weight: 700;	/*bold name*/
+		color: #333333;
+		font-weight: 700;
 	}
 	.feed-events .single-event .event-info p a:hover {
-		color: #333333;		/*same as above*/
+		color: #333333;
 		font-weight: 700;
 	}
 	.series-header .middle-column .info-tabs .tab-pane .slider .rounded-block:last-of-type {
-		border: none;		/*remove divider on last quote*/
-		margin-bottom: 0px;		/*remove extra space*/
+		border: none;
+		margin-bottom: 0px;
 	}
 	.series-header .middle-column .info-tabs .slider .btn,
 	.series-header .middle-column .info-tabs .slider .right-column .top-buttons .top-button,
 	.series-header .right-column .top-buttons .middle-column .info-tabs .slider .top-button {
-		margin-bottom: 0px;		/*remove space under quote view all button*/
+		margin-bottom: 0px;
 	}
 	.series-reviews .review-listing .review-summary {
 		overflow: hidden;
@@ -950,7 +739,7 @@ url-prefix(https://hummingbird.me/) {
 		display: inline;
 	}
 	img {
-		color: transparent;		/*hides alt text if img not loaded*/
+		color: transparent;
 		background-color: transparent;
 	}
 	.follow-bubbles li .user-bubble {
@@ -963,7 +752,6 @@ url-prefix(https://hummingbird.me/) {
 		max-height: none;
 	}
 	.series-header .middle-column .info-tabs .nav-tabs li.active > a {
-		/*border-bottom: 1px solid #4B5360;*/
 		border-bottom: 1px solid transparent;
 	}
 	.series-header .middle-column .info-tabs .nav-tabs li.active > a:hover {
