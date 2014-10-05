@@ -1,11 +1,11 @@
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
+	text-rendering: optimizeLegibility !important;
+}
 @-moz-document url-prefix(http://forums.hummingbird.me/), url-prefix(https://forums.hummingbird.me/) {
-	@font-face {
-		font-family: 'Lato';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
-		text-rendering: optimizeLegibility !important;
-	}
 	html, body {
 		font-family: 'Lato' !important;
 		background-color: #E0E0E0 !important;
@@ -359,13 +359,6 @@
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
-	@font-face {
-		font-family: 'Lato';
-		font-style: normal;
-		font-weight: 400;
-		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
-		text-rendering: optimizeLegibility !important;
-	}
 	html, body {
 		font-family: 'Lato' !important;
 		background-color: #E0E0E0 !important;
