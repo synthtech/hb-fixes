@@ -434,6 +434,9 @@
 	a.badge-category.home {
 		color: #222 !important;
 	}
+	body #wmd-input {
+		resize: vertical;
+	}
 }
 
 
