@@ -1,10 +1,3 @@
-@font-face {
-	font-family: 'Lato';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
-	text-rendering: optimizeLegibility !important;
-}
 @-moz-document url-prefix(http://forums.hummingbird.me/), url-prefix(https://forums.hummingbird.me/) {
 	html, body {
 		font-family: 'Lato' !important;
@@ -809,4 +802,11 @@
 	.min-height-wrapper .container:first-of-type {
 		padding-bottom: 20px;
 	}
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
+	text-rendering: optimizeLegibility !important;
 }
