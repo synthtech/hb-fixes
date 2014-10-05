@@ -437,6 +437,9 @@
 	body #wmd-input {
 		resize: vertical;
 	}
+	.profile-navigation .inline-list .nav-link {
+		padding-bottom: 14px;
+	}
 }
 
 
