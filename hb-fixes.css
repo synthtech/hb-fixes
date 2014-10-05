@@ -1,5 +1,6 @@
 /*Applies only to the forums (Discourse)*/
-@-moz-document url-prefix(https://forums.hummingbird.me/) {
+@-moz-document url-prefix(http://forums.hummingbird.me/),
+url-prefix(https://forums.hummingbird.me/) {
 	/*Lato 2.0*/
 	@font-face {
 		font-family: 'Lato';
@@ -444,7 +445,8 @@
 
 
 /*Applies only to the main site*/
-@-moz-document url-prefix(https://hummingbird.me/) {
+@-moz-document url-prefix(http://hummingbird.me/),
+url-prefix(https://hummingbird.me/) {
 	/*Lato 2.0*/
 	@font-face {
 		font-family: 'Lato';
