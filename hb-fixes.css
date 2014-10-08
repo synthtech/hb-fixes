@@ -368,6 +368,13 @@
 	.extra-info-wrapper {
 		color: #C8C8C8;
 	}
+	#search-dropdown ul ul {
+		overflow: auto;
+		max-height: 310px;
+	}
+	.d-dropdown#search-dropdown .heading a.filter:hover {
+		background-color: transparent;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
