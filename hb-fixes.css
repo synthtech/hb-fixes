@@ -3,7 +3,7 @@
 		font-family: 'Lato';
 		font-style: normal;
 		font-weight: 400;
-		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
+		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
 		text-rendering: optimizeLegibility !important;
 	}
 	html, body {
@@ -365,6 +365,9 @@
 	.topic-list .topic-list-item:hover {
 		background-color: #FAFAFA;
 	}
+	.extra-info-wrapper {
+		color: #C8C8C8;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
@@ -372,7 +375,7 @@
 		font-family: 'Lato';
 		font-style: normal;
 		font-weight: 400;
-		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v10/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
+		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/1bHRUMxmJHoup12DnI9XmQ.woff) format('woff');
 		text-rendering: optimizeLegibility !important;
 	}
 	html, body {
@@ -842,20 +845,20 @@
 		to { opacity: 1; }
 	}
 	@-moz-keyframes fadein {
-	    from { opacity: 0; }
-	    to { opacity: 1; }
+		from { opacity: 0; }
+		to { opacity: 1; }
 	}
 	@-webkit-keyframes fadein {
-	    from { opacity: 0; }
-	    to { opacity: 1; }
+		from { opacity: 0; }
+		to { opacity: 1; }
 	}
 	@-ms-keyframes fadein {
-	    from { opacity: 0; }
-	    to { opacity: 1; }
+		from { opacity: 0; }
+		to { opacity: 1; }
 	}
 	@-o-keyframes fadein {
-	    from { opacity: 0; }
-	    to { opacity: 1; }
+		from { opacity: 0; }
+		to { opacity: 1; }
 	}
 
 	.user-cover .cover-photo {
