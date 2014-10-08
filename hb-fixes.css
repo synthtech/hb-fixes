@@ -266,9 +266,6 @@
 		background-color: #F67A4D;
 	}
 
-	.user-cover {
-		background-image: none;
-	}
 	.gutter {
 		float: right;
 		padding-right: 5px;
@@ -356,6 +353,18 @@
 	.profile-navigation .inline-list .nav-link {
 		padding-bottom: 14px;
 	}
+	.extra-info-wrapper .topic-statuses i {
+		color: #C8C8C8;
+	}
+	.user-cover .cover-photo {
+		min-height: 0;
+	}
+	.topic-statuses .fa {
+		color: #222;
+	}
+	.topic-list .topic-list-item:hover {
+		background-color: #FAFAFA;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
@@ -388,6 +397,7 @@
 	}
 	.quick-update .series-title {
 		white-space: normal;
+		height: 3.3em;
 	}
 	.quick-update .series-slider .fa-angle-left {
 		left: -30px;
@@ -822,5 +832,44 @@
 	}
 	.user-feed-filter .user-feed-tab:first-child {
 		border-left: none;
+	}
+	.user-cover {
+		background-image: url(https://s3.amazonaws.com/f.cl.ly/items/062K3X2O2724291l0X0y/cover-default.png);
+	}
+
+	@keyframes fadein {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	@-moz-keyframes fadein {
+	    from { opacity: 0; }
+	    to { opacity: 1; }
+	}
+	@-webkit-keyframes fadein {
+	    from { opacity: 0; }
+	    to { opacity: 1; }
+	}
+	@-ms-keyframes fadein {
+	    from { opacity: 0; }
+	    to { opacity: 1; }
+	}
+	@-o-keyframes fadein {
+	    from { opacity: 0; }
+	    to { opacity: 1; }
+	}
+
+	.user-cover .cover-photo {
+		-webkit-animation: fadein 2s;
+		-moz-animation: fadein 2s;
+		-ms-animation: fadein 2s;
+		-o-animation: fadein 2s;
+		animation: fadein 2s;
+	}
+	.responsive-image {
+		-webkit-animation: fadein 0.6s;
+		-moz-animation: fadein 0.6s;
+		-ms-animation: fadein 0.6s;
+		-o-animation: fadein 0.6s;
+		animation: fadein 0.6s;
 	}
 }
