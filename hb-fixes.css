@@ -375,10 +375,6 @@
 	.ad-unit {
 		display: none;
 	}
-	.topic-map tr {
-		white-space: normal;
-		overflow: hidden;
-	}
 	.poll-ui td.radio {
 		padding-right: 0px;
 		padding-left: 14px;
@@ -387,10 +383,10 @@
 		table-layout: fixed;
 		width: 100%;
 	}
-	.topic-links tbody tr td:first-child {
+	.topic-map .topic-links tbody tr td:first-child {
 		width: 24px;
 	}
-	.topic-links tbody tr td:last-child {
+	.topic-map .topic-links tbody tr td:last-child {
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
