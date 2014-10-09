@@ -72,21 +72,18 @@
 		padding-top: 0px;
 	}
 	.embedded-posts a.lightbox {
-		max-width: 87%;
+		max-width: 300px;
 	}
 	.embedded-posts a.lightbox img {
 		height: auto;
-		width: 100% !important;
 	}
 	.embedded-posts a.lightbox .meta {
 		bottom: auto;
 		margin-top: -29px;
 	}
 	.embedded-posts img:not(.thumbnail):not(.emoji):not(.avatar) {
-	    max-height: 500px;
-	    width: auto;
 	    height: auto;
-	    max-width: 100%;
+	    max-width: 300px;
 	}
 	.dropdown-menu li a div span:nth-of-type(2) {
 		display: none;
@@ -374,6 +371,28 @@
 	}
 	.d-dropdown#search-dropdown .heading a.filter:hover {
 		background-color: transparent;
+	}
+	.ad-unit {
+		display: none;
+	}
+	.topic-map tr {
+		white-space: normal;
+		overflow: hidden;
+	}
+	.poll-ui td.radio {
+		padding-right: 0px;
+		padding-left: 14px;
+	}
+	table.topic-links {
+		table-layout: fixed;
+		width: 100%;
+	}
+	.topic-links tbody tr td:first-child {
+		width: 24px;
+	}
+	.topic-links tbody tr td:last-child {
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
 
