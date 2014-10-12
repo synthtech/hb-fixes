@@ -908,4 +908,19 @@
 	.block-grid-2 .block-grid-item:nth-child(2n+1) {
 		padding-left: 12px;
 	}
+	.settings .panel#backup-settings .panel-body .row {
+		padding: 0px 5px 15px 5px;
+	}
+	.settings .panel#backup-settings .panel-body .row:first-child div button:first-child {
+		right: 10px;
+	}
+	.settings .ratings-picker {
+		margin-bottom: 20px;
+	}
+	.settings h2 {
+		margin-bottom: 20px;
+	}
+	.settings > .row {
+		margin-bottom: 20px;
+	}
 }
