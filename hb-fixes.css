@@ -29,14 +29,17 @@
 	.d-dropdown li {
 		padding: 2px;
 	}
-	.d-dropdown li:not(.category):not(.heading) a:hover {
+	.d-dropdown li:not(.category):not(.heading):hover a:not(.badge-notification) {
 		background-color: #F5F5F5 !important;
 	}
-	#site-map-dropdown.d-dropdown .heading a:hover {
+	.d-dropdown#notifications-dropdown li:hover a {
+		background-color: #F5F5F5 !important;
+	}
+	.d-dropdown#site-map-dropdown .heading a:hover {
 		background-color: transparent;
 	}
-	#user-dropdown.d-dropdown li:not(.category):not(.heading) a:hover {
-		background-color: #F5F5F5 !important;
+	.d-dropdown a:visited {
+		color: #525A65;
 	}
 	.category-dropdown-menu {
 		max-height: none;
@@ -222,9 +225,6 @@
 	.control-group.pref-password {
 		display: none;
 	}
-	#notifications-dropdown.d-dropdown li a:hover {
-		background-color: transparent !important;
-	}
 	.hb-nav .nav > li > .dropdown-menu {
 		border-bottom-left-radius: 0px;
 		border-bottom-right-radius: 0px;
@@ -338,12 +338,6 @@
 		background-color: #6CF;
 	}
 
-	/*a.badge-category {
-	    color: #FFF !important;
-	}
-	a.badge-category.home {
-		color: #222 !important;
-	}*/
 	body #wmd-input {
 		resize: vertical;
 	}
@@ -398,6 +392,59 @@
 	}
 	.embedded-posts .topic-body video:nth-child(2) {
 		margin-top: 1em;
+	}
+
+	.nav-pills > li.active > a,
+	.nav-pills > li.active > a:hover,
+	.nav-pills > li.active > a:focus {
+		background-color: #E45735;
+	}
+	.period-chooser #period-popup ul li a:hover {
+		background-color: #F5F5F5 !important;
+	}
+	#list-area .top-lists h2 {
+		margin-left: 10px;
+		margin-bottom: 20px;
+	}
+	.user-navigation h3 {
+		margin-left: 5px;
+	}
+	.user-main .user-stream .title {
+		max-width: 85%;
+	}
+	.user-cover-options .account-info .inline-list {
+		display: none;
+	}
+	.user-cover-options .account-info .username {
+		margin-top: 60px;
+	}
+	section.about {
+		margin-top: 0px;
+		padding-bottom: 0px;
+	}
+	.user-main .about {
+		margin-bottom: 0px;
+	}
+	.nav-stacked > li + li {
+		margin-top: 0px;
+	}
+	.show-badge table.badges-listing {
+		width: 100%;
+	}
+	.show-badge table.badges-listing td.description {
+		width: 69%;
+	}
+	.show-badge table.badges-listing td.info {
+		width: 15%;
+	}
+	.badges table.badges-listing {
+		width: 100%;
+	}
+	.badges table.badges-listing td.granted {
+		width: 2%;
+	}
+	.badges table.badges-listing td.grant-count {
+		width: 5%;
 	}
 }
 
@@ -907,5 +954,15 @@
 	}
 	.settings > .row {
 		margin-bottom: 20px;
+	}
+
+	.feed-sidebar-footer a {
+		color: #999999;
+	}
+	.feed-sidebar-footer a:hover {
+		color: #EC8661;
+	}
+	.user-dashboard .status-update-panel {
+		margin-bottom: 5px;
 	}
 }
