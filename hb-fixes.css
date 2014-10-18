@@ -843,13 +843,10 @@
 		max-height: none;
 	}
 	.series-header .middle-column .info-tabs .nav-tabs li.active > a {
-		border-bottom: 1px solid transparent;
+		border-bottom: none;
 	}
 	.series-header .middle-column .info-tabs .nav-tabs li.active > a:hover {
-		border-bottom: 1px solid transparent;
-	}
-	.series-header {
-		overflow: visible;
+		border-bottom: none;
 	}
 
 	.series-header .condensed .right-column {
@@ -996,5 +993,32 @@
 	}
 	.chat-container .online-users ul li:not(.header):hover {
 		background-color: rgba(0, 0, 0, 0.1);
+	}
+	.chat-container .chat-window .chat-items li .message .video-embed {
+		width: inherit;
+	}
+
+	.series-header .middle-column .info-tabs .tab-pane {
+		border: none;
+	}
+	.series-header .middle-column .info-tabs .nav-tabs li.active > a {
+		border: none;
+	}
+	.series-header .middle-column .info-tabs .nav-tabs li.active > a:hover {
+		border: none;
+	}
+	.series-header .middle-column .info-tabs .nav-tabs > li > a:hover {
+		background-color: transparent;
+		border: none;
+	}
+	.nav-tabs > li > a {
+		border: none;
+	}
+	.series-header .middle-column .info-tabs .nav-tabs li.open > a {
+		background-color: transparent;
+		border: none;
+	}
+	.series-header .middle-column .info-tabs .nav-tabs li.open > a:hover {
+		background-color: transparent;
 	}
 }
