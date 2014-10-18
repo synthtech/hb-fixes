@@ -965,4 +965,36 @@
 	.user-dashboard .status-update-panel {
 		margin-bottom: 5px;
 	}
+	.user-dashboard .user-feed .alert {
+		margin-bottom: 0px;
+	}
+
+	.chat-container .chat-window .entry form {
+		height: 40px;
+	}
+	.chat-container .chat-window .entry {
+		height: 5%;
+	}
+	.chat-container .chat-window {
+		height: 94%;
+	}
+	.chat-container .chat-window .chat-items li {
+		border-bottom: none;
+		padding-bottom: 0px;
+	}
+	.chat-container .chat-window .chat-items li .username {
+		width: 14%;
+	}
+	.chat-container .chat-window .chat-items li .message {
+		width: 86%;
+	}
+	.chat-container .online-users ul li {
+		border-bottom: none;
+	}
+	.chat-container .online-users ul li.header {
+		border-bottom: 1px solid #999;
+	}
+	.chat-container .online-users ul li:not(.header):hover {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
 }
