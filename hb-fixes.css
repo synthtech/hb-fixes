@@ -971,12 +971,17 @@
 	}
 	.chat-container .online-users {
 		overflow-y: auto;
+		width: 17%;
+	}
+	.chat-container .chat-window {
+		width: 83%;
 	}
 	.chat-container .chat-window .chat-items li {
 		border-bottom: none;
 	}
 	.chat-container .chat-window .chat-items li .username {
 		padding: 5px 20px;
+		text-align: right;
 	}
 	.chat-container .chat-window .chat-items li .message {
 		padding: 5px 15px;
@@ -989,6 +994,24 @@
 	}
 	.chat-container .chat-window .chat-items li .message .autoembed {
 		max-width: inherit;
+	}
+	.chat-container .online-users ul li img {
+		height: 30px;
+		width: 30px;
+	}
+	.chat-container .online-users ul li a {
+		line-height: 30px;
+	}
+	.chat-container .online-users ul li:hover img {
+		height: 50px;
+		width: 50px;
+	}
+	.chat-container .online-users ul li:hover a {
+		line-height: 50px;
+		font-size: 20px;
+	}
+	.chat-container .chat-window .entry input {
+		width: 73%;
 	}
 
 	.series-header .middle-column .info-tabs .tab-pane {
