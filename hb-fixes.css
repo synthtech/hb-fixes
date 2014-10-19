@@ -966,36 +966,29 @@
 		margin-bottom: 0px;
 	}
 
-	.chat-container .chat-window .entry form {
-		height: 40px;
+	.chat-container .chat-window .chat-items {
+		overflow-y: auto;
 	}
-	.chat-container .chat-window .entry {
-		height: 5%;
-	}
-	.chat-container .chat-window {
-		height: 94%;
+	.chat-container .online-users {
+		overflow-y: auto;
 	}
 	.chat-container .chat-window .chat-items li {
 		border-bottom: none;
-		padding-bottom: 0px;
 	}
 	.chat-container .chat-window .chat-items li .username {
-		width: 14%;
+		padding: 5px 20px;
 	}
 	.chat-container .chat-window .chat-items li .message {
-		width: 86%;
+		padding: 5px 15px;
 	}
-	.chat-container .online-users ul li {
-		border-bottom: none;
+	.chat-container .chat-window .entry {
+		height: 40px;
 	}
-	.chat-container .online-users ul li.header {
-		border-bottom: 1px solid #999;
+	.chat-container .chat-window {
+		padding-bottom: 40px;
 	}
-	.chat-container .online-users ul li:not(.header):hover {
-		background-color: rgba(0, 0, 0, 0.1);
-	}
-	.chat-container .chat-window .chat-items li .message .video-embed {
-		width: inherit;
+	.chat-container .chat-window .chat-items li .message .autoembed {
+		max-width: inherit;
 	}
 
 	.series-header .middle-column .info-tabs .tab-pane {
@@ -1020,5 +1013,9 @@
 	}
 	.series-header .middle-column .info-tabs .nav-tabs li.open > a:hover {
 		background-color: transparent;
+	}
+
+	.hb-nav .dropdown-menu li {
+		min-width: 100px;
 	}
 }
