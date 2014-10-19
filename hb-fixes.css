@@ -998,6 +998,8 @@
 	.chat-container .online-users ul li img {
 		height: 30px;
 		width: 30px;
+		-webkit-transition: 0.2s ease-in;
+		transition: 0.2s ease-in;
 	}
 	.chat-container .online-users ul li a {
 		line-height: 30px;
