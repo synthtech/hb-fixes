@@ -353,6 +353,10 @@
 	.topic-statuses .fa {
 		color: #222;
 	}
+	.topic-list .topic-list-item {
+		-webkit-transition: 0.2s ease-in;
+		transition: 0.2s ease-in;
+	}
 	.topic-list .topic-list-item:hover {
 		background-color: #FAFAFA;
 	}
@@ -972,25 +976,20 @@
 	.chat-container .online-users {
 		overflow-y: auto;
 	}
-	.chat-container .chat-window .chat-items li {
-		border-bottom: none;
-	}
 	.chat-container .chat-window .chat-items li .username {
-		padding: 5px 20px;
-		text-align: right;
-	}
-	.chat-container .chat-window .chat-items li .message {
-		padding: 5px 15px;
-	}
-	.chat-container .chat-window .entry {
-		height: 40px;
-	}
-	.chat-container .chat-window {
-		padding-bottom: 40px;
+		font-family: 'Lato';
+		padding-right: 10px;
 	}
 	.chat-container .chat-window .chat-items li .message .autoembed {
-		max-width: inherit;
+		max-width: 50% !important;
 	}
+	.chat-container .chat-window .chat-items li .message .video-embed {
+		margin-bottom: -20px;
+	}
+	.chat-container .chat-window .chat-items li .message .video-embed .video-wrapper {
+		max-width: 100% !important;
+	}
+
 	.chat-container .online-users ul li img {
 		height: 30px;
 		width: 30px;
