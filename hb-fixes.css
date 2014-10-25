@@ -931,16 +931,6 @@
 		-webkit-animation: fadein 0.6s;
 	}
 
-	.series-gallery img {
-		height: auto;
-	}
-	.block-grid-2 .block-grid-item:nth-child(2n) {
-		float: right;
-		padding-right: 12px;
-	}
-	.block-grid-2 .block-grid-item:nth-child(2n+1) {
-		padding-left: 12px;
-	}
 	.settings .panel#backup-settings .panel-body .row {
 		padding: 0px 5px 15px 5px;
 	}
@@ -988,6 +978,9 @@
 	}
 	.chat-container .chat-window .chat-items li .message .video-embed .video-wrapper {
 		max-width: 100% !important;
+	}
+	.chat-container .chat-window .chat-items li .message .video-embed .gfy-wrapper {
+		margin-bottom: -120px;
 	}
 
 	.chat-container .online-users ul li img {
