@@ -450,6 +450,10 @@
 	.badges table.badges-listing td.grant-count {
 		width: 5%;
 	}
+
+	#banner.overlay {
+		transform: translateZ(0);
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
