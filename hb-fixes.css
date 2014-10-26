@@ -454,6 +454,30 @@
 	#banner.overlay {
 		transform: translateZ(0);
 	}
+	.nav-pills > li > a:hover,
+	.nav-pills > li > a:focus {
+		color: #F89774;
+	}
+	#list-area {
+		margin-bottom: 50px;
+	}
+	#list-area .topic-list.categories td {
+		border-bottom: none;
+	}
+	#list-area td .subcategories .badge-category[href] {
+		color: #222 !important;
+		border: none;
+		width: auto;
+	}
+	#list-area td .subcategories .badge-category-parent {
+		position: relative;
+	}
+	#list-area .topic-list.categories a.title {
+		color: #222 !important;
+	}
+	#list-area .topic-list.categories .featured-topic i {
+		color: #222 !important;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
@@ -1034,5 +1058,9 @@
 
 	.hb-nav .dropdown-menu li {
 		min-width: 100px;
+	}
+	/*[[cursor]]*/
+	.apps-page {
+		margin-bottom: 50px;
 	}
 }
