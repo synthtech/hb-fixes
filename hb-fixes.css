@@ -478,6 +478,21 @@
 	#list-area .topic-list.categories .featured-topic i {
 		color: #222 !important;
 	}
+
+	nav.post-controls button:hover {
+		background-color: transparent;
+	}
+	nav.post-controls button.like:hover {
+		background-color: transparent;
+	}
+	nav.post-controls button.create {
+		color: inherit;
+		background-color: transparent;
+	}
+	nav.post-controls button.create:hover {
+		color: #08c;
+		background-color: transparent;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
