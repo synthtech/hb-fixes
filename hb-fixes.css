@@ -1134,8 +1134,7 @@
 		font-family: 'Lato';
 	}
 	.user-cover-options .edit-avatar label {
-		font-size: 14px;
-		padding-top: 30%;
+		padding-top: 35%;
 	}
 	.user-cover-options .user-wrapper .account-info textarea {
 		resize: none;
@@ -1169,7 +1168,10 @@
 	.chat-container .chat-window .chat-items li .message {
 		line-height: inherit;
 	}
-	
+	.user-about-panel .user-interests {
+		margin: 0 0 0 -8px;
+	}
+
 
 	/*dev*/
 	body a, body a:hover {
