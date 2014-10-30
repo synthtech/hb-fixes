@@ -1171,9 +1171,15 @@
 	.user-about-panel .user-interests {
 		margin: 0 0 0 -8px;
 	}
+	.navbar-brand {
+		background-position: 0 0;
+		top: 4px;
+		height: 40px;
+		width: 40px;
+		margin-right: 10px;
+	}
 
-
-	/*dev*/
+	/*cursor*/
 	body a, body a:hover {
 		cursor: url("https://i.imgur.com/vbj45rG.gif"), auto;
 	}
