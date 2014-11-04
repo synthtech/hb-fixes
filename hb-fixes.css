@@ -518,6 +518,20 @@
 		color: #08c;
 		background-color: transparent;
 	}
+	nav.post-controls button.delete:hover {
+		color: inherit;
+		background-color: transparent;
+	}
+	.topic-map .buttons .btn {
+		border-bottom: none;
+		background-color: transparent;
+	}
+	.topic-map .buttons .btn:hover {
+		border-bottom: none !important;
+	}
+	.extra-info h1 {
+		margin-left: 20px;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
@@ -635,15 +649,15 @@
 	.update-panel .profile-navigation .genre-list .nav-link a:before {
 		content: unset;
 	}
-	.profile-navigation .inline-list .nav-link .active,
+	/*.profile-navigation .inline-list .nav-link .active,
 	.profile-navigation .update-panel .genre-list .nav-link .active,
 	.update-panel .profile-navigation .genre-list .nav-link .active {
 		border-bottom: 1px solid #EC8661;
-	}
+	}*/
 	.profile-navigation .inline-list .nav-link > a,
 	.profile-navigation .update-panel .genre-list .nav-link > a,
 	.update-panel .profile-navigation .genre-list .nav-link > a {
-		padding: 11px 20px;
+		/*padding: 11px 20px;*/
 		font-family: 'Lato';
 	}
 	.anime-breakdown-panel .breakdown-genrelist li span {
@@ -683,12 +697,15 @@
 	}
 	.modal-content {
 		border-radius: 3px;
-		background-color: rgba(0, 0, 0, 0.2);
+		/*background-color: rgba(0, 0, 0, 0.2);*/
 		border: none;
 		box-shadow: none;
 	}
-	.modal-body {
+	/*.modal-body {
 		padding: 5px 5px 0px 5px;
+	}*/
+	.modal-body {
+		padding: 10px;
 	}
 	.modal-body iframe {
 		width: 100%;
@@ -767,13 +784,17 @@
 	}
 
 	.follow-button {
-		background-color: #F89774 !important;
-		color: #FFF !important;
 		font-family: 'Lato';
 	}
-	.follow-button:hover {
-		background-color: #F67A4D !important;
+	/*.follow-button.follow,
+	.follow-button.unfollow {
+		background-color: #F89774 !important;
+		color: #FFF !important;
 	}
+	.follow-button.follow:hover,
+	.follow-button.unfollow:hover, {
+		background-color: #F67A4D !important;
+	}*/
 	.series-content .btn-primary {
 		background-color: #F89774;
 		border: none;
@@ -1133,11 +1154,8 @@
 	.user-cover-options .follow-widgets .follow-title {
 		font-family: 'Lato';
 	}
-	.user-cover-options .edit-avatar label {
-		padding-top: 35%;
-	}
 	.user-cover-options .user-wrapper .account-info textarea {
-		resize: none;
+		/*resize: none;*/
 		padding: 0 5px;
 	}
 	.chat-container .chat-window .entry input {
@@ -1177,6 +1195,15 @@
 		height: 40px;
 		width: 40px;
 		margin-right: 10px;
+	}
+
+	.profile-navigation {
+		background-color: transparent;
+	}
+	.user-cover .dark-overlay {
+		bottom: 0px;
+		height: 100%;
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
 	}
 
 	/*cursor*/
