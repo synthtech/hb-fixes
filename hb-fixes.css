@@ -125,11 +125,7 @@
 	.dropdown-menu a {
 		padding: 10px !important;
 	}
-	ol.category-breadcrumb {
-		/*margin-top: 5px;*/
-	}
 	.list-controls .btn {
-		/*margin-top: 5px;*/
 		margin-left: 0px;
 		margin-bottom: 0px;
 	}
@@ -814,15 +810,6 @@
 	.follow-button {
 		font-family: 'Lato';
 	}
-	/*.follow-button.follow,
-	.follow-button.unfollow {
-		background-color: #F89774 !important;
-		color: #FFF !important;
-	}
-	.follow-button.follow:hover,
-	.follow-button.unfollow:hover, {
-		background-color: #F67A4D !important;
-	}*/
 	.series-content .btn-primary {
 		background-color: #F89774;
 		border: none;
@@ -1051,10 +1038,6 @@
 		padding-bottom: 20px;
 	}
 
-	/*.user-cover {
-		background-image: url(https://s3.amazonaws.com/f.cl.ly/items/062K3X2O2724291l0X0y/cover-default.png);
-	}*/
-
 	@keyframes fadein {
 		from { opacity: 0; }
 		to { opacity: 1; }
@@ -1183,7 +1166,7 @@
 		font-family: 'Lato';
 	}
 	.user-cover-options .user-wrapper .account-info textarea {
-		/*resize: none;*/
+		resize: none;
 		padding: 0 5px;
 	}
 	.chat-container .chat-window .entry input {
@@ -1195,11 +1178,7 @@
 	button:focus {
 		outline: 0 !important;
 	}
-	/*.user-cover-options .user-bio {
-		max-height: 48px;
-		overflow-y: auto;
-		max-width: 600px;
-	}*/
+
 	.chat-container .chat-window .entry button {
 		font-family: 'Lato';
 		border: none;
@@ -1225,22 +1204,11 @@
 		margin-right: 10px;
 	}
 
-	/*.profile-navigation {
-		background-color: transparent;
-	}
-	.user-cover .dark-overlay {
-		bottom: 0px;
-		height: 100%;
-		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
-	}*/
 	.user-cover-options .username {
-		text-shadow: 1px 1px 10px black;
+		text-shadow: 1px 1px 5px #222;
 	}
 	.user-cover-options .user-bio {
-		text-shadow: 1px 1px 10px black;
-	}
-	.user-about-panel .about {
-		margin-bottom: 0px;
+		text-shadow: 1px 1px 5px #222;
 	}
 
 	/*cursor*/
