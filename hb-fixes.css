@@ -32,11 +32,11 @@
 		text-rendering: optimizeLegibility !important;
 	}
 	html, body {
-		font-family: 'Lato' !important;
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
 		background-color: #E0E0E0 !important;
 	}
 	body input, body button, body select, body textarea {
-		font-family: 'Lato' !important;
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
 	}
 	#main-outlet {
 		background-color: #E0E0E0 !important;
@@ -556,6 +556,9 @@
 	#reply-control.edit-title.open {
 		height: 300px;
 	}
+	.topic-list td[colspan="9"] {
+		padding: 16px 10px;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
@@ -592,11 +595,11 @@
 		text-rendering: optimizeLegibility !important;
 	}
 	html, body {
-		font-family: 'Lato' !important;
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
 		background-color: #E0E0E0 !important;
 	}
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-		font-family: 'Lato' !important;
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
 	}
 	.update-panel li a.remove-post {
 		color: #999999 !important;
@@ -1090,6 +1093,7 @@
 	}
 	.chat-container .online-users {
 		overflow-y: auto;
+		box-shadow: inset -1px 0px 3px rgba(0,0,0,0.3);
 	}
 	.chat-container .chat-window .chat-items li .username {
 		font-family: 'Lato';
@@ -1214,5 +1218,15 @@
 	/*cursor*/
 	body a, body a:hover {
 		cursor: url("https://i.imgur.com/vbj45rG.gif"), auto;
+	}
+}
+
+@-moz-document url-prefix(http://hummingbird.me/onboarding), url-prefix(https://hummingbird.me/onboarding) {
+	html {
+		background-image: url(https://i.imgur.com/rXyPy3p.gif);
+		background-position-x: center;
+	}
+	body {
+		background-color: transparent !important;
 	}
 }
