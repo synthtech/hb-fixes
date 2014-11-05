@@ -137,7 +137,7 @@
 		border-bottom: 1px solid #EC8661;
 	}
 	.profile-navigation .inline-list .nav-link > a {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 		padding: 13px 20px;
 	}
 	.profile-navigation .inline-list .nav-link > a:hover {
@@ -634,16 +634,16 @@
 		border-radius: 4px;
 	}
 	.genre-tab .badge {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.top-buttons .top-button {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.hb-nav .dropdown {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	#recent-toggle {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.dropdown-menu {
 		min-width: initial;
@@ -652,10 +652,10 @@
 		padding: 0px;
 	}
 	.panel-divider {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.library-filter {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.library-dropdown .personal-notes {
 		height: 45px;
@@ -664,7 +664,7 @@
 	}
 	.library-search {
 		height: auto;
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.profile-navigation .inline-list .nav-link,
 	.profile-navigation .update-panel .genre-list .nav-link,
@@ -685,10 +685,10 @@
 	.profile-navigation .update-panel .genre-list .nav-link > a,
 	.update-panel .profile-navigation .genre-list .nav-link > a {
 		/*padding: 11px 20px;*/
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.anime-breakdown-panel .breakdown-genrelist li span {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	a:focus {
 		text-decoration: none !important;
@@ -739,10 +739,10 @@
 	}
 
 	.hb-nav .notification-dropdown .user-info small {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.upload-cover {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 		font-size: 12px !important;
 	}
 	.user-cover-options .upload-cover:hover {
@@ -765,7 +765,7 @@
 		background-color: initial;
 	}
 	.hummingbird-header-1 .notification-block .single-notification {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 
 	.library-table {
@@ -811,7 +811,7 @@
 	}
 
 	.follow-button {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.series-content .btn-primary {
 		background-color: #F89774;
@@ -911,7 +911,7 @@
 		margin-bottom: 0px;
 	}
 	.series-header .middle-column .info-tabs .nav-tabs li > a {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.user-feed .story .comment-replies .view-more a {
 		color: #999999;
@@ -1009,7 +1009,7 @@
 		font-size: 0.8em;
 	}
 	.series-header .right-column .top-buttons .top-button {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.series-header .right-column .top-buttons .btn-group.open .dropdown-menu li:last-child a:hover {
 		border-bottom-left-radius: 4px;
@@ -1096,7 +1096,7 @@
 		box-shadow: inset -1px 0px 3px rgba(0,0,0,0.3);
 	}
 	.chat-container .chat-window .chat-items li .username {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 		padding-right: 10px;
 	}
 	.chat-container .chat-window .chat-items li .message img.autoembed {
@@ -1167,14 +1167,14 @@
 	}
 
 	.user-cover-options .follow-widgets .follow-title {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.user-cover-options .user-wrapper .account-info textarea {
 		resize: none;
 		padding: 0 5px;
 	}
 	.chat-container .chat-window .entry input {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 	.user-cover-options .follow-button .fa {
 		font-size: 14px;
@@ -1184,7 +1184,7 @@
 	}
 
 	.chat-container .chat-window .entry button {
-		font-family: 'Lato';
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 		border: none;
 		margin-top: -1px;
 		height: calc(100% + 1px);
