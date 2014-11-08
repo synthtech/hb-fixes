@@ -144,7 +144,7 @@
 		color: #EC8661;
 	}
 	.extra-info-wrapper .star {
-		top: initial;
+		top: 5px;
 	}
 	.extra-info-wrapper a.topic-link {
 		margin-top: -3px;
@@ -299,6 +299,7 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		border-radius: 0 !important;
 	}
 	#poster-expansion h3 {
 		overflow: hidden;
@@ -385,6 +386,8 @@
 	}
 	.extra-info-wrapper {
 		color: #C8C8C8;
+		float: left;
+		width: 77%;
 	}
 	#search-dropdown ul ul {
 		overflow: auto;
@@ -558,6 +561,35 @@
 	}
 	.topic-list td[colspan="9"] {
 		padding: 16px 10px;
+	}
+
+	/*temp fixes*/
+	.badge-notification.new-topic::before {
+		content: " ";
+	}
+	.topic-list .badge-notification.new-topic {
+		top: -2px;
+	}
+	.badge-notification.new-topic {
+		color: #FFF;
+		background-color: #6CF;
+		font-size: 11px;
+		margin-left: 5px;
+		padding-left: 3px !important;
+	}
+	.user-main {
+		margin-top: 20px;
+	}
+	.user-main .about {
+		width: auto;
+		background-color: #2f343b !important;
+	}
+	.user-main .about .controls {
+		width: auto;
+		padding: 20px 15px 10px 0px;
+	}
+	.user-main .about .controls .btn-danger.right {
+		margin-top: -1px;
 	}
 }
 
