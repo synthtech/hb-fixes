@@ -156,7 +156,7 @@
 		margin-top: 3px;
 	}
 	div.container.posts {
-		padding-bottom: 30px !important;
+		padding-bottom: 50px !important;
 	}
 
 	.follow-button {
@@ -918,7 +918,7 @@
 	.photos-videos, .favorite-anime, .status-update-panel, .follow-panel {
 		border-radius: 3px;
 	}
-	.min-height-wrapper .container:first-of-type {
+	.min-height-wrapper > .container:first-of-type {
 		padding-top: 10px;
 	}
 	.profile-content {
@@ -1078,8 +1078,8 @@
 	.rating-column:hover .rating-value {
 		background-color: #EC8661;
 	}
-	.min-height-wrapper .container:first-of-type {
-		padding-bottom: 20px;
+	.min-height-wrapper > .container:first-of-type {
+		padding-bottom: 50px;
 	}
 
 	@keyframes fadein {
@@ -1270,6 +1270,72 @@
 	}
 	.account-form input {
 		text-indent: 0px;
+	}
+	.profile-navigation .inline-list .nav-link > a.active,
+	.profile-navigation .update-panel .genre-list .nav-link > a.active,
+	.update-panel .profile-navigation .genre-list .nav-link > a.active {
+		background-color: transparent;
+	}
+	.library-type .dropdown-menu > li > a {
+		padding: 10px 20px;
+	}
+	.library-type .dropdown-menu {
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+	.library-type.open button.dropdown-toggle {
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+	input.library-search:focus {
+		border: none;
+	}
+	.library-table .panel {
+		margin-bottom: 0px;
+	}
+	.library-container {
+		padding-bottom: 50px;
+	}
+	.library-dropdown .status-select .dropdown-menu {
+		padding-top: 0px;
+		margin-top: 0px;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+	.library-dropdown .status-select .dropdown-menu > li > a {
+		padding: 6px 20px;
+	}
+	.library-dropdown .status-select.open button.dropdown-toggle {
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+	.library-dropdown {
+		background: -webkit-linear-gradient(to bottom, #EEEEEE, #F5F5F5 10%, #FAFAFA 90%, #EEEEEE);
+		background: linear-gradient(to bottom, #EEEEEE, #F5F5F5 10%, #FAFAFA 90%, #EEEEEE);
+	}
+	.library-dropdown .personal-notes-save {
+		background-color: #1ABC9C;
+		color: #FFF;
+	}
+	.library-dropdown .personal-notes-save:hover {
+		background-color: #138B73;
+		color: #FFF;
+	}
+	.library-dropdown .col-md-2 {
+		width: 20%;
+	}
+	.library-dropdown .col-md-6 {
+		width: 55%;
+	}
+	.library-dropdown .col-md-4 {
+		width: 25%;
+		float: right;
+	}
+	.library-dropdown h4 {
+		margin-top: 0;
+	}
+	.user-cover .cover-photo .edit-cover label {
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 	}
 
 	/*cursor*/
