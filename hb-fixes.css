@@ -591,6 +591,10 @@
 	.user-main .about .controls .btn-danger.right {
 		margin-top: -1px;
 	}
+
+	#user-card .bio .overflow {
+		max-height: none;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
@@ -628,7 +632,12 @@
 	}
 	html, body {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
+	}
+	html {
 		background-color: #E0E0E0 !important;
+	}
+	body {
+		background-color: transparent !important;
 	}
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
@@ -1247,10 +1256,26 @@
 		text-shadow: 1px 1px 5px #222;
 	}
 
-	/*cursor*/
-	body a, body a:hover {
-		cursor: url("https://i.imgur.com/vbj45rG.gif"), auto;
+	body.guest-padding {
+		background-size: cover;
 	}
+	.guest-home {
+		margin-bottom: 0px;
+	}
+	.guest-home .bottom-section {
+		position: relative;
+	}
+	.search-container .search-container-body input {
+		padding: 6px 12px;
+	}
+	.account-form input {
+		text-indent: 0px;
+	}
+
+	/*cursor*/
+	/*body a, body a:hover {
+		cursor: url("https://i.imgur.com/vbj45rG.gif"), auto;
+	}*/
 }
 
 @-moz-document url-prefix(http://hummingbird.me/onboarding), url-prefix(https://hummingbird.me/onboarding) {
@@ -1258,7 +1283,10 @@
 		background-image: url(https://i.imgur.com/rXyPy3p.gif);
 		background-position-x: center;
 	}
-	body {
+}
+
+@-moz-document url(http://hummingbird.me/), url(https://hummingbird.me/) {
+	html {
 		background-color: transparent !important;
 	}
 }
