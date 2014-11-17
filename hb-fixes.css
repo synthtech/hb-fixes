@@ -738,22 +738,17 @@
 		background: none;
 	}
 	.review-content .youtube-frame iframe {
-		max-width: initial;
-		border-radius: initial;
+		border-radius: 0px;
 		border: none;
 	}
-	.review-listing .reviewer-name .subtext {
+	/*.review-listing .reviewer-name .subtext {
 		display: none;
-	}
+	}*/
 	.review-breakdown {
 		margin-bottom: 30px;
 	}
 	.review-content {
 		font-size: initial;
-	}
-	.back-to-anime {
-		left: -15px;
-		margin-top: 30px;
 	}
 	.bg-image-wrapper.series {
 		opacity: 0.2;
@@ -940,7 +935,7 @@
 	.reader-actions .reader-vote .dislike a {
 		border-color: #333;
 	}
-	.series-header .middle-column .info-tabs .slider .character,
+	/*.series-header .middle-column .info-tabs .slider .character,
 	.series-header .middle-column .info-tabs .slider .voice-actor {
 		background-color: transparent;
 	}
@@ -953,7 +948,7 @@
 	}
 	.series-header .middle-column .info-tabs .nav-tabs li > a {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
-	}
+	}*/
 	.user-feed .story .comment-replies .view-more a {
 		color: #999999;
 	}
@@ -974,7 +969,7 @@
 		color: #333333;
 		font-weight: 700;
 	}
-	.series-header .middle-column .info-tabs .tab-pane .slider .rounded-block:last-of-type {
+	/*.series-header .middle-column .info-tabs .tab-pane .slider .rounded-block:last-of-type {
 		border: none;
 		margin-bottom: 0px;
 	}
@@ -986,11 +981,7 @@
 	.series-reviews .review-listing .review-summary {
 		overflow: hidden;
 		text-overflow: ellipsis;
-	}
-	.inline-list li,
-	.update-panel .genre-list li {
-		padding-right: 0px;
-	}
+	}*/
 	.library-dropdown .genres li:after {
 		padding: 0px 3px;
 	}
@@ -1336,6 +1327,94 @@
 	}
 	.user-cover .cover-photo .edit-cover label {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+	}
+
+	.series-info .genres li,
+	.series-info .studios li {
+		text-decoration: none;
+	}
+	.series-info .small-label {
+		margin-top: 3px;
+	}
+	.series-header .facebook-share,
+	.series-header .twitter-share {
+		display: none;
+	}
+	.series-header .featured-quote {
+		max-width: 600px;
+	}
+	.hb-score {
+		border-bottom: none;
+	}
+	.trending-review-empty {
+		margin-top: 50px;
+		text-align: center;
+	}
+	.rating-legend {
+		display: none;
+	}
+	.poster-container .favorite-link {
+		opacity: .4;
+	}
+	.poster-container .trailer-link {
+		opacity: 0;
+	}
+	.series-metadata {
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		color: inherit;
+	}
+	.series-cast .cast-name small {
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+	}
+	.series-header .featured-quote .quote-author {
+		margin-bottom: 0px;
+	}
+	.review-nag {
+		display: none;
+	}
+	.review-breakdown .breakdown-title {
+		border-left: none;
+	}
+	.review-sidebar {
+		position: fixed;
+		left: 72%;
+		transform: translateZ(0);
+		bottom: 11%;
+	}
+	.review-wrapper .series-panel {
+		padding: 10px 30px 0px 30px;
+	}
+	.review-sidebar .series-panel:first-child {
+		margin-bottom: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+	.review-sidebar .series-panel:nth-child(2) {
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+	.review-sidebar h4 {
+		margin-top: 0px;
+	}
+	.review-content .youtube-frame {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.series-info .synopsis {
+		color: inherit;
+	}
+	.reviews h4 {
+		margin-bottom: 10px;
+	}
+	.histogram {
+		margin-bottom: 20px;
+	}
+	.franchise-show:last-child {
+		border-bottom: none;
+		margin-bottom: 0px;
+	}
+	.series-reviews .review-listing {
+		background: transparent;
 	}
 
 	/*cursor*/
