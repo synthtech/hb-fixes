@@ -1416,6 +1416,13 @@
 	.series-reviews .review-listing {
 		background: transparent;
 	}
+	.update-panel .genre-list li {
+		padding-right: 0px;
+	}
+	.series-cast .cast-image .actor,
+	.series-cast .cast-image .character {
+		top: 0px;
+	}
 
 	/*cursor*/
 	/*body a, body a:hover {
