@@ -38,15 +38,22 @@
 	body input, body button, body select, body textarea {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
 	}
+	body {
+		background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
+		background-size: contain;
+	}
 	#main-outlet {
-		background-color: #E0E0E0 !important;
+		/*background-color: #E0E0E0 !important;*/
+		background-color: transparent !important;
 	}
 	#poster-expansion .bio {
 		max-height: none;
 	}
 	.d-dropdown {
-		margin-top: 4px;
+		/*margin-top: 4px;*/
 		right: -3px;
+		top: 36px;
+		border-top: none;
 	}
 	#site-map-dropdown {
 		height: auto;
@@ -594,6 +601,68 @@
 
 	#user-card .bio .overflow {
 		max-height: none;
+	}
+
+	.navbar-brand {
+		padding: 0px;
+		margin-left: 0px !important;
+		margin-right: 10px;
+		margin-top: 3px;
+	}
+	.navbar-brand img {
+		background-image: url(https://i.imgur.com/ZnYHhjW.png);
+		background-size: contain;
+		width: 0px;
+		height: 0px;
+		padding: 20px;
+	}
+	.d-header {
+		margin-top: 50px;
+	}
+	.d-header .panel {
+		top: 0px;
+	}
+	.d-header .icons {
+		top: 0px;
+	}
+	.d-header .icons .icon {
+		padding-bottom: 4px;
+	}
+	#user-card .card-content {
+		margin-top: 55px;
+	}
+	#user-card.show-badges .badge-section .user-badge,
+	#user-card.show-badges .badge-section .more-user-badges {
+		border-color: transparent;
+		transition: .2s ease-in;
+	}
+	#user-card.show-badges .badge-section .user-badge:hover,
+	#user-card.show-badges .badge-section .more-user-badges:hover {
+		color: #BFBFBF;
+	}
+	#user-card {
+		transition: .2s ease-in;
+	}
+	a {
+		transition: .2s ease-in;
+	}
+	.nav-pills > li > a {
+		transition: .2s ease-in;
+	}
+	.btn {
+		transition: .2s ease-in;
+	}
+	nav.post-controls .actions {
+		transition: .2s ease-in;
+	}
+	.discourse-no-touch .d-header .icons .icon {
+		transition: .2s ease-in;
+	}
+	.d-dropdown input[type='text'] {
+		width: 90%;
+	}
+	:focus {
+		box-shadow: none !important;
 	}
 }
 
@@ -1232,13 +1301,6 @@
 	.user-about-panel .user-interests {
 		margin: 0 0 0 -8px;
 	}
-	.navbar-brand {
-		background-position: 0 0;
-		top: 4px;
-		height: 40px;
-		width: 40px;
-		margin-right: 10px;
-	}
 
 	.user-cover-options .username {
 		text-shadow: 1px 1px 5px #222;
@@ -1458,18 +1520,26 @@
 		width: 80%;
 	}
 
+	.footer-shadow {
+		background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
+		background-size: contain;
+	}
+	.navbar-brand {
+		background-image: url(https://i.imgur.com/ZnYHhjW.png);
+		background-size: contain;
+		background-position: 0;
+		top: 4px;
+		height: 40px;
+		width: 40px;
+		margin-right: 10px;
+		margin-left: 10px !important;
+	}
+
 	/*cursor*/
 	/*body a, body a:hover {
 		cursor: url("https://i.imgur.com/vbj45rG.gif"), auto;
 	}*/
 }
-
-/*@-moz-document url-prefix(http://hummingbird.me/onboarding), url-prefix(https://hummingbird.me/onboarding) {
-	html {
-		background-image: url(https://i.imgur.com/rXyPy3p.gif);
-		background-position-x: center;
-	}
-}*/
 
 /*@-moz-document url(http://hummingbird.me/), url(https://hummingbird.me/) {
 	html {
