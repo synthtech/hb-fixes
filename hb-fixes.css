@@ -5,7 +5,6 @@
 		font-weight: 400;
 		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
 		unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-		text-rendering: optimizeLegibility !important;
 	}
 	@font-face {
 		font-family: 'Lato';
@@ -13,7 +12,6 @@
 		font-weight: 400;
 		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/7aC-Y4V2UPHQp-tqeekgkA.woff2) format('woff2');
 		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-		text-rendering: optimizeLegibility !important;
 	}
 	@font-face {
 		font-family: 'Lato';
@@ -21,7 +19,6 @@
 		font-weight: 400;
 		src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/YMOYVM-eg6Qs9YzV9OSqZfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
 		unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-		text-rendering: optimizeLegibility !important;
 	}
 	@font-face {
 		font-family: 'Lato';
@@ -29,18 +26,15 @@
 		font-weight: 400;
 		src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/0Bl1oqNTjMmBgjhjvqXaufesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
 		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-		text-rendering: optimizeLegibility !important;
 	}
 	html, body {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
+		text-rendering: optimizeLegibility !important;
 		background-color: #E0E0E0 !important;
 	}
 	body input, body button, body select, body textarea {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
-	}
-	body {
-		background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
-		background-size: contain;
+		text-rendering: optimizeLegibility !important;
 	}
 	#main-outlet {
 		/*background-color: #E0E0E0 !important;*/
@@ -145,6 +139,7 @@
 	}
 	.profile-navigation .inline-list .nav-link > a {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 		padding: 13px 20px;
 	}
 	.profile-navigation .inline-list .nav-link > a:hover {
@@ -248,6 +243,7 @@
 	}
 	.wmd-button {
 		font-family: FontAwesome !important;
+		text-rendering: optimizeLegibility !important;
 	}
 	.control-group.pref-avatar {
 		display: none;
@@ -664,6 +660,13 @@
 	:focus {
 		box-shadow: none !important;
 	}
+
+	.mfp-title a.image-source-link {
+		color: #F3F3F3;
+	}
+	.mfp-title a.image-source-link:hover {
+		color: #EC8661;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
@@ -673,7 +676,6 @@
 		font-weight: 400;
 		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
 		unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-		text-rendering: optimizeLegibility !important;
 	}
 	@font-face {
 		font-family: 'Lato';
@@ -681,7 +683,6 @@
 		font-weight: 400;
 		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/7aC-Y4V2UPHQp-tqeekgkA.woff2) format('woff2');
 		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-		text-rendering: optimizeLegibility !important;
 	}
 	@font-face {
 		font-family: 'Lato';
@@ -689,7 +690,6 @@
 		font-weight: 400;
 		src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/YMOYVM-eg6Qs9YzV9OSqZfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
 		unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-		text-rendering: optimizeLegibility !important;
 	}
 	@font-face {
 		font-family: 'Lato';
@@ -697,10 +697,10 @@
 		font-weight: 400;
 		src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/0Bl1oqNTjMmBgjhjvqXaufesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
 		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-		text-rendering: optimizeLegibility !important;
 	}
 	html, body {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
+		text-rendering: optimizeLegibility !important;
 	}
 	html {
 		background-color: #E0E0E0 !important;
@@ -710,6 +710,7 @@
 	}
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
+		text-rendering: optimizeLegibility !important;
 	}
 	.update-panel li a.remove-post {
 		color: #999999 !important;
@@ -745,15 +746,19 @@
 	}
 	.genre-tab .badge {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.top-buttons .top-button {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.hb-nav .dropdown {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	#recent-toggle {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.dropdown-menu {
 		min-width: initial;
@@ -763,9 +768,11 @@
 	}
 	.panel-divider {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.library-filter {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.library-dropdown .personal-notes {
 		height: 45px;
@@ -775,6 +782,7 @@
 	.library-search {
 		height: auto;
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.profile-navigation .inline-list .nav-link,
 	.profile-navigation .update-panel .genre-list .nav-link,
@@ -796,9 +804,11 @@
 	.update-panel .profile-navigation .genre-list .nav-link > a {
 		/*padding: 11px 20px;*/
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.anime-breakdown-panel .breakdown-genrelist li span {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	a:focus {
 		text-decoration: none !important;
@@ -845,9 +855,11 @@
 
 	.hb-nav .notification-dropdown .user-info small {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.upload-cover {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 		font-size: 12px !important;
 	}
 	.user-cover-options .upload-cover:hover {
@@ -871,6 +883,7 @@
 	}
 	.hummingbird-header-1 .notification-block .single-notification {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 
 	.library-table {
@@ -917,6 +930,7 @@
 
 	.follow-button {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.series-content .btn-primary {
 		background-color: #F89774;
@@ -1111,6 +1125,7 @@
 	}
 	.series-header .right-column .top-buttons .top-button {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.series-header .right-column .top-buttons .btn-group.open .dropdown-menu li:last-child a:hover {
 		border-bottom-left-radius: 4px;
@@ -1198,6 +1213,7 @@
 	}
 	.chat-container .chat-window .chat-items li .username {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 		padding-right: 10px;
 	}
 	.chat-container .chat-window .chat-items li .message img.autoembed {
@@ -1269,6 +1285,7 @@
 
 	.user-cover-options .follow-widgets .follow-title {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.user-cover-options .user-wrapper .account-info textarea {
 		resize: none;
@@ -1276,6 +1293,7 @@
 	}
 	.chat-container .chat-window .entry input {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.user-cover-options .follow-button .fa {
 		font-size: 14px;
@@ -1286,6 +1304,7 @@
 
 	.chat-container .chat-window .entry button {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 		border: none;
 		margin-top: -1px;
 		height: calc(100% + 1px);
@@ -1389,6 +1408,7 @@
 	}
 	.user-cover .cover-photo .edit-cover label {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 
 	.series-info .genres li,
@@ -1423,10 +1443,12 @@
 	}
 	.series-metadata {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 		color: inherit;
 	}
 	.series-cast .cast-name small {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
 	}
 	.series-header .featured-quote .quote-author {
 		margin-bottom: 0px;
@@ -1502,9 +1524,11 @@
 	}
 	.series-header .edit-button a {
 		background: rgba(0,0,0,0.2);
+		color: rgba(255,255,255,0.4);
 	}
 	.series-header .edit-button a:hover {
 		background: rgba(0,0,0,0.6);
+		color: rgba(255,255,255,1);
 	}
 	.edit-series-modal .modal-dialog .modal-content .modal-body {
 		overflow-x: hidden;
@@ -1520,10 +1544,6 @@
 		width: 80%;
 	}
 
-	.footer-shadow {
-		background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
-		background-size: contain;
-	}
 	.navbar-brand {
 		background-image: url(https://i.imgur.com/ZnYHhjW.png);
 		background-size: contain;
@@ -1535,14 +1555,82 @@
 		margin-left: 10px !important;
 	}
 
+	.apps-page .app-inner .app-title {
+		margin-bottom: 10px;
+	}
+	.apps-page .app-inner input {
+		margin-bottom: 5px;
+	}
+	.apps-header p {
+		margin-bottom: 10px;
+	}
+	.apps-header p:nth-of-type(2) {
+		margin-bottom: 0px;
+	}
+	.apps-header a.btn {
+		background-color: rgba(255,255,255,0.7);
+		color: #333333;
+		border-color: transparent;
+	}
+	.apps-header a.btn:hover {
+		background-color: rgba(255,255,255,0.9);
+	}
+	.apps-page .app-inner .app-title .app-type {
+		font-size: 0.45em;
+		padding: 2.5px 5px;
+	}
+
+	.account-form button {
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
+	}
+	.user-dashboard > .row {
+		margin-top: 20px;
+	}
+
+	.follow-bubbles li .user-bubble .bubble-avatar .responsive-image {
+		height: 48px;
+	}
+	.series-info .studios .inline-list {
+		padding-left: 60px;
+	}
+
+	.story-modal .all-likes ul li[data-tooltip]:before {
+		bottom: 100%;
+	}
+	.story-modal .all-likes ul li[data-tooltip]:after {
+		bottom: 100%;
+	}
+	.story-actions .active-users li[data-tooltip]:before {
+		bottom: 100%;
+	}
+	.story-actions .active-users li[data-tooltip]:after {
+		bottom: 100%;
+	}
+
 	/*cursor*/
 	/*body a, body a:hover {
 		cursor: url("https://i.imgur.com/vbj45rG.gif"), auto;
 	}*/
 }
 
-/*@-moz-document url(http://hummingbird.me/), url(https://hummingbird.me/) {
+@-moz-document url(http://hummingbird.me/), url(https://hummingbird.me/) {
 	html {
 		background-color: transparent !important;
 	}
-}*/
+}
+
+/*winter theme start*/
+@-moz-document url-prefix(http://forums.hummingbird.me/), url-prefix(https://forums.hummingbird.me/) {
+	body {
+		background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
+		background-size: contain;
+	}
+}
+@-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
+	.footer-shadow {
+		background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
+		background-size: contain;
+	}
+}
+/*winter theme end*/
