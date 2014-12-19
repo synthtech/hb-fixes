@@ -1608,6 +1608,30 @@
 		bottom: 100%;
 	}
 
+	.comment-replies .reply .user-avatar a img.responsive-image {
+		height: 43px;
+		width: 43px;
+	}
+	.update-panel .comment-text a img {
+		max-height: 500px;
+		width: auto;
+		max-width: 100%;
+	}
+	.quote-bubble .review-quote {
+		font-size: 14px;
+	}
+	.quote-bubble .review-quote .media .media-body p {
+		margin-bottom: 0;
+	}
+	.comment-replies .reply .content img {
+		max-height: 500px;
+		width: auto;
+		max-width: 100%;
+	}
+	.pace .pace-activity {
+		display: none;
+	}
+
 	/*cursor*/
 	/*body a, body a:hover {
 		cursor: url("https://i.imgur.com/vbj45rG.gif"), auto;
@@ -1619,6 +1643,42 @@
 		background-color: transparent !important;
 	}
 }
+
+/*mal rating start*/
+@-moz-document url-prefix(http://myanimelist.net/404.php?) {
+	@font-face {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+		unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+	}
+	@font-face {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/7aC-Y4V2UPHQp-tqeekgkA.woff2) format('woff2');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+	}
+	body {
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
+		text-rendering: optimizeLegibility !important;
+		text-align: center !important;
+	}
+}
+@-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
+	.hb-score iframe {
+		height: 3em !important;
+		width: 100% !important;
+	}
+	.hb-score {
+		margin-bottom: 0;
+	}
+	.hb-score h3 {
+		margin-bottom: 0;
+	}
+}
+/*mal rating end*/
 
 /*winter theme start*/
 @-moz-document url-prefix(http://forums.hummingbird.me/), url-prefix(https://forums.hummingbird.me/) {
