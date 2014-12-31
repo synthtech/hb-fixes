@@ -667,10 +667,6 @@
 	.mfp-title a.image-source-link:hover {
 		color: #EC8661;
 	}
-
-	.posters a img.avatar {
-		border-radius: 2px;
-	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
