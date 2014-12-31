@@ -667,6 +667,10 @@
 	.mfp-title a.image-source-link:hover {
 		color: #EC8661;
 	}
+
+	.posters a img.avatar {
+		border-radius: 2px;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
@@ -716,14 +720,15 @@
 		color: #999999 !important;
 	}
 	.update-panel li a.remove-post:hover {
-		color: #EC8661 !important;
+		color: #FF0000 !important;
 	}
 	.hb-nav .searchbar .search-field {
 		margin-left: 20px;
 		border: none;
+		/*width: 317px;*/
 	}
 	.quick-update .watched-series .overlay-panel {
-		background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+		background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
 	}
 	.quick-update .series-title {
 		white-space: normal;
@@ -740,17 +745,6 @@
 	}
 	.quick-update .series-slider .arrow-nav.inactive {
 		color: transparent;
-	}
-	.responsive-image {
-		border-radius: 4px;
-	}
-	.genre-tab .badge {
-		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
-		text-rendering: optimizeLegibility !important;
-	}
-	.top-buttons .top-button {
-		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
-		text-rendering: optimizeLegibility !important;
 	}
 	.hb-nav .dropdown {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
@@ -789,20 +783,9 @@
 	.update-panel .profile-navigation .genre-list .nav-link {
 		float: left;
 	}
-	.profile-navigation .inline-list .nav-link a:before,
-	.profile-navigation .update-panel .genre-list .nav-link a:before,
-	.update-panel .profile-navigation .genre-list .nav-link a:before {
-		content: unset;
-	}
-	/*.profile-navigation .inline-list .nav-link .active,
-	.profile-navigation .update-panel .genre-list .nav-link .active,
-	.update-panel .profile-navigation .genre-list .nav-link .active {
-		border-bottom: 1px solid #EC8661;
-	}*/
 	.profile-navigation .inline-list .nav-link > a,
 	.profile-navigation .update-panel .genre-list .nav-link > a,
 	.update-panel .profile-navigation .genre-list .nav-link > a {
-		/*padding: 11px 20px;*/
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 		text-rendering: optimizeLegibility !important;
 	}
@@ -820,9 +803,6 @@
 		border-radius: 0px;
 		border: none;
 	}
-	/*.review-listing .reviewer-name .subtext {
-		display: none;
-	}*/
 	.review-breakdown {
 		margin-bottom: 30px;
 	}
@@ -853,33 +833,27 @@
 		width: 100%;
 	}
 
-	.hb-nav .notification-dropdown .user-info small {
-		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
-		text-rendering: optimizeLegibility !important;
-	}
-	.upload-cover {
-		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
-		text-rendering: optimizeLegibility !important;
-		font-size: 12px !important;
-	}
-	.user-cover-options .upload-cover:hover {
-		color: #F89774;
-		border-color: #F89774;
-	}
-
 	.hb-nav .user-area .dropdown-menu li a:hover {
 		color: #EC8661 !important;
 	}
-	.hb-nav .notification-dropdown li a:hover {
+	.hb-nav .notification-dropdown li {
+		transition: .2s ease-in;
+	}
+	.hb-nav .notification-dropdown li:hover a {
 		color: inherit !important;
+	}
+	.hb-nav .notification-dropdown li:hover {
 		background-color: #F5F5F5;
 	}
-	.hb-nav .notification-dropdown li:last-child a {
-		background-color: initial;
+	.hb-nav .notification-dropdown li:last-child {
+		background-color: #F5F5F5;
+		border-bottom: none;
 	}
-	.hb-nav .notification-dropdown li:last-child a:hover {
+	.hb-nav .notification-dropdown li:last-child:hover a {
 		color: #EC8661 !important;
-		background-color: initial;
+	}
+	.hb-nav .notification-dropdown li:last-child:hover {
+		background-color: #F5F5F5;
 	}
 	.hummingbird-header-1 .notification-block .single-notification {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
@@ -906,26 +880,6 @@
 	.community-widget-panel .panel-body .latest-post-list .latest-post-title a:hover,
 	.community-widget-panel .update-panel .latest-post-list .latest-post-title a:hover {
 		color: #424242;
-	}
-
-	.info-tabs {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-	.review-listing {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
-	.reader-actions .reader-vote .recommend a.active,
-	.reader-actions .reader-vote .recommend a:hover {
-		color: #2baf2b;
-		border-color: #2baf2b;
-	}
-	.reader-actions .reader-vote .dislike a.active,
-	.reader-actions .reader-vote .dislike a:hover {
-		color: #e84e40;
-		border-color: #e84e40;
 	}
 
 	.follow-button {
@@ -962,7 +916,7 @@
 	}
 	input.search-field:focus {
 		margin-top: 14px !important;
-		width: 350px !important;
+		width: 317px !important;
 		max-width: 400px !important;
 	}
 
@@ -971,19 +925,6 @@
 	}
 	.search-container .search-container-body {
 		border-radius: 5px;
-	}
-
-	div.feed-head-advert {
-		display: none;
-	}
-	div.feed-sm-sidebar-advert {
-		display: none;
-	}
-	div.feed-sidebar-advert {
-		display: none;
-	}
-	div.anime-page-advert {
-		display: none;
 	}
 
 	.quick-update .overlay-panel .series-title a {
@@ -997,41 +938,19 @@
 		border-radius: 3px;
 	}
 	.min-height-wrapper > .container:first-of-type {
-		padding-top: 10px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.profile-content {
-		margin-top: 15px;
+		margin-top: 20px;
 	}
 	.library-container {
-		padding-top: 15px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.series-reviews {
-		padding-bottom: 30px;
+		padding-bottom: 20px;
 	}
-	.series-gallery {
-		padding-bottom: 30px;
-	}
-	.series-reviews .review-listing a:last-child .review {
-		border-bottom: 1px solid transparent;
-	}
-	.reader-actions .reader-vote .recommend a,
-	.reader-actions .reader-vote .dislike a {
-		border-color: #333;
-	}
-	/*.series-header .middle-column .info-tabs .slider .character,
-	.series-header .middle-column .info-tabs .slider .voice-actor {
-		background-color: transparent;
-	}
-	.series-header .middle-column .info-tabs .slider .actor:before {
-		content: none;
-	}
-	.series-header .middle-column .info-tabs .tab-pane .rounded-block.franchise-show:nth-last-of-type(4) {
-		border: none;
-		margin-bottom: 0px;
-	}
-	.series-header .middle-column .info-tabs .nav-tabs li > a {
-		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
-	}*/
 	.user-feed .story .comment-replies .view-more a {
 		color: #999999;
 	}
@@ -1052,19 +971,7 @@
 		color: #333333;
 		font-weight: 700;
 	}
-	/*.series-header .middle-column .info-tabs .tab-pane .slider .rounded-block:last-of-type {
-		border: none;
-		margin-bottom: 0px;
-	}
-	.series-header .middle-column .info-tabs .slider .btn,
-	.series-header .middle-column .info-tabs .slider .right-column .top-buttons .top-button,
-	.series-header .right-column .top-buttons .middle-column .info-tabs .slider .top-button {
-		margin-bottom: 0px;
-	}
-	.series-reviews .review-listing .review-summary {
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}*/
+
 	.library-dropdown .genres li:after {
 		padding: 0px 3px;
 	}
@@ -1142,19 +1049,8 @@
 		margin-top: 10px;
 	}
 
-	.hb-nav .notification-dropdown .user-avatar img {
-		width: 150%;
-	}
-	.hb-nav .notification-dropdown .user-info {
-		padding-right: 0px;
-		padding-left: 22px;
-	}
-
 	.rating-column:hover .rating-value {
 		background-color: #EC8661;
-	}
-	.min-height-wrapper > .container:first-of-type {
-		padding-bottom: 50px;
 	}
 
 	@keyframes fadein {
@@ -1166,10 +1062,6 @@
 		to { opacity: 1; }
 	}
 
-	/*.user-cover .cover-photo {
-		animation: fadein 2s;
-		-webkit-animation: fadein 2s;
-	}*/
 	.responsive-image {
 		animation: fadein 0.6s;
 		-webkit-animation: fadein 0.6s;
@@ -1204,7 +1096,8 @@
 		margin-bottom: 0px;
 	}
 
-	.chat-container .chat-window .chat-items {
+	/*chat start*/
+	/*.chat-container .chat-window .chat-items {
 		overflow-y: auto;
 	}
 	.chat-container .online-users {
@@ -1251,8 +1144,28 @@
 		line-height: 50px;
 		font-size: 20px;
 	}
+	.chat-container .chat-window .entry input {
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
+	}
+	.chat-container .chat-window .entry button {
+		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+		text-rendering: optimizeLegibility !important;
+		border: none;
+		margin-top: -1px;
+		height: calc(100% + 1px);
+		line-height: inherit;
+	}
+	.chat-container .chat-window .entry button:before {
+		line-height: inherit;
+	}
+	.chat-container .chat-window .chat-items li .username,
+	.chat-container .chat-window .chat-items li .message {
+		line-height: inherit;
+	}*/
+	/*chat end*/
 
-	.series-header .middle-column .info-tabs .tab-pane {
+	/*.series-header .middle-column .info-tabs .tab-pane {
 		border: none;
 	}
 	.series-header .middle-column .info-tabs .nav-tabs li.active > a {
@@ -1274,7 +1187,7 @@
 	}
 	.series-header .middle-column .info-tabs .nav-tabs li.open > a:hover {
 		background-color: transparent;
-	}
+	}*/
 
 	.hb-nav .dropdown-menu li {
 		min-width: 100px;
@@ -1291,10 +1204,6 @@
 		resize: none;
 		padding: 0 5px;
 	}
-	.chat-container .chat-window .entry input {
-		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
-		text-rendering: optimizeLegibility !important;
-	}
 	.user-cover-options .follow-button .fa {
 		font-size: 14px;
 	}
@@ -1302,21 +1211,6 @@
 		outline: 0 !important;
 	}
 
-	.chat-container .chat-window .entry button {
-		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
-		text-rendering: optimizeLegibility !important;
-		border: none;
-		margin-top: -1px;
-		height: calc(100% + 1px);
-		line-height: inherit;
-	}
-	.chat-container .chat-window .entry button:before {
-		line-height: inherit;
-	}
-	.chat-container .chat-window .chat-items li .username,
-	.chat-container .chat-window .chat-items li .message {
-		line-height: inherit;
-	}
 	.user-about-panel .user-interests {
 		margin: 0 0 0 -8px;
 	}
@@ -1365,9 +1259,6 @@
 	.library-table .panel {
 		margin-bottom: 0px;
 	}
-	.library-container {
-		padding-bottom: 50px;
-	}
 	.library-dropdown .status-select .dropdown-menu {
 		padding-top: 0px;
 		margin-top: 0px;
@@ -1388,6 +1279,7 @@
 	.library-dropdown .personal-notes-save {
 		background-color: #1ABC9C;
 		color: #FFF;
+		transition: .2s ease-in;
 	}
 	.library-dropdown .personal-notes-save:hover {
 		background-color: #138B73;
@@ -1409,6 +1301,7 @@
 	.user-cover .cover-photo .edit-cover label {
 		font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
 		text-rendering: optimizeLegibility !important;
+		border-radius: 3px;
 	}
 
 	.series-info .genres li,
@@ -1509,9 +1402,6 @@
 		top: 0px;
 	}
 
-	.ad-unit {
-		display: none;
-	}
 	.global-footer .site-footer-links li {
 		padding-right: 10px;
 	}
@@ -1629,6 +1519,178 @@
 		max-width: 100%;
 	}
 	.pace .pace-activity {
+		display: none;
+	}
+
+	.series-panel .user-actions .btn-group.open > .library-button {
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+	.series-panel .user-actions .btn-group.open > .dropdown-menu {
+		width: 100%;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+	.series-panel .user-actions .btn-group.open > .dropdown-menu > li:last-child:hover > a {
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	.series-panel .cast-language .btn-group.open > .dropdown-toggle {
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+	.series-panel .cast-language .btn-group.open > .dropdown-menu {
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+	.series-panel .cast-language .btn-group.open > .dropdown-menu > li:last-child:hover > a {
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	.series-panel .user-actions {
+		border: none;
+		padding: 0px;
+		margin-top: 20px;
+	}
+	.series-cast .character-wrapper {
+		width: 250px;
+		vertical-align: top;
+	}
+	.series-cast .cast-name {
+		width: 190px;
+	}
+	.quote-like-box .quote-divider {
+		display: none;
+	}
+	.quote-like-box .total-likes {
+		padding-left: 0px;
+	}
+
+	.user-cover-options .follow-button.edit {
+		width: 36px;
+		padding: 0;
+	}
+	.user-cover-options .follow-button.edit .fa.fa-pencil {
+		padding: 10px 12px;
+	}
+	.user-feed .story .update-panel .series-thumb {
+		width: 20%;
+	}
+	.user-feed .story .update-panel .media-content {
+		width: 80%;
+	}
+	.series-panel .poster-container {
+		width: 33%;
+	}
+	.series-panel .series-info {
+		width: 67%;
+	}
+	.user-dashboard {
+		margin-top: 0px;
+	}
+	.user-cover-options .follow-button.edit {
+		background: rgba(0,0,0,0.2);
+		color: rgba(255,255,255,0.4);
+	}
+	.user-cover-options .follow-button.edit:hover {
+		background: rgba(0,0,0,0.6);
+		color: rgba(255,255,255,1);
+	}
+	.follow-button {
+		transition: .2s ease-in;
+	}
+	.search-container {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.community-widget-panel .panel-body .latest-post-list .recent-post-avatar,
+	.community-widget-panel .update-panel .latest-post-list .recent-post-avatar {
+		border-radius: 2px;
+	}
+	.notification .avatar {
+		width: 12%;
+	}
+	.notification .content {
+		width: 88%;
+		white-space: normal;
+		line-height: 1.2em;
+		padding-right: 0px;
+	}
+	.notification .content .time {
+		margin-top: 2px;
+	}
+	.notification {
+		padding-right: 0px;
+	}
+	.hb-nav .notification-dropdown {
+		width: 350px;
+	}
+	.feed-sidebar-footer {
+		font-size: 0.9em;
+	}
+	.review-sidebar .dislike a {
+		background-color: #E53935;
+		color: #fff;
+	}
+	.review-sidebar .dislike a:hover {
+		background-color: #CB1E1A;
+		color: #fff;
+	}
+	.episode-button:hover {
+		color: #FFF;
+		background-color: #1ABC9C;
+		transition: .2s ease-in;
+	}
+	.episode-button:focus {
+		color: #FFF;
+		background-color: #138B73;
+	}
+
+	/*temp manga fixes start*/
+	.manga-page .sidebar-title {
+		color: inherit;
+		font-weight: bold;
+	}
+	.manga-page .series-panel .poster-container {
+		width: 100%;
+	}
+	.manga-page .personal-rating {
+		border-bottom: none;
+	}
+	.manga-page .genre-tab .badge {
+		background-color: #777777;
+	}
+	.manga-page .nav-tabs > li.active > a,
+	.manga-page .nav-tabs > li.active > a:hover,
+	.manga-page .nav-tabs > li.active > a:focus {
+		border: 1px solid #838C9A;
+		border-bottom-color: transparent !important;
+	}
+	.manga-page .nav-tabs > li > a {
+		margin-right: 0px;
+	}
+	.manga-page .series-description {
+		font-size: 16px;
+	}
+	.manga-page .info-tabs {
+		padding: 0;
+	}
+	/*temp manga fixes end*/
+
+	/*ads*/
+	div.feed-head-advert {
+		display: none;
+	}
+	div.feed-sm-sidebar-advert {
+		display: none;
+	}
+	div.feed-sidebar-advert {
+		display: none;
+	}
+	div.anime-page-advert {
+		display: none;
+	}
+	.ad-unit {
 		display: none;
 	}
 
