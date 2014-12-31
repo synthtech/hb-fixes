@@ -1165,30 +1165,6 @@
 	}*/
 	/*chat end*/
 
-	/*.series-header .middle-column .info-tabs .tab-pane {
-		border: none;
-	}
-	.series-header .middle-column .info-tabs .nav-tabs li.active > a {
-		border: none;
-	}
-	.series-header .middle-column .info-tabs .nav-tabs li.active > a:hover {
-		border: none;
-	}
-	.series-header .middle-column .info-tabs .nav-tabs > li > a:hover {
-		background-color: transparent;
-		border: none;
-	}
-	.nav-tabs > li > a {
-		border: none;
-	}
-	.series-header .middle-column .info-tabs .nav-tabs li.open > a {
-		background-color: transparent;
-		border: none;
-	}
-	.series-header .middle-column .info-tabs .nav-tabs li.open > a:hover {
-		background-color: transparent;
-	}*/
-
 	.hb-nav .dropdown-menu li {
 		min-width: 100px;
 	}
