@@ -667,6 +667,17 @@
 	.mfp-title a.image-source-link:hover {
 		color: #EC8661;
 	}
+
+	.d-header #site-logo.logo-big {
+		content: url(https://i.imgur.com/X0fS3I1.png);
+	}
+	#topic-title h1 {
+		display: inline-flex;
+		margin-right: 5px;
+	}
+	#topic-title a.badge-category {
+		margin-top: 0;
+	}
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
@@ -722,9 +733,6 @@
 		margin-left: 20px;
 		border: none;
 		/*width: 317px;*/
-	}
-	.quick-update .watched-series .overlay-panel {
-		background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
 	}
 	.quick-update .series-title {
 		white-space: normal;
@@ -895,22 +903,22 @@
 		text-shadow: 2px 4px 6px #A94831;
 	}
 
-	.search-dropdown {
+	.nav .searchbar .search-dropdown {
 		border-radius: 0px !important;
 		width: 390px !important;
 		margin-left: 0px;
 		margin-top: 0px;
 		max-width: 400px !important;
 	}
-	.search-dropdown .search-result {
+	.nav .searchbar .search-dropdown .search-result {
 		width: 390px !important;
 		max-width: 400px !important;
 	}
-	.search-dropdown .search-result a {
+	.nav .searchbar .search-dropdown .search-result a {
 		padding-right: 20px !important;
 		padding-left: 20px !important;
 	}
-	input.search-field:focus {
+	.nav .searchbar input.search-field:focus {
 		margin-top: 14px !important;
 		width: 317px !important;
 		max-width: 400px !important;
@@ -1474,22 +1482,22 @@
 		height: 43px;
 		width: 43px;
 	}
-	.update-panel .comment-text a img {
+	/*.update-panel .comment-text a img {
 		max-height: 500px;
 		width: auto;
 		max-width: 100%;
-	}
+	}*/
 	.quote-bubble .review-quote {
 		font-size: 14px;
 	}
 	.quote-bubble .review-quote .media .media-body p {
 		margin-bottom: 0;
 	}
-	.comment-replies .reply .content img {
+	/*.comment-replies .reply .content img {
 		max-height: 500px;
 		width: auto;
 		max-width: 100%;
-	}
+	}*/
 	.pace .pace-activity {
 		display: none;
 	}
@@ -1616,6 +1624,13 @@
 	.episode-button:focus {
 		color: #FFF;
 		background-color: #138B73;
+	}
+
+	.story-actions .active-users li img {
+		height: 20px;
+	}
+	.story-actions .active-users li[data-tooltip]:after {
+		margin-left: 0;
 	}
 
 	/*temp manga fixes start*/
