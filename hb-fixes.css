@@ -1466,16 +1466,16 @@
 	}
 
 	.story-modal .all-likes ul li[data-tooltip]:before {
-		bottom: 100%;
+		bottom: 110%;
 	}
 	.story-modal .all-likes ul li[data-tooltip]:after {
-		bottom: 100%;
+		bottom: 110%;
 	}
 	.story-actions .active-users li[data-tooltip]:before {
-		bottom: 100%;
+		bottom: 105%;
 	}
 	.story-actions .active-users li[data-tooltip]:after {
-		bottom: 100%;
+		bottom: 105%;
 	}
 
 	.comment-replies .reply .user-avatar a img.responsive-image {
@@ -1631,6 +1631,79 @@
 	}
 	.story-actions .active-users li[data-tooltip]:after {
 		margin-left: 0;
+	}
+
+	.follow-panel .follow-cover {
+		animation: fadein 0.6s;
+		-webkit-animation: fadein 0.6s;
+	}
+	.grid-thumb .thumbnail img {
+		animation: fadein 0.6s;
+		-webkit-animation: fadein 0.6s;
+	}
+	.story-actions .nsfw-indicator[data-tooltip]:before {
+		bottom: 105%;
+		margin-left: -72px;
+	}
+	.story-actions .nsfw-indicator[data-tooltip]:after {
+		bottom: 105%;
+		margin-left: 3px;
+	}
+	.community-rating-wrapper li[data-tooltip]:before {
+		bottom: 105%;
+	}
+	.community-rating-wrapper li[data-tooltip]:after{
+		bottom: 105%;
+	}
+	.edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Direct link to your replacement image."]:before {
+		bottom: 105%;
+		margin-left: -20px;
+	}
+	.edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Direct link to your replacement image."]:after {
+		bottom: 105%;
+		margin-left: 56px;
+	}
+	.edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Direct link to your replacement image. Preferable images are desktop wallpapers at least 1500px wide."]:before {
+		bottom: 105%;
+		margin-left: -15px;
+	}
+	.edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Direct link to your replacement image. Preferable images are desktop wallpapers at least 1500px wide."]:after {
+		bottom: 105%;
+		margin-left: 63px;
+	}
+	.edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="The video ID is the part between v= and & of the video's page URL."]:before {
+		bottom: 105%;
+		margin-left: -15px;
+	}
+	.edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="The video ID is the part between v= and & of the video's page URL."]:after {
+		bottom: 105%;
+		margin-left: 64px;
+	}
+	.edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Distance in pixels that you want to move the visible part of the cover photo up."]:before {
+		bottom: 105%;
+		margin-left: -35px;
+	}
+	.edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Distance in pixels that you want to move the visible part of the cover photo up."]:after {
+		bottom: 105%;
+		margin-left: 83px;
+	}
+	.edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Let the reviewer know why this edit is awesome"]:before {
+		bottom: 105%;
+		margin-left: -15px;
+	}
+	.edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Let the reviewer know why this edit is awesome"]:after {
+		bottom: 105%;
+		margin-left: 62px;
+	}
+
+	.series-panel .user-actions .btn-group.open > .dropdown-menu > li > a {
+		padding: 5px 20px;
+	}
+	.series-panel .cast-language .btn-group.open > .dropdown-menu > li > a {
+		padding: 5px 20px;
+	}
+	.status-update-panel .status-box-wrapper #status-box-text {
+		text-transform: uppercase;
 	}
 
 	/*temp manga fixes start*/
