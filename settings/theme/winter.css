@@ -1,12 +1,12 @@
 @-moz-document url-prefix(http://forums.hummingbird.me/), url-prefix(https://forums.hummingbird.me/) {
-	body {
-		background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
-		background-size: contain;
-	}
+    body {
+        background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
+        background-size: contain;
+    }
 }
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
-	.footer-shadow {
-		background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
-		background-size: contain;
-	}
+    .footer-shadow {
+        background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
+        background-size: contain;
+    }
 }
