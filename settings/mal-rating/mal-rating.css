@@ -6,7 +6,7 @@
         text-align: center !important;
     }
 }
-@-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
+@-moz-document regexp("https?://hummingbird.me/.*") {
     .hb-score iframe {
         height: 3em !important;
         width: 100% !important;
