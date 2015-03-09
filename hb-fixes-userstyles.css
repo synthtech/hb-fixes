@@ -1,12 +1,12 @@
 @-moz-document url-prefix(http://forums.hummingbird.me/), url-prefix(https://forums.hummingbird.me/) {
     /*[[font-format]]*/
     html, body {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;
         background-color: #E0E0E0 !important;
     }
     body input, body button, body select, body textarea {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;
     }
     #main-outlet {
@@ -111,7 +111,7 @@
         border-bottom: 1px solid #EC8661;
     }
     .profile-navigation .inline-list .nav-link > a {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
         padding: 13px 20px;
     }
@@ -627,7 +627,7 @@
     .discourse-no-touch .d-header .icons .icon {
         transition: .2s ease-in;
     }
-    .d-dropdown input[type='text'] {
+    .d-dropdown input[type="text"] {
         width: 90%;
     }
     :focus {
@@ -656,7 +656,7 @@
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
     /*[[font-format]]*/
     html, body {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;
     }
     html {
@@ -666,7 +666,7 @@
         background-color: transparent !important;
     }
     h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;
     }
     .update-panel li a.remove-post {
@@ -697,11 +697,11 @@
         color: transparent;
     }
     .hb-nav .dropdown {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     #recent-toggle {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .dropdown-menu {
@@ -711,11 +711,11 @@
         padding: 0px;
     }
     .panel-divider {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .library-filter {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .library-dropdown .personal-notes {
@@ -725,7 +725,7 @@
     }
     .library-search {
         height: auto;
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .profile-navigation .inline-list .nav-link,
@@ -736,11 +736,11 @@
     .profile-navigation .inline-list .nav-link > a,
     .profile-navigation .update-panel .genre-list .nav-link > a,
     .update-panel .profile-navigation .genre-list .nav-link > a {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .anime-breakdown-panel .breakdown-genrelist li span {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     a:focus {
@@ -806,7 +806,7 @@
         background-color: #F5F5F5;
     }
     .hummingbird-header-1 .notification-block .single-notification {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
 
@@ -833,7 +833,7 @@
     }
 
     .follow-button {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .series-content .btn-primary {
@@ -981,7 +981,7 @@
         font-size: 0.8em;
     }
     .series-header .right-column .top-buttons .top-button {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .series-header .right-column .top-buttons .btn-group.open .dropdown-menu li:last-child a:hover {
@@ -1055,7 +1055,7 @@
         box-shadow: inset -1px 0px 3px rgba(0,0,0,0.3);
     }
     .chat-container .chat-window .chat-items li .username {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
         padding-right: 10px;
     }
@@ -1095,11 +1095,11 @@
         font-size: 20px;
     }
     .chat-container .chat-window .entry input {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .chat-container .chat-window .entry button {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
         border: none;
         margin-top: -1px;
@@ -1123,7 +1123,7 @@
     }
 
     .user-cover-options .follow-widgets .follow-title {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .user-cover-options .user-wrapper .account-info textarea {
@@ -1225,7 +1225,7 @@
         margin-top: 0;
     }
     .user-cover .cover-photo .edit-cover label {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
         border-radius: 3px;
     }
@@ -1261,12 +1261,12 @@
         opacity: 0;
     }
     .series-metadata {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
         color: inherit;
     }
     .series-cast .cast-name small {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .series-header .featured-quote .quote-author {
@@ -1397,7 +1397,7 @@
     }
 
     .account-form button {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .user-dashboard > .row {

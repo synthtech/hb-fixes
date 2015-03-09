@@ -1,7 +1,7 @@
 @-moz-document url-prefix(http://myanimelist.net/404.php?) {
     /*[[font-format]]*/
     body {
-        font-family: 'Lato', 'Segoe UI Semibold', 'Helvetica Neue', 'Open Sans Semibold', sans-serif !important;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;
         text-align: center !important;
     }
