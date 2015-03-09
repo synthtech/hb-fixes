@@ -1,32 +1,5 @@
 @-moz-document url-prefix(http://forums.hummingbird.me/), url-prefix(https://forums.hummingbird.me/) {
-    @font-face {
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format("woff2");
-        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-    }
-    @font-face {
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v11/7aC-Y4V2UPHQp-tqeekgkA.woff2) format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
-    @font-face {
-        font-family: "Lato";
-        font-style: italic;
-        font-weight: 400;
-        src: local("Lato Italic"), local("Lato-Italic"), url(https://fonts.gstatic.com/s/lato/v11/YMOYVM-eg6Qs9YzV9OSqZfesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
-        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-    }
-    @font-face {
-        font-family: "Lato";
-        font-style: italic;
-        font-weight: 400;
-        src: local("Lato Italic"), local("Lato-Italic"), url(https://fonts.gstatic.com/s/lato/v11/0Bl1oqNTjMmBgjhjvqXaufesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
+    /*[[font-format]]*/
     html, body {
         font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;
@@ -681,34 +654,7 @@
 }
 
 @-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
-    @font-face {
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format("woff2");
-        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-    }
-    @font-face {
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v11/7aC-Y4V2UPHQp-tqeekgkA.woff2) format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
-    @font-face {
-        font-family: "Lato";
-        font-style: italic;
-        font-weight: 400;
-        src: local("Lato Italic"), local("Lato-Italic"), url(https://fonts.gstatic.com/s/lato/v11/YMOYVM-eg6Qs9YzV9OSqZfesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
-        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-    }
-    @font-face {
-        font-family: "Lato";
-        font-style: italic;
-        font-weight: 400;
-        src: local("Lato Italic"), local("Lato-Italic"), url(https://fonts.gstatic.com/s/lato/v11/0Bl1oqNTjMmBgjhjvqXaufesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
+    /*[[font-format]]*/
     html, body {
         font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;
@@ -1466,16 +1412,16 @@
     }
 
     .story-modal .all-likes ul li[data-tooltip]:before {
-        bottom: 110%;
+        bottom: 100%;
     }
     .story-modal .all-likes ul li[data-tooltip]:after {
-        bottom: 110%;
+        bottom: 100%;
     }
     .story-actions .active-users li[data-tooltip]:before {
-        bottom: 105%;
+        bottom: 100%;
     }
     .story-actions .active-users li[data-tooltip]:after {
-        bottom: 105%;
+        bottom: 100%;
     }
 
     .comment-replies .reply .user-avatar a img.responsive-image {
@@ -1633,79 +1579,6 @@
         margin-left: 0;
     }
 
-    .follow-panel .follow-cover {
-        animation: fadein 0.6s;
-        -webkit-animation: fadein 0.6s;
-    }
-    .grid-thumb .thumbnail img {
-        animation: fadein 0.6s;
-        -webkit-animation: fadein 0.6s;
-    }
-    .story-actions .nsfw-indicator[data-tooltip]:before {
-        bottom: 105%;
-        margin-left: -72px;
-    }
-    .story-actions .nsfw-indicator[data-tooltip]:after {
-        bottom: 105%;
-        margin-left: 3px;
-    }
-    .community-rating-wrapper li[data-tooltip]:before {
-        bottom: 105%;
-    }
-    .community-rating-wrapper li[data-tooltip]:after{
-        bottom: 105%;
-    }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Direct link to your replacement image."]:before {
-        bottom: 105%;
-        margin-left: -20px;
-    }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Direct link to your replacement image."]:after {
-        bottom: 105%;
-        margin-left: 56px;
-    }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Direct link to your replacement image. Preferable images are desktop wallpapers at least 1500px wide."]:before {
-        bottom: 105%;
-        margin-left: -15px;
-    }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Direct link to your replacement image. Preferable images are desktop wallpapers at least 1500px wide."]:after {
-        bottom: 105%;
-        margin-left: 63px;
-    }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="The video ID is the part between v= and & of the video"s page URL."]:before {
-        bottom: 105%;
-        margin-left: -15px;
-    }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="The video ID is the part between v= and & of the video"s page URL."]:after {
-        bottom: 105%;
-        margin-left: 64px;
-    }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Distance in pixels that you want to move the visible part of the cover photo up."]:before {
-        bottom: 105%;
-        margin-left: -35px;
-    }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Distance in pixels that you want to move the visible part of the cover photo up."]:after {
-        bottom: 105%;
-        margin-left: 83px;
-    }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Let the reviewer know why this edit is awesome"]:before {
-        bottom: 105%;
-        margin-left: -15px;
-    }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Let the reviewer know why this edit is awesome"]:after {
-        bottom: 105%;
-        margin-left: 62px;
-    }
-
-    .series-panel .user-actions .btn-group.open > .dropdown-menu > li > a {
-        padding: 5px 20px;
-    }
-    .series-panel .cast-language .btn-group.open > .dropdown-menu > li > a {
-        padding: 5px 20px;
-    }
-    .status-update-panel .status-box-wrapper #status-box-text {
-        text-transform: uppercase;
-    }
-
     /*temp manga fixes start*/
     .manga-page .sidebar-title {
         color: inherit;
@@ -1754,10 +1627,7 @@
         display: none;
     }
 
-    /*cursor*/
-    /*body a, body a:hover {
-        cursor: url("https://i.imgur.com/vbj45rG.gif"), auto;
-    }*/
+    /*[[cursor]]*/
 }
 
 @-moz-document url(http://hummingbird.me/), url(https://hummingbird.me/) {
@@ -1765,54 +1635,5 @@
         background-color: transparent !important;
     }
 }
-
-/*mal rating start*/
-@-moz-document url-prefix(http://myanimelist.net/404.php?) {
-    @font-face {
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format("woff2");
-        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-    }
-    @font-face {
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v11/7aC-Y4V2UPHQp-tqeekgkA.woff2) format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
-    body {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
-        text-rendering: optimizeLegibility !important;
-        text-align: center !important;
-    }
-}
-@-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
-    .hb-score iframe {
-        height: 3em !important;
-        width: 100% !important;
-    }
-    .hb-score {
-        margin-bottom: 0;
-    }
-    .hb-score h3 {
-        margin-bottom: 0;
-    }
-}
-/*mal rating end*/
-
-/*winter theme start*/
-@-moz-document url-prefix(http://forums.hummingbird.me/), url-prefix(https://forums.hummingbird.me/) {
-    body {
-        background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
-        background-size: contain;
-    }
-}
-@-moz-document url-prefix(http://hummingbird.me/), url-prefix(https://hummingbird.me/) {
-    .footer-shadow {
-        background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
-        background-size: contain;
-    }
-}
-/*winter theme end*/
+/*[[mal-rating]]*/
+/*[[theme]]*/
