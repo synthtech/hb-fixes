@@ -1621,11 +1621,11 @@
         bottom: 105%;
         margin-left: 63px;
     }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="The video ID is the part between v= and & of the video"s page URL."]:before {
+    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="The video ID is the part between v= and & of the video's page URL."]:before {
         bottom: 105%;
         margin-left: -15px;
     }
-    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="The video ID is the part between v= and & of the video"s page URL."]:after {
+    .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="The video ID is the part between v= and & of the video's page URL."]:after {
         bottom: 105%;
         margin-left: 64px;
     }
