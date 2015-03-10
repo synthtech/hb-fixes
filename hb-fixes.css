@@ -1757,11 +1757,6 @@
     .ad-unit {
         display: none;
     }
-
-    /*cursor*/
-    /*body a, body a:hover {
-        cursor: url("https://i.imgur.com/vbj45rG.gif"), auto;
-    }*/
 }
 
 @-moz-document regexp("https?://hummingbird.me/") {
@@ -1805,18 +1800,3 @@
     }
 }
 /*mal rating end*/
-
-/*winter theme start*/
-@-moz-document regexp("https?://forums.hummingbird.me/.*") {
-    body {
-        background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
-        background-size: contain;
-    }
-}
-@-moz-document regexp("https?://hummingbird.me/.*") {
-    .footer-shadow {
-        background: url(https://i.imgur.com/bQbEq1R.png) repeat-y center center #E0E0E0;
-        background-size: contain;
-    }
-}
-/*winter theme end*/
