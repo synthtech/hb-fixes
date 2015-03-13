@@ -1695,6 +1695,15 @@
     .user-about-panel .about iframe {
         max-width: 100%;
     }
+    .group-members-panel ul li img {
+        width: 50px;
+        height: 50px;
+    }
+    .group-about-panel .about img,
+    .group-about-panel .about video,
+    .group-about-panel .about iframe {
+        max-width: 100%;
+    }
 
     /*temp manga fixes start*/
     .manga-page .sidebar-title {
