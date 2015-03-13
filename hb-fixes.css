@@ -400,14 +400,10 @@
         padding-right: 0;
         padding-left: 14px;
     }
-    table.topic-links {
-        table-layout: fixed;
-        width: 100%;
-    }
-    .topic-map .topic-links tbody tr td:first-child {
+    .topic-map .topic-links tr td:first-child {
         width: 24px;
     }
-    .topic-map .topic-links tbody tr td:last-child {
+    .topic-map .topic-links tr td:last-child {
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -681,6 +677,13 @@
     .lazyYT-container a.html5-title-text:hover {
         color: #FFFFFF !important;
         text-decoration: none;
+    }
+    .d-dropdown .filter {
+        margin-top: 10px;
+    }
+    table.topic-links {
+        table-layout: auto;
+        width: auto;
     }
 }
 
@@ -959,10 +962,10 @@
     .series-reviews {
         padding-bottom: 20px;
     }
-    .user-feed .story .comment-replies .view-more a {
+    .view-more a {
         color: #999999;
     }
-    .user-feed .story .comment-replies .view-more a:hover {
+    .view-more a:hover {
         color: #EC8661;
     }
     .panel-heading .edit-panel a {
@@ -1486,22 +1489,12 @@
         height: 43px;
         width: 43px;
     }
-    /*.update-panel .comment-text a img {
-        max-height: 500px;
-        width: auto;
-        max-width: 100%;
-    }*/
     .quote-bubble .review-quote {
         font-size: 14px;
     }
     .quote-bubble .review-quote .media .media-body p {
         margin-bottom: 0;
     }
-    /*.comment-replies .reply .content img {
-        max-height: 500px;
-        width: auto;
-        max-width: 100%;
-    }*/
     .pace .pace-activity {
         display: none;
     }
@@ -1550,13 +1543,13 @@
         padding-left: 0;
     }
 
-    .user-cover-options .follow-button.edit {
+    /*.user-cover-options .follow-button.edit {
         width: 36px;
         padding: 0;
     }
     .user-cover-options .follow-button.edit .fa.fa-pencil {
         padding: 10px 12px;
-    }
+    }*/
     .user-feed .story .update-panel .series-thumb {
         width: 20%;
     }
@@ -1572,14 +1565,14 @@
     .user-dashboard {
         margin-top: 0;
     }
-    .user-cover-options .follow-button.edit {
+    /*.user-cover-options .follow-button.edit {
         background: rgba(0,0,0,.2);
         color: rgba(255,255,255,.4);
     }
     .user-cover-options .follow-button.edit:hover {
         background: rgba(0,0,0,.6);
         color: rgba(255,255,255,1);
-    }
+    }*/
     .follow-button {
         transition: .2s ease-in;
     }
@@ -1710,6 +1703,53 @@
         text-transform: uppercase;
     }
 
+    .comment-replies .reply .content img {
+        max-width: 100%;
+        max-height: 500px;
+    }
+    .update-panel .comment-text img {
+        max-height: 500px;
+    }
+    .group-wrapper .overlay {
+        background-color: rgba(0,0,0,.6);
+    }
+    .update-panel .comment-text video,
+    .update-panel .comment-text progress {
+        max-width: 100%;
+        max-height: 500px;
+    }
+    .follow-bubbles {
+        padding-right: 15px;
+    }
+    .update-panel > .user-image img.responsive-image {
+        width: 52px;
+        height: 52px;
+    }
+    .update-panel .feed-events .user-image img.responsive-image {
+        width: 36px;
+        height: 36px;
+    }
+    .group-members-panel .panel-body ul li[data-tooltip]:before {
+        bottom: 110%;
+    }
+    .group-members-panel .panel-body ul li[data-tooltip]:after {
+        bottom: 110%;
+    }
+    .group-cta .suggestion-button {
+        background-color: #1ABC9C;
+        color: #FFF;
+        transition: .2s ease-in;
+    }
+    .group-cta .suggestion-button:hover {
+        background-color: #138B73;
+        color: #FFF;
+    }
+    .user-about-panel .about img,
+    .user-about-panel .about video,
+    .user-about-panel .about iframe {
+        max-width: 100%;
+    }
+
     /*temp manga fixes start*/
     .manga-page .sidebar-title {
         color: inherit;
@@ -1723,6 +1763,7 @@
     }
     .manga-page .genre-tab .badge {
         background-color: #777777;
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
     }
     .manga-page .nav-tabs > li.active > a,
     .manga-page .nav-tabs > li.active > a:hover,
@@ -1738,6 +1779,9 @@
     }
     .manga-page .info-tabs {
         padding: 0;
+    }
+    .manga-page .top-buttons .top-button {
+        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
     }
     /*temp manga fixes end*/
 
