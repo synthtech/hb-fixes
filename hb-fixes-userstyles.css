@@ -1756,7 +1756,6 @@
     .ad-unit {
         display: none;
     }
-    /*[[cursor]]*/
 }
 
 @-moz-document regexp("https?://hummingbird.me/") {
@@ -1766,4 +1765,3 @@
 }
 
 /*[[mal-rating]]*/
-/*[[theme]]*/
