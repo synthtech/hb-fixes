@@ -685,6 +685,13 @@
         table-layout: auto;
         width: auto;
     }
+
+    #main-outlet {
+        padding-top: 113px;
+    }
+    .d-header {
+        padding-top: 0px;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
@@ -1757,6 +1764,16 @@
     .group-about-panel .about video,
     .group-about-panel .about iframe {
         max-width: 100%;
+    }
+    .onebox-body.media-embed img {
+        max-width: 100px !important;
+    }
+    .onebox-body img {
+        max-width: 200px !important;
+    }
+    .update-panel .user-info-bar .user-image img {
+        height: 52px;
+        width: 52px;
     }
 
     /*temp manga fixes start*/
