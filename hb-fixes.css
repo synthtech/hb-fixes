@@ -383,7 +383,7 @@
         border-bottom-left-radius: 0;
     }
     .badge-notification.new-posts,
-    .badge-notification.unread-posts {
+    .badge-notification.unread {
         border-radius: 0;
         padding: 3px;
         margin-left: 3px;
@@ -740,6 +740,18 @@
 
     img.chromoji {
         top: 0em !important;
+    }
+
+    .poll .poll-container {
+        height: auto !important;
+    }
+    .poll .poll-container ul li img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .poll .poll-container .results tbody tr td.option img {
+        max-width: 150px;
+        max-height: 150px;
     }
 }
 
@@ -1792,6 +1804,10 @@
     .update-panel .user-info-bar .user-image img {
         height: 52px;
         width: 52px;
+    }
+
+    .poster-container .series-poster {
+        width: 100%;
     }
 
     /*ads*/
