@@ -1812,6 +1812,12 @@
     }
 }
 
+@-moz-document regexp("https?://hummingbird.me/manga/.*") {
+    .series-cast .cast-image .character {
+        opacity: 1;
+    }
+}
+
 @-moz-document regexp("https?://hummingbird.me/") {
     html {
         background-color: transparent !important;
