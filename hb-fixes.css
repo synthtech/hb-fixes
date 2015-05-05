@@ -1318,6 +1318,7 @@
     .series-info .genres li,
     .series-info .studios li {
         text-decoration: none;
+        margin-right: 10px;
     }
     .series-info .small-label {
         margin-top: 3px;
@@ -1791,10 +1792,6 @@
     .update-panel .user-info-bar .user-image img {
         height: 52px;
         width: 52px;
-    }
-
-    .series-header .featured-quote .quote-text {
-        word-break: break-word;
     }
 
     /*ads*/
