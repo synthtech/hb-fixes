@@ -737,6 +737,10 @@
     .title-wrapper h1 {
         font-weight: normal;
     }
+
+    img.chromoji {
+        top: 0em !important;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
