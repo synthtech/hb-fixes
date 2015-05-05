@@ -1866,41 +1866,6 @@
         word-break: break-word;
     }
 
-    /*temp manga fixes start*/
-    .manga-page .sidebar-title {
-        color: inherit;
-        font-weight: bold;
-    }
-    .manga-page .series-panel .poster-container {
-        width: 100%;
-    }
-    .manga-page .personal-rating {
-        border-bottom: none;
-    }
-    .manga-page .genre-tab .badge {
-        background-color: #777777;
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
-    }
-    .manga-page .nav-tabs > li.active > a,
-    .manga-page .nav-tabs > li.active > a:hover,
-    .manga-page .nav-tabs > li.active > a:focus {
-        border: 1px solid #838C9A;
-        border-bottom-color: transparent !important;
-    }
-    .manga-page .nav-tabs > li > a {
-        margin-right: 0;
-    }
-    .manga-page .series-description {
-        font-size: 16px;
-    }
-    .manga-page .info-tabs {
-        padding: 0;
-    }
-    .manga-page .top-buttons .top-button {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
-    }
-    /*temp manga fixes end*/
-
     /*ads*/
     div.feed-head-advert {
         display: none;
