@@ -1,5 +1,6 @@
 @-moz-document regexp("https?://forums.hummingbird.me/.*") {
     /*[[font-format]]*/
+
     html, body {
         font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;
@@ -319,7 +320,7 @@
         border-bottom-left-radius: 0;
     }
     .badge-notification.new-posts,
-    .badge-notification.unread-posts {
+    .badge-notification.unread {
         border-radius: 0;
         padding: 3px;
         margin-left: 3px;
@@ -658,10 +659,42 @@
         table-layout: auto;
         width: auto;
     }
+
+    #main-outlet {
+        padding-top: 113px;
+    }
+    .d-header {
+        padding-top: 0px;
+    }
+
+    .post-cloak .reply-to-tab {
+        margin-top: -12px;
+    }
+
+    .title-wrapper h1 {
+        font-weight: normal;
+    }
+
+    img.chromoji {
+        top: 0em !important;
+    }
+
+    .poll .poll-container {
+        height: auto !important;
+    }
+    .poll .poll-container ul li img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .poll .poll-container .results tbody tr td.option img {
+        max-width: 150px;
+        max-height: 150px;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
     /*[[font-format]]*/
+    
     html, body {
         font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;
@@ -1053,75 +1086,6 @@
         margin-bottom: 0;
     }
 
-    /*chat start*/
-    /*.chat-container .chat-window .chat-items {
-        overflow-y: auto;
-    }
-    .chat-container .online-users {
-        overflow-y: auto;
-        box-shadow: inset -1px 0 3px rgba(0,0,0,.3);
-    }
-    .chat-container .chat-window .chat-items li .username {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
-        text-rendering: optimizeLegibility !important;
-        padding-right: 10px;
-    }
-    .chat-container .chat-window .chat-items li .message img.autoembed {
-        max-width: 400px !important;
-        max-height: 300px !important;
-    }
-    .chat-container .chat-window .chat-items li .message .video-embed .video-wrapper {
-        padding-bottom: 29%;
-    }
-    .chat-container .chat-window .chat-items li .message .video-embed .video-wrapper iframe {
-        max-height: 260px !important;
-        max-width: 400px !important;
-    }
-    .chat-container .chat-window .chat-items li .message .video-embed .gfy-wrapper {
-        margin-bottom: -120px;
-    }
-
-    .chat-container .online-users ul li img {
-        height: 30px;
-        width: 30px;
-        -webkit-transition: .2s ease-in;
-        transition: .2s ease-in;
-    }
-    .chat-container .online-users ul li a {
-        line-height: 30px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    .chat-container .online-users ul li:hover img {
-        height: 50px;
-        width: 50px;
-    }
-    .chat-container .online-users ul li:hover a {
-        line-height: 50px;
-        font-size: 20px;
-    }
-    .chat-container .chat-window .entry input {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
-        text-rendering: optimizeLegibility !important;
-    }
-    .chat-container .chat-window .entry button {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
-        text-rendering: optimizeLegibility !important;
-        border: none;
-        margin-top: -1px;
-        height: calc(100% + 1px);
-        line-height: inherit;
-    }
-    .chat-container .chat-window .entry button:before {
-        line-height: inherit;
-    }
-    .chat-container .chat-window .chat-items li .username,
-    .chat-container .chat-window .chat-items li .message {
-        line-height: inherit;
-    }*/
-    /*chat end*/
-
     .hb-nav .dropdown-menu li {
         min-width: 100px;
     }
@@ -1240,6 +1204,7 @@
     .series-info .genres li,
     .series-info .studios li {
         text-decoration: none;
+        margin-right: 10px;
     }
     .series-info .small-label {
         margin-top: 3px;
@@ -1704,41 +1669,20 @@
     .group-about-panel .about iframe {
         max-width: 100%;
     }
-
-    /*temp manga fixes start*/
-    .manga-page .sidebar-title {
-        color: inherit;
-        font-weight: bold;
+    .onebox-body.media-embed img {
+        max-width: 100px !important;
     }
-    .manga-page .series-panel .poster-container {
+    .onebox-body img {
+        max-width: 200px !important;
+    }
+    .update-panel .user-info-bar .user-image img {
+        height: 52px;
+        width: 52px;
+    }
+
+    .poster-container .series-poster {
         width: 100%;
     }
-    .manga-page .personal-rating {
-        border-bottom: none;
-    }
-    .manga-page .genre-tab .badge {
-        background-color: #777777;
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
-    }
-    .manga-page .nav-tabs > li.active > a,
-    .manga-page .nav-tabs > li.active > a:hover,
-    .manga-page .nav-tabs > li.active > a:focus {
-        border: 1px solid #838C9A;
-        border-bottom-color: transparent !important;
-    }
-    .manga-page .nav-tabs > li > a {
-        margin-right: 0;
-    }
-    .manga-page .series-description {
-        font-size: 16px;
-    }
-    .manga-page .info-tabs {
-        padding: 0;
-    }
-    .manga-page .top-buttons .top-button {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
-    }
-    /*temp manga fixes end*/
 
     /*ads*/
     div.feed-head-advert {
@@ -1755,6 +1699,12 @@
     }
     .ad-unit {
         display: none;
+    }
+}
+
+@-moz-document regexp("https?://hummingbird.me/manga/.*") {
+    .series-cast .cast-image .character {
+        opacity: 1;
     }
 }
 
