@@ -757,6 +757,10 @@
         width: auto;
         height: auto;
     }
+
+    img.avatar {
+        border-radius: 0;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
