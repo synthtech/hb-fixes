@@ -1393,7 +1393,6 @@
     .series-metadata {
         font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
         text-rendering: optimizeLegibility !important;
-        color: inherit;
     }
     .series-cast .cast-name small {
         font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
