@@ -81,10 +81,10 @@
         max-height: none;
     }
     .d-dropdown {
-        /*margin-top: 4px;*/
-        right: -3px;
+        right: -1px;
         top: 36px;
         border-top: none;
+        border-radius: 0;
     }
     #site-map-dropdown {
         height: auto;
@@ -506,6 +506,7 @@
     .nav-pills > li > a:hover,
     .nav-pills > li > a:focus {
         color: #F89774;
+        background: none;
     }
     #list-area {
         margin-bottom: 50px;
@@ -629,6 +630,7 @@
     }
     .d-header .icons .icon {
         padding-bottom: 4px;
+        border-bottom: 1px solid transparent;
     }
     #user-card .card-content {
         margin-top: 55px;
@@ -693,6 +695,7 @@
     }
     .nav-pills > li.active > a,
     .nav-pills > li > a.active {
+        color: #FFF;
         background-color: #F89774;
     }
     .extra-info-wrapper .title-wrapper div:first-of-type {
@@ -760,6 +763,28 @@
 
     img.avatar {
         border-radius: 0;
+    }
+    body input,
+    body button,
+    body select,
+    body textarea {
+        border-radius: 0 !important;
+    }
+    .select2-container-active {
+        box-shadow: none;
+    }
+    .select2-dropdown-open .select2-choice {
+        border-radius: 0 !important;
+    }
+    .select2-container {
+        border-radius: 0 !important;
+    }
+    .badge-notification {
+        padding: 3px;
+    }
+    .topic-body .regular,
+    .topic-body .contents {
+        margin-top: 1em;
     }
 }
 
