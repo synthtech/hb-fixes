@@ -887,6 +887,25 @@
     #suggested-topics table {
         padding-left: 0;
     }
+
+    .user-cover-options {
+        display: none;
+    }
+    .user-cover .cover-overlay {
+        display: none;
+    }
+    .user-main {
+        margin-top: -280px;
+    }
+    .user-main .about .details {
+        position: relative;
+    }
+    .user-main .about .secondary {
+        position: relative;
+    }
+    .user-main .about {
+        margin-bottom: 80px;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
