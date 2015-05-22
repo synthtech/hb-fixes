@@ -1949,6 +1949,10 @@
         width: 100%;
     }
 
+    .modal {
+        overflow-y: auto;
+    }
+
     /*ads*/
     div.feed-head-advert {
         display: none;
