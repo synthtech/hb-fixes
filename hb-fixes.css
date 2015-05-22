@@ -1952,6 +1952,14 @@
     .modal {
         overflow-y: auto;
     }
+    .update-panel .comment-text a {
+        display: inline;
+        text-overflow: initial;
+    }
+    .update-panel .comment-text {
+        text-overflow: ellipsis;
+        max-width: 99.9%;
+    }
 
     /*ads*/
     div.feed-head-advert {
