@@ -689,9 +689,6 @@
         color: #FFF;
         background-color: #F89774;
     }
-    .extra-info-wrapper .title-wrapper div:first-of-type {
-        display: none;
-    }
     .extra-info-wrapper .extra-info.two-rows h1 {
         line-height: 2.5em;
     }
@@ -726,10 +723,6 @@
 
     .post-cloak .reply-to-tab {
         margin-top: -12px;
-    }
-
-    .title-wrapper h1 {
-        font-weight: normal;
     }
 
     img.chromoji {
@@ -893,6 +886,23 @@
     }
     .user-cover .cover-overlay {
         display: none;
+    }
+
+    .title-wrapper h1 {
+        display: inline-block;
+    }
+    .title-wrapper div:first-of-type {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .extra-info-wrapper .badge-wrapper.bar span.badge-category {
+        color: #FFFFFF !important;
+    }
+    .extra-info-wrapper .title-wrapper .badge-wrapper.bar {
+        top: -8px;
+    }
+    #topic-title .title-wrapper .badge-wrapper.bar {
+        top: -1px;
     }
 }
 
