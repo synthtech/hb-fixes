@@ -888,32 +888,46 @@
         display: none;
     }
 
-    .title-wrapper h1 {
+    #topic-title .title-wrapper h1 {
         display: inline;
     }
-    .title-wrapper > div:first-of-type {
+    #topic-title .title-wrapper > div:first-of-type {
         display: inline-block;
         margin-left: 5px;
         vertical-align: bottom;
     }
-    .title-wrapper h1 .topic-statuses {
+    #topic-title .title-wrapper h1 .topic-statuses {
         display: inline;
     }
-    .title-wrapper h1 a.topic-link {
+    #topic-title .title-wrapper h1 a.topic-link {
         display: inline;
-    }
-    .extra-info-wrapper .badge-wrapper.bar span.badge-category {
-        color: #FFFFFF !important;
-    }
-    .extra-info-wrapper .title-wrapper h1 {
-        top: -1px;
-    }
-    .extra-info-wrapper .title-wrapper .badge-wrapper.bar {
-        top: -10px;
     }
     #topic-title .title-wrapper .badge-wrapper.bar {
         top: -1px;
     }
+
+    .extra-info-wrapper .title-wrapper {
+        display: flex;
+    }
+    .extra-info-wrapper .title-wrapper h1 {
+        display: flex;
+        max-width: 85%;
+    }
+    .extra-info-wrapper .title-wrapper > div:first-of-type {
+        display: flex;
+        margin-left: 5px;
+        max-width: 15%;
+    }
+    .extra-info-wrapper .title-wrapper h1 .topic-statuses {
+        margin-top: -5px;
+    }
+    .extra-info-wrapper .badge-wrapper.bar span.badge-category {
+        color: #FFFFFF !important;
+    }
+    .extra-info-wrapper .title-wrapper .badge-wrapper.bar {
+        top: 7px;
+    }
+
     .topic-map .avatars .post-count {
         border-radius: 0;
     }
