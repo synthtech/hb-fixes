@@ -183,7 +183,7 @@
         height: auto;
     }
     .logo-small {
-        margin-top: 3px;
+        margin-top: 5px;
     }
     div.container.posts {
         padding-bottom: 50px !important;
@@ -749,7 +749,7 @@
         border-radius: 0;
     }
     body input,
-    body button,
+    html.desktop-view > body button,
     body select,
     body textarea {
         border-radius: 0 !important;
@@ -889,20 +889,33 @@
     }
 
     .title-wrapper h1 {
-        display: inline-block;
+        display: inline;
     }
-    .title-wrapper div:first-of-type {
+    .title-wrapper > div:first-of-type {
         display: inline-block;
         margin-left: 5px;
+        vertical-align: bottom;
+    }
+    .title-wrapper h1 .topic-statuses {
+        display: inline;
+    }
+    .title-wrapper h1 a.topic-link {
+        display: inline;
     }
     .extra-info-wrapper .badge-wrapper.bar span.badge-category {
         color: #FFFFFF !important;
     }
+    .extra-info-wrapper .title-wrapper h1 {
+        top: -1px;
+    }
     .extra-info-wrapper .title-wrapper .badge-wrapper.bar {
-        top: -8px;
+        top: -10px;
     }
     #topic-title .title-wrapper .badge-wrapper.bar {
         top: -1px;
+    }
+    .topic-map .avatars .post-count {
+        border-radius: 0;
     }
 }
 
