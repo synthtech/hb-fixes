@@ -120,7 +120,7 @@
         height: auto;
     }
     .logo-small {
-        margin-top: 3px;
+        margin-top: 5px;
     }
     div.container.posts {
         padding-bottom: 50px !important;
@@ -626,9 +626,6 @@
         color: #FFF;
         background-color: #F89774;
     }
-    .extra-info-wrapper .title-wrapper div:first-of-type {
-        display: none;
-    }
     .extra-info-wrapper .extra-info.two-rows h1 {
         line-height: 2.5em;
     }
@@ -665,10 +662,6 @@
         margin-top: -12px;
     }
 
-    .title-wrapper h1 {
-        font-weight: normal;
-    }
-
     img.chromoji {
         top: 0em !important;
     }
@@ -693,7 +686,7 @@
         border-radius: 0;
     }
     body input,
-    body button,
+    html.desktop-view > body button,
     body select,
     body textarea {
         border-radius: 0 !important;
@@ -823,6 +816,57 @@
     }
     #suggested-topics table {
         padding-left: 0;
+    }
+
+    .user-cover-options {
+        display: none;
+    }
+    .user-cover .cover-overlay {
+        display: none;
+    }
+
+    #topic-title .title-wrapper h1 {
+        display: inline;
+    }
+    #topic-title .title-wrapper > div:first-of-type {
+        display: inline-block;
+        margin-left: 5px;
+        vertical-align: bottom;
+    }
+    #topic-title .title-wrapper h1 .topic-statuses {
+        display: inline;
+    }
+    #topic-title .title-wrapper h1 a.topic-link {
+        display: inline;
+    }
+    #topic-title .title-wrapper .badge-wrapper.bar {
+        top: -1px;
+    }
+
+    .extra-info-wrapper .title-wrapper {
+        display: flex;
+    }
+    .extra-info-wrapper .title-wrapper h1 {
+        display: flex;
+        max-width: 85%;
+    }
+    .extra-info-wrapper .title-wrapper > div:first-of-type {
+        display: flex;
+        margin-left: 5px;
+        max-width: 15%;
+    }
+    .extra-info-wrapper .title-wrapper h1 .topic-statuses {
+        margin-top: -5px;
+    }
+    .extra-info-wrapper .badge-wrapper.bar span.badge-category {
+        color: #FFFFFF !important;
+    }
+    .extra-info-wrapper .title-wrapper .badge-wrapper.bar {
+        top: 7px;
+    }
+
+    .topic-map .avatars .post-count {
+        border-radius: 0;
     }
 }
 
@@ -1814,6 +1858,18 @@
 
     .poster-container .series-poster {
         width: 100%;
+    }
+
+    .modal {
+        overflow-y: auto;
+    }
+    .update-panel .comment-text a {
+        display: inline;
+        text-overflow: initial;
+    }
+    .update-panel .comment-text {
+        text-overflow: ellipsis;
+        max-width: 99.9%;
     }
 
     /*ads*/
