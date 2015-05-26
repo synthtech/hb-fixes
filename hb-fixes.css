@@ -931,6 +931,27 @@
     .topic-map .avatars .post-count {
         border-radius: 0;
     }
+
+    .regular .cooked a {
+        color: #EC8661;
+    }
+    .regular .cooked a:hover {
+        color: #006DA3;
+    }
+    aside.onebox .onebox-body a[href] {
+        color: #EC8661;
+    }
+    aside.onebox .onebox-body a[href]:hover {
+        color: #006DA3;
+    }
+    .topic-body > p a,
+    .topic-body > a {
+        color: #EC8661;
+    }
+    .topic-body > p a:hover,
+    .topic-body > a:hover {
+        color: #006DA3;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
@@ -1681,9 +1702,6 @@
     .follow-bubbles li .user-bubble .bubble-avatar .responsive-image {
         height: 48px;
     }
-    .series-info .studios .inline-list {
-        padding-left: 60px;
-    }
 
     .story-modal .all-likes ul li[data-tooltip]:before {
         bottom: 110%;
@@ -1996,6 +2014,21 @@
     .update-panel .comment-text {
         text-overflow: ellipsis;
         max-width: 99.9%;
+    }
+
+    .series-info .genres .inline-list {
+        /*margin-left: 57px;*/
+        margin-left: 61px;
+    }
+    .series-info .studios .inline-list {
+        margin-left: 61px;
+    }
+    .series-info .small-label {
+        margin-top: 2px;
+    }
+    .user-about-panel .user-interests .interest-icon .fa,
+    .group-about-panel .user-interests .interest-icon .fa {
+        vertical-align: middle;
     }
 
     /*ads*/
