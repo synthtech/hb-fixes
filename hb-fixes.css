@@ -239,7 +239,7 @@
 
     a.mention {
         background: none !important;
-        color: #EC8661; 
+        color: #EC8661;
     }
     .meta {
         font-size: 12px;
@@ -266,7 +266,7 @@
     a, video, audio {
         outline: 0;
     }
-    input::-moz-focus-inner { 
+    input::-moz-focus-inner {
         border: 0;
     }
     .wmd-button {
@@ -1019,7 +1019,7 @@
         src: local("Lato Bold Italic"), local("Lato-BoldItalic"), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEFtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
     }
-    
+
     html, body {
         font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;

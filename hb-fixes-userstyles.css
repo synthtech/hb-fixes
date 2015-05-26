@@ -176,7 +176,7 @@
 
     a.mention {
         background: none !important;
-        color: #EC8661; 
+        color: #EC8661;
     }
     .meta {
         font-size: 12px;
@@ -203,7 +203,7 @@
     a, video, audio {
         outline: 0;
     }
-    input::-moz-focus-inner { 
+    input::-moz-focus-inner {
         border: 0;
     }
     .wmd-button {
@@ -872,7 +872,7 @@
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
     /*[[font-format]]*/
-    
+
     html, body {
         font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
         text-rendering: optimizeLegibility !important;
