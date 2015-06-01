@@ -957,6 +957,29 @@
     .read_restricted .gutter {
         position: absolute;
     }
+
+    .topic-post article.boxed .select-posts {
+        background-color: #E0E0E0;
+        width: 200px;
+        height: 2em;
+        margin-left: 20px;
+    }
+    #selected-posts {
+        margin-left: 333px;
+    }
+    .topic-admin-menu {
+        top: 91px;
+    }
+    .show-topic-admin {
+        background-color: transparent;
+        color: #999;
+        padding: 11px 14px;
+        top: 51px;
+    }
+    .show-topic-admin:hover {
+        color: #222;
+        background-color: #E9E9E9;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
