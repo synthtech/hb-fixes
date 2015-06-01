@@ -732,13 +732,13 @@
     .poll .poll-container {
         height: auto !important;
     }
-    .poll .poll-container ul li img {
+    .poll .poll-container ul li img:not(.emoji) {
         max-width: 200px;
         max-height: 200px;
         width: auto;
         height: auto;
     }
-    .poll .poll-container .results tbody tr td.option img {
+    .poll .poll-container .results tbody tr td.option img:not(.emoji) {
         max-width: 200px;
         max-height: 200px;
         width: auto;
