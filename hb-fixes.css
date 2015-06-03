@@ -1075,7 +1075,7 @@
     }
     .quick-update .series-title {
         white-space: normal;
-        height: 3.3em;
+        height: 3.2em;
     }
     .quick-update .series-slider .fa-angle-left {
         left: -30px;
@@ -2057,6 +2057,10 @@
     .user-about-panel .user-interests .interest-icon .fa,
     .group-about-panel .user-interests .interest-icon .fa {
         vertical-align: middle;
+    }
+
+    .user-cover-options .follow-button.delete-group {
+        right: 200px;
     }
 
     /*ads*/
