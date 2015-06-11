@@ -107,7 +107,7 @@
     .embedded-posts .topic-avatar {
         margin: 0;
     }
-    .embedded-posts .topic-avatar .avatar {
+    .embedded-posts .topic-avatar img.avatar {
         width: 45px;
         height: 45px;
     }
