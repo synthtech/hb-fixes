@@ -745,9 +745,6 @@
         height: auto;
     }
 
-    img.avatar {
-        border-radius: 0;
-    }
     body input,
     html.desktop-view > body button,
     body select,
