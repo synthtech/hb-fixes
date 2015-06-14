@@ -1467,15 +1467,11 @@
         height: 48px;
     }
 
-    .story-modal .all-likes ul li[data-tooltip]:before {
-        bottom: 110%;
-    }
+    .story-modal .all-likes ul li[data-tooltip]:before,
     .story-modal .all-likes ul li[data-tooltip]:after {
         bottom: 110%;
     }
-    .story-actions .active-users li[data-tooltip]:before {
-        bottom: 105%;
-    }
+    .story-actions .active-users li[data-tooltip]:before,
     .story-actions .active-users li[data-tooltip]:after {
         bottom: 105%;
     }
@@ -1641,10 +1637,8 @@
         bottom: 105%;
         margin-left: 3px;
     }
-    .community-rating-wrapper li[data-tooltip]:before {
-        bottom: 105%;
-    }
-    .community-rating-wrapper li[data-tooltip]:after{
+    .community-rating-wrapper li[data-tooltip]:before,
+    .community-rating-wrapper li[data-tooltip]:after {
         bottom: 105%;
     }
     .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Direct link to your replacement image."]:before {
@@ -1724,9 +1718,7 @@
         width: 36px;
         height: 36px;
     }
-    .group-members-panel .panel-body ul li[data-tooltip]:before {
-        bottom: 110%;
-    }
+    .group-members-panel .panel-body ul li[data-tooltip]:before,
     .group-members-panel .panel-body ul li[data-tooltip]:after {
         bottom: 110%;
     }
@@ -1797,6 +1789,15 @@
 
     .user-cover-options .follow-button.delete-group {
         right: 200px;
+    }
+
+    .poster-container .favorite-link[data-tooltip]:before,
+    .poster-container .favorite-link[data-tooltip]:after {
+        bottom: 110%;
+    }
+    .poster-container .trailer-link[data-tooltip]:before,
+    .poster-container .trailer-link[data-tooltip]:after {
+        bottom: 105%;
     }
 
     /*ads*/
