@@ -1830,7 +1830,7 @@
 }
 
 /*mal rating start*/
-@-moz-document url-prefix(http://myanimelist.net/404.php?) {
+/*@-moz-document url-prefix(http://myanimelist.net/404.php?) {
     @font-face {
         font-family: "Lato";
         font-style: normal;
@@ -1862,5 +1862,5 @@
     .hb-score h3 {
         margin-bottom: 0;
     }
-}
+}*/
 /*mal rating end*/
