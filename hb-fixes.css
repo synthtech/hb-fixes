@@ -716,6 +716,9 @@
     .extra-info-wrapper .title-wrapper .badge-wrapper.bar {
         top: 7px;
     }
+    .post-cloak .reply-to-tab .avatar {
+        margin-top: -4px;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
@@ -1772,15 +1775,10 @@
         max-width: 99.9%;
     }
 
-    .series-info .genres .inline-list {
-        /*margin-left: 57px;*/
-        margin-left: 61px;
-    }
-    .series-info .studios .inline-list {
-        margin-left: 61px;
-    }
-    .series-info .small-label {
-        margin-top: 2px;
+    .series-info .genres .inline-list, .series-info .genres .update-panel .genre-list,
+    .update-panel .series-info .genres .genre-list, .series-info .studios .inline-list,
+    .series-info .studios .update-panel .genre-list, .update-panel .series-info .studios .genre-list {
+        padding-left: 61px;
     }
     .user-about-panel .user-interests .interest-icon .fa,
     .group-about-panel .user-interests .interest-icon .fa {
