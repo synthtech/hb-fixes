@@ -125,7 +125,7 @@
         display: none;
     }
     .dropdown-menu {
-        /*width: auto;*/
+        width: auto;
         min-width: initial;
         padding: initial !important;
         margin-top: -2px;
@@ -718,6 +718,9 @@
     }
     .post-cloak .reply-to-tab .avatar {
         margin-top: -4px;
+    }
+    .hb-nav .nav >li > .dropdown-menu {
+        min-width: 130px;
     }
 }
 
@@ -1340,12 +1343,6 @@
     .review-breakdown .breakdown-title {
         border-left: none;
     }
-    .review-sidebar {
-        position: fixed;
-        left: 72%;
-        transform: translateZ(0);
-        bottom: 11%;
-    }
     .review-wrapper .series-panel {
         padding: 10px 30px 0 30px;
     }
@@ -1796,6 +1793,10 @@
     .poster-container .trailer-link[data-tooltip]:before,
     .poster-container .trailer-link[data-tooltip]:after {
         bottom: 105%;
+    }
+
+    .purchase-block {
+        position: relative;
     }
 
     /*ads*/
