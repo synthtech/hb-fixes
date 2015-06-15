@@ -2,20 +2,13 @@
     /*[[font-format]]*/
 
     html, body {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
+        font-family: "Lato", sans-serif !important;
         text-rendering: optimizeLegibility !important;
         background-color: #E0E0E0 !important;
     }
     body input, body button, body select, body textarea {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
+        font-family: "Lato", sans-serif !important;
         text-rendering: optimizeLegibility !important;
-    }
-    #main-outlet {
-        /*background-color: #E0E0E0 !important;*/
-        background-color: transparent !important;
-    }
-    #poster-expansion .bio {
-        max-height: none;
     }
     .d-dropdown {
         right: -1px;
@@ -41,32 +34,15 @@
     .d-dropdown a:visited {
         color: #525A65;
     }
-    .embedded-posts .topic-avatar {
-        margin: 0;
-    }
-    .embedded-posts .topic-avatar .avatar {
-        width: 45px;
-        height: 45px;
-    }
-    .embedded-posts .topic-meta-data h5 {
-        left: auto;
-    }
     section.ember-view.embedded-posts.top.topic-body.offset2 {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
-    .embedded-posts .topic-body {
-        padding-left: 0;
-        width: 87%;
-    }
     .embedded-posts .topic-body p iframe {
         margin-top: 1em;
     }
-    .embedded-posts .quote {
-        margin-top: 1em !important;
-    }
     .embedded-posts .row {
-        padding-top: 0;
+        padding-top: 0 !important;
     }
     .embedded-posts a.lightbox {
         max-width: 300px;
@@ -103,18 +79,12 @@
         border-bottom: 1px solid #EC8661;
     }
     .profile-navigation .inline-list .nav-link > a {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
         padding: 13px 20px;
     }
     .profile-navigation .inline-list .nav-link > a:hover {
         color: #EC8661;
-    }
-    .extra-info-wrapper .star {
-        top: 5px;
-    }
-    .extra-info-wrapper a.topic-link {
-        margin-top: -3px;
     }
     .d-header .title {
         height: auto;
@@ -174,10 +144,10 @@
         margin-top: 1em;
     }
 
-    a.mention {
+    /*a.mention {
         background: none !important;
         color: #EC8661;
-    }
+    }*/
     .meta {
         font-size: 12px;
     }
@@ -216,10 +186,6 @@
     .control-group.pref-password {
         display: none;
     }
-    .hb-nav .nav > li > .dropdown-menu {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
     .nav-stacked .active > a,
     .nav-stacked .active .fa-chevron-right {
         background-color: #F89774;
@@ -254,10 +220,6 @@
         background-color: #F67A4D;
     }
 
-    .gutter {
-        float: right;
-        padding-right: 5px;
-    }
     /*.lazyYT-title {
         background-color: rgba(0,0,0,.8);
         padding: 8px 0 8px 12px !important;
@@ -287,15 +249,6 @@
         color: transparent;
         background-color: transparent;
     }
-    .moderator .topic-body {
-        background-color: transparent;
-    }
-    .ember-view.topic-post.moderator {
-        background-color: #FFF9C4;
-    }
-    .user-main .user-stream .item.moderator-action {
-        background-color: #FFF9C4;
-    }
 
     .user-cover {
         height: auto;
@@ -306,25 +259,13 @@
     .nav-pills > li > a {
         border-radius: 0;
     }
-    td .badge-category[href] {
-        border-radius: 0;
-    }
-    td .badge-category-parent {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
     .badge-notification.new-posts,
     .badge-notification.unread {
-        border-radius: 0;
         padding: 3px;
-        margin-left: 3px;
     }
     .badge-notification,
     .badge-group {
-        border-radius: 0;
-    }
-    .badge-notification.new-posts {
-        background-color: #6CF;
+        border-radius: 2px;
     }
 
     body #wmd-input {
@@ -526,7 +467,7 @@
         color: #FFF;
         background-color: #6CF;
         font-size: 11px;
-        margin-left: 5px;
+        margin-left: 3px;
         padding-left: 3px !important;
     }
 
@@ -573,9 +514,6 @@
         color: #BFBFBF;
     }
     #user-card {
-        transition: .2s ease-in;
-    }
-    a {
         transition: .2s ease-in;
     }
     .nav-pills > li > a {
@@ -626,9 +564,6 @@
         color: #FFF;
         background-color: #F89774;
     }
-    .extra-info-wrapper .extra-info.two-rows h1 {
-        line-height: 2.5em;
-    }
     .topic-list {
         border-top: none;
         background-color: #F7F7F7;
@@ -658,33 +593,10 @@
         padding-top: 0px;
     }
 
-    .post-cloak .reply-to-tab {
-        margin-top: -12px;
-    }
-
     img.chromoji {
         top: 0em !important;
     }
 
-    .poll .poll-container {
-        height: auto !important;
-    }
-    .poll .poll-container ul li img {
-        max-width: 200px;
-        max-height: 200px;
-        width: auto;
-        height: auto;
-    }
-    .poll .poll-container .results tbody tr td.option img {
-        max-width: 200px;
-        max-height: 200px;
-        width: auto;
-        height: auto;
-    }
-
-    img.avatar {
-        border-radius: 0;
-    }
     body input,
     html.desktop-view > body button,
     body select,
@@ -708,106 +620,10 @@
         margin-top: 1em;
     }
 
-    .badge-wrapper.bar .badge-category-parent-bg,
-    .badge-wrapper.bar .badge-category-bg {
-        padding: 5px 3px;
-    }
-    .badge-wrapper.bar span.badge-category {
-        margin-top: 0;
-        vertical-align: middle;
-        padding: 5px 3px;
-    }
-    #suggested-topics h3 .badge-wrapper.bar span.badge-category {
-        margin-top: -3px;
-        padding: 3px;
-    }
-    #suggested-topics h3 .badge-wrapper.bar .badge-category-parent-bg,
-    #suggested-topics h3 .badge-wrapper.bar .badge-category-bg {
-        padding: 1px;
-    }
-    #suggested-topics h3 .badge-wrapper.bar {
-        line-height: inherit;
-    }
-    .categories .subcategories a.badge-wrapper.bar {
-        width: auto;
-    }
     .topic-list.categories > tbody > tr:nth-child(odd) {
         background-color: #FFFFFF;
     }
-    .list-controls .category-dropdown-menu {
-        border: none;
-    }
-    div.cat a.badge-wrapper.bar {
-        margin: 0 !important;
-    }
-    .list-controls .category-dropdown-menu .cat .badge-wrapper.bar .badge-category {
-        max-width: none;
-        padding: 6px 0;
-    }
-    .list-controls .category-dropdown-menu .cat .badge-wrapper.bar .badge-category-bg {
-        padding: 6px 0;
-    }
-    .d-dropdown .category .badge-notification {
-        vertical-align: middle;
-        padding: 3px;
-    }
-    .d-dropdown .category .badge-wrapper.bar {
-        line-height: inherit;
-    }
-    .d-dropdown .category .badge-wrapper.bar span.badge-category {
-        padding: 0 3px;
-    }
-    .d-dropdown .category .badge-wrapper.bar .badge-category-parent-bg,
-    .d-dropdown .category .badge-wrapper.bar .badge-category-bg {
-        padding: 1px;
-    }
-    .user-right .info .category .badge-wrapper.bar {
-        line-height: inherit;
-    }
-    .user-right .info .category .badge-wrapper.bar span.badge-category {
-        padding: 0 5px;
-    }
-    .user-right .info .category .badge-wrapper.bar .badge-category-parent-bg,
-    .user-right .info .category .badge-wrapper.bar .badge-category-bg {
-        padding: 1px;
-    }
-    .user-main .user-stream .title a {
-        margin-left: 2px;
-    }
-    .paginated-topics-list .topic-list > tbody > tr:nth-child(odd) {
-        background-color: #FFFFFF;
-    }
-    .user-main .user-stream .item.notification {
-        padding: 10px 15px 5px 15px;
-    }
-    div.ac-wrap div.item span {
-        height: auto;
-        line-height: inherit;
-    }
-    div.ac-wrap div.item .badge-wrapper.bar {
-        line-height: inherit;
-    }
-    div.ac-wrap div.item .badge-wrapper.bar .badge-category-parent-bg,
-    div.ac-wrap div.item .badge-wrapper.bar .badge-category-bg {
-        padding: 1px;
-    }
-    div.ac-wrap div.item .badge-wrapper.bar span.badge-category {
-        padding: 0 5px;
-    }
-    .ac-wrap .autocomplete {
-        width: auto;
-        border: none;
-    }
-    .ac-wrap .autocomplete ul li {
-        border-bottom: none;
-    }
-    .ac-wrap .autocomplete ul li a .badge-wrapper.bar {
-        margin-right: 6px;
-        width: 100%;
-    }
-    .ac-wrap .autocomplete ul li a .badge-wrapper.bar .badge-category-parent-bg {
-        display: none;
-    }
+
     .topic-area {
         border: none;
     }
@@ -825,48 +641,23 @@
         display: none;
     }
 
-    #topic-title .title-wrapper h1 {
-        display: inline;
-    }
-    #topic-title .title-wrapper > div:first-of-type {
-        display: inline-block;
-        margin-left: 5px;
-        vertical-align: bottom;
-    }
-    #topic-title .title-wrapper h1 .topic-statuses {
-        display: inline;
-    }
-    #topic-title .title-wrapper h1 a.topic-link {
-        display: inline;
-    }
-    #topic-title .title-wrapper .badge-wrapper.bar {
-        top: -1px;
+    .topic-map .avatars .post-count {
+        border-radius: 0;
+        right: 4px;
+        border-top-right-radius: 3px;
     }
 
-    .extra-info-wrapper .title-wrapper {
-        display: flex;
-    }
-    .extra-info-wrapper .title-wrapper h1 {
-        display: flex;
-        max-width: 85%;
-    }
-    .extra-info-wrapper .title-wrapper > div:first-of-type {
-        display: flex;
-        margin-left: 5px;
-        max-width: 15%;
-    }
-    .extra-info-wrapper .title-wrapper h1 .topic-statuses {
-        margin-top: -5px;
-    }
-    .extra-info-wrapper .badge-wrapper.bar span.badge-category {
-        color: #FFFFFF !important;
+    .category-dropdown-menu {
+        min-width: 131px;
     }
     .extra-info-wrapper .title-wrapper .badge-wrapper.bar {
         top: 7px;
     }
-
-    .topic-map .avatars .post-count {
-        border-radius: 0;
+    .post-cloak .reply-to-tab .avatar {
+        margin-top: -4px;
+    }
+    .hb-nav .nav >li > .dropdown-menu {
+        min-width: 130px;
     }
 }
 
@@ -874,7 +665,7 @@
     /*[[font-format]]*/
 
     html, body {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
+        font-family: "Lato", sans-serif !important;
         text-rendering: optimizeLegibility !important;
     }
     html {
@@ -884,7 +675,7 @@
         background-color: transparent !important;
     }
     h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif !important;
+        font-family: "Lato", sans-serif !important;
         text-rendering: optimizeLegibility !important;
     }
     .update-panel li a.remove-post {
@@ -900,7 +691,7 @@
     }
     .quick-update .series-title {
         white-space: normal;
-        height: 3.3em;
+        height: 3.2em;
     }
     .quick-update .series-slider .fa-angle-left {
         left: -30px;
@@ -915,11 +706,11 @@
         color: transparent;
     }
     .hb-nav .dropdown {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     #recent-toggle {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .dropdown-menu {
@@ -929,11 +720,11 @@
         padding: 0;
     }
     .panel-divider {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .library-filter {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .library-dropdown .personal-notes {
@@ -943,7 +734,7 @@
     }
     .library-search {
         height: auto;
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .profile-navigation .inline-list .nav-link,
@@ -954,11 +745,11 @@
     .profile-navigation .inline-list .nav-link > a,
     .profile-navigation .update-panel .genre-list .nav-link > a,
     .update-panel .profile-navigation .genre-list .nav-link > a {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .anime-breakdown-panel .breakdown-genrelist li span {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     a:focus {
@@ -1024,7 +815,7 @@
         background-color: #F5F5F5;
     }
     .hummingbird-header-1 .notification-block .single-notification {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
 
@@ -1051,7 +842,7 @@
     }
 
     .follow-button {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .series-content .btn-primary {
@@ -1199,7 +990,7 @@
         font-size: .8em;
     }
     .series-header .right-column .top-buttons .top-button {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .series-header .right-column .top-buttons .btn-group.open .dropdown-menu li:last-child a:hover {
@@ -1272,7 +1063,7 @@
     }
 
     .user-cover-options .follow-widgets .follow-title {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .user-cover-options .user-wrapper .account-info textarea {
@@ -1374,7 +1165,7 @@
         margin-top: 0;
     }
     .user-cover .cover-photo .edit-cover label {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
         border-radius: 3px;
     }
@@ -1410,11 +1201,11 @@
         opacity: 0;
     }
     .series-metadata {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .series-cast .cast-name small {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .series-header .featured-quote .quote-author {
@@ -1425,12 +1216,6 @@
     }
     .review-breakdown .breakdown-title {
         border-left: none;
-    }
-    .review-sidebar {
-        position: fixed;
-        left: 72%;
-        transform: translateZ(0);
-        bottom: 11%;
     }
     .review-wrapper .series-panel {
         padding: 10px 30px 0 30px;
@@ -1545,7 +1330,7 @@
     }
 
     .account-form button {
-        font-family: "Lato", "Segoe UI Semibold", "Helvetica Neue", "Open Sans Semibold", sans-serif;
+        font-family: "Lato", sans-serif;
         text-rendering: optimizeLegibility !important;
     }
     .user-dashboard > .row {
@@ -1555,19 +1340,12 @@
     .follow-bubbles li .user-bubble .bubble-avatar .responsive-image {
         height: 48px;
     }
-    .series-info .studios .inline-list {
-        padding-left: 60px;
-    }
 
-    .story-modal .all-likes ul li[data-tooltip]:before {
-        bottom: 110%;
-    }
+    .story-modal .all-likes ul li[data-tooltip]:before,
     .story-modal .all-likes ul li[data-tooltip]:after {
         bottom: 110%;
     }
-    .story-actions .active-users li[data-tooltip]:before {
-        bottom: 105%;
-    }
+    .story-actions .active-users li[data-tooltip]:before,
     .story-actions .active-users li[data-tooltip]:after {
         bottom: 105%;
     }
@@ -1733,10 +1511,8 @@
         bottom: 105%;
         margin-left: 3px;
     }
-    .community-rating-wrapper li[data-tooltip]:before {
-        bottom: 105%;
-    }
-    .community-rating-wrapper li[data-tooltip]:after{
+    .community-rating-wrapper li[data-tooltip]:before,
+    .community-rating-wrapper li[data-tooltip]:after {
         bottom: 105%;
     }
     .edit-series-modal .modal-dialog .modal-content .modal-body label[data-tooltip="Direct link to your replacement image."]:before {
@@ -1816,9 +1592,7 @@
         width: 36px;
         height: 36px;
     }
-    .group-members-panel .panel-body ul li[data-tooltip]:before {
-        bottom: 110%;
-    }
+    .group-members-panel .panel-body ul li[data-tooltip]:before,
     .group-members-panel .panel-body ul li[data-tooltip]:after {
         bottom: 110%;
     }
@@ -1870,6 +1644,33 @@
     .update-panel .comment-text {
         text-overflow: ellipsis;
         max-width: 99.9%;
+    }
+
+    .series-info .genres .inline-list, .series-info .genres .update-panel .genre-list,
+    .update-panel .series-info .genres .genre-list, .series-info .studios .inline-list,
+    .series-info .studios .update-panel .genre-list, .update-panel .series-info .studios .genre-list {
+        padding-left: 61px;
+    }
+    .user-about-panel .user-interests .interest-icon .fa,
+    .group-about-panel .user-interests .interest-icon .fa {
+        vertical-align: middle;
+    }
+
+    .user-cover-options .follow-button.delete-group {
+        right: 200px;
+    }
+
+    .poster-container .favorite-link[data-tooltip]:before,
+    .poster-container .favorite-link[data-tooltip]:after {
+        bottom: 110%;
+    }
+    .poster-container .trailer-link[data-tooltip]:before,
+    .poster-container .trailer-link[data-tooltip]:after {
+        bottom: 105%;
+    }
+
+    .purchase-block {
+        position: relative;
     }
 
     /*ads*/
