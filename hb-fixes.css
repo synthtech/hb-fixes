@@ -749,6 +749,10 @@
     #topic-closing-info {
         border-top: none;
     }
+
+    button:focus {
+        outline: 0 !important;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
