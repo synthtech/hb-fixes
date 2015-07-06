@@ -722,6 +722,10 @@
     .hb-nav .nav >li > .dropdown-menu {
         min-width: 130px;
     }
+
+    .topic-post article.boxed .select-posts {
+        background-color: #E0E0E0;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
@@ -1797,6 +1801,10 @@
 
     .purchase-block {
         position: relative;
+    }
+
+    img.chromoji {
+        top: -2px !important;
     }
 
     /*ads*/
