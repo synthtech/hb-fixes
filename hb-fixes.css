@@ -726,6 +726,29 @@
     .topic-post article.boxed .select-posts {
         background-color: #E0E0E0;
     }
+
+    .regular.contents nav.post-controls .show-replies {
+        background-color: transparent;
+    }
+    .regular.contents nav.post-controls .show-replies:hover {
+        background-color: transparent;
+    }
+
+    .topic-area {
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .posts-wrapper {
+        width: 80%;
+        background-color: #FFF;
+    }
+    .topic-area > .ember-view {
+        width: 100%;
+    }
+    #topic-closing-info {
+        border-top: none;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
