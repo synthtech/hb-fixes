@@ -657,7 +657,7 @@
     }
 
     img.chromoji {
-        top: 0em !important;
+        top: -2px !important;
     }
 
     body input,
@@ -1723,7 +1723,7 @@
         text-transform: uppercase;
     }
 
-    .comment-replies .reply .content img {
+    .comment-replies .reply .content img:not(.emoji) {
         max-width: 100%;
         max-height: 500px;
     }
@@ -1832,6 +1832,10 @@
 
     img.chromoji {
         top: -2px !important;
+    }
+
+    .comment .emoji {
+        margin-top: -2px !important;
     }
 
     /*ads*/
