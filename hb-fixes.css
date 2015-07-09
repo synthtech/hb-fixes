@@ -1481,10 +1481,6 @@
     .apps-header a.btn:hover {
         background-color: rgba(255,255,255,.9);
     }
-    .apps-page .app-inner .app-title .app-type {
-        font-size: .45em;
-        padding: 2.5px 5px;
-    }
 
     .account-form button {
         font-family: "Lato", sans-serif;
@@ -1836,6 +1832,19 @@
 
     .comment .emoji {
         margin-top: -2px !important;
+    }
+
+    .apps-header .btn, .apps-header .top-button {
+        transform: none;
+    }
+    .form-horizontal .control-label {
+        padding-top: 5px;
+    }
+    .apps-page .form-group .btn-primary {
+        margin-right: 10px;
+    }
+    .apps-page .app-keys {
+        margin-bottom: 80px;
     }
 
     /*ads*/
