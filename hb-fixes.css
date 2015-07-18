@@ -1454,7 +1454,7 @@
         width: 80%;
     }
 
-    .navbar-brand {
+    body:not(.admin) .navbar-brand {
         background-image: url(https://i.imgur.com/ZnYHhjW.png);
         background-size: contain;
         background-position: 0;
