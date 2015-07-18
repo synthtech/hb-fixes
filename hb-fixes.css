@@ -753,6 +753,10 @@
     button:focus {
         outline: 0 !important;
     }
+
+    .user-main .about .details .primary .bio {
+        max-height: none;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
