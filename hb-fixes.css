@@ -1454,7 +1454,7 @@
         width: 80%;
     }
 
-    body:not(.admin) .navbar-brand {
+    body:not(.admin) .navbar-brand.animated {
         background-image: url(https://i.imgur.com/ZnYHhjW.png);
         background-size: contain;
         background-position: 0;
