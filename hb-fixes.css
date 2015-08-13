@@ -1344,6 +1344,7 @@
     }
     .series-header .featured-quote {
         max-width: 600px;
+        background: rgba(0,0,0,0.6);
     }
     .hb-score {
         border-bottom: none;
