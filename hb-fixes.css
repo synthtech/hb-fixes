@@ -1796,8 +1796,11 @@
     }
 
     .series-info .genres .inline-list, .series-info .genres .update-panel .genre-list,
-    .update-panel .series-info .genres .genre-list, .series-info .studios .inline-list,
-    .series-info .studios .update-panel .genre-list, .update-panel .series-info .studios .genre-list {
+    .update-panel .series-info .genres .genre-list {
+        padding-left: 57px;
+    }
+    .series-info .studios .inline-list, .series-info .studios .update-panel .genre-list,
+    .update-panel .series-info .studios .genre-list {
         padding-left: 61px;
     }
     .user-about-panel .user-interests .interest-icon .fa,
