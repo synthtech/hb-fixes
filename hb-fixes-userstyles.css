@@ -594,7 +594,7 @@
     }
 
     img.chromoji {
-        top: 0em !important;
+        top: -2px !important;
     }
 
     body input,
@@ -658,6 +658,41 @@
     }
     .hb-nav .nav >li > .dropdown-menu {
         min-width: 130px;
+    }
+
+    .topic-post article.boxed .select-posts {
+        background-color: #E0E0E0;
+    }
+
+    .regular.contents nav.post-controls .show-replies {
+        background-color: transparent;
+    }
+    .regular.contents nav.post-controls .show-replies:hover {
+        background-color: transparent;
+    }
+
+    .topic-area {
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .posts-wrapper {
+        width: 80%;
+        background-color: #FFF;
+    }
+    .topic-area > .ember-view {
+        width: 100%;
+    }
+    #topic-closing-info {
+        border-top: none;
+    }
+
+    button:focus {
+        outline: 0 !important;
+    }
+
+    .user-main .about .details .primary .bio {
+        max-height: none;
     }
 }
 
@@ -1183,6 +1218,7 @@
     }
     .series-header .featured-quote {
         max-width: 600px;
+        background: rgba(0,0,0,0.6);
     }
     .hb-score {
         border-bottom: none;
@@ -1293,7 +1329,7 @@
         width: 80%;
     }
 
-    .navbar-brand {
+    body:not(.admin) .navbar-brand.animated {
         background-image: url(https://i.imgur.com/ZnYHhjW.png);
         background-size: contain;
         background-position: 0;
@@ -1323,10 +1359,6 @@
     }
     .apps-header a.btn:hover {
         background-color: rgba(255,255,255,.9);
-    }
-    .apps-page .app-inner .app-title .app-type {
-        font-size: .45em;
-        padding: 2.5px 5px;
     }
 
     .account-form button {
@@ -1566,7 +1598,7 @@
         text-transform: uppercase;
     }
 
-    .comment-replies .reply .content img {
+    .comment-replies .reply .content img:not(.emoji) {
         max-width: 100%;
         max-height: 500px;
     }
@@ -1637,18 +1669,13 @@
     .modal {
         overflow-y: auto;
     }
-    .update-panel .comment-text a {
-        display: inline;
-        text-overflow: initial;
-    }
-    .update-panel .comment-text {
-        text-overflow: ellipsis;
-        max-width: 99.9%;
-    }
 
     .series-info .genres .inline-list, .series-info .genres .update-panel .genre-list,
-    .update-panel .series-info .genres .genre-list, .series-info .studios .inline-list,
-    .series-info .studios .update-panel .genre-list, .update-panel .series-info .studios .genre-list {
+    .update-panel .series-info .genres .genre-list {
+        padding-left: 57px;
+    }
+    .series-info .studios .inline-list, .series-info .studios .update-panel .genre-list,
+    .update-panel .series-info .studios .genre-list {
         padding-left: 61px;
     }
     .user-about-panel .user-interests .interest-icon .fa,
@@ -1671,6 +1698,27 @@
 
     .purchase-block {
         position: relative;
+    }
+
+    img.chromoji {
+        top: -2px !important;
+    }
+
+    .comment .emoji {
+        margin-top: -2px !important;
+    }
+
+    .apps-header .btn, .apps-header .top-button {
+        transform: none;
+    }
+    .form-horizontal .control-label {
+        padding-top: 5px;
+    }
+    .apps-page .form-group .btn-primary {
+        margin-right: 10px;
+    }
+    .apps-page .app-keys {
+        margin-bottom: 80px;
     }
 
     /*ads*/
