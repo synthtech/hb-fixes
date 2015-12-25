@@ -1810,7 +1810,7 @@
     }
     .user-about-panel .user-interests .interest-icon .fa,
     .group-about-panel .user-interests .interest-icon .fa {
-        vertical-align: middle;
+        vertical-align: text-bottom;
     }
 
     .user-cover-options .follow-button.delete-group {
