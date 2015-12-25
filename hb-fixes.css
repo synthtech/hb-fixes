@@ -757,6 +757,10 @@
     .user-main .about .details .primary .bio {
         max-height: none;
     }
+
+    .topic-admin-menu {
+        top: 91px !important;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
