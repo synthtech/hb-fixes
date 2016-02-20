@@ -833,11 +833,8 @@
         font-family: "Lato", sans-serif !important;
         text-rendering: optimizeLegibility !important;
     }
-    html {
-        background-color: #E0E0E0 !important;
-    }
-    body {
-        background-color: transparent !important;
+    body.ember-application, .footer-shadow, body.rails_admin {
+        background-color: #E0E0E0;
     }
     h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         font-family: "Lato", sans-serif !important;
@@ -1872,11 +1869,5 @@
 @-moz-document regexp("https?://hummingbird.me/manga/.*") {
     .series-cast .cast-image .character {
         opacity: 1;
-    }
-}
-
-@-moz-document regexp("https?://hummingbird.me/") {
-    html {
-        background-color: transparent !important;
     }
 }
