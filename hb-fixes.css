@@ -725,6 +725,7 @@
 
     .topic-post article.boxed .select-posts {
         background-color: #E0E0E0;
+        height: 100px;
     }
 
     .regular.contents nav.post-controls .show-replies {
@@ -1098,7 +1099,7 @@
     }
     .list-group-item .list-item-right .list-item-type,
     .library-filter .list-item-right .list-item-type {
-        width: 50px;
+        width: 70px;
     }
     .list-group-item .list-item-right .list-item-score,
     .library-filter .list-item-right .list-item-score {
@@ -1863,6 +1864,15 @@
     }
     .ad-unit {
         display: none;
+    }
+}
+
+@-moz-document regexp("https?://hummingbird.me/anime/.*") {
+    .series-cast .cast-image .character {
+        opacity: 1;
+    }
+    .series-cast .character-wrapper:hover .cast-image .character {
+        opacity: 0;
     }
 }
 
