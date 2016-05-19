@@ -124,6 +124,13 @@
     #user-card .card-content {
         margin-top: 60px;
     }
+
+    a, button, video, audio {
+        outline: 0;
+    }
+    input::-moz-focus-inner {
+        border: 0;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
