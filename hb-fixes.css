@@ -73,6 +73,42 @@
         font-family: "Lato", sans-serif !important;
         text-rendering: optimizeLegibility !important;
     }
+
+    a {
+        transition: .2s ease-in;
+    }
+    .private_message .gutter, .deleted-topic .gutter,
+    .read_restricted .gutter {
+        position: absolute;
+    }
+    .user-menu .notifications li p {
+        max-height: 1.5em;
+    }
+    #user-card.show-badges .badge-section .user-badge,
+    #user-card.show-badges .badge-section .more-user-badges {
+        border: none;
+    }
+    .badge-notification {
+        padding: 3px 5px;
+    }
+    .notification-options .dropdown-menu {
+        width: auto;
+    }
+    .notification-options .dropdown-menu li a div > span:last-of-type {
+        display: none;
+    }
+    .category-dropdown-menu {
+        max-height: none;
+    }
+    big {
+        line-height: 1em;
+    }
+    nav.post-controls button.d-hover {
+        background: inherit;
+    }
+    .discourse-no-touch .topic-body .actions .fade-out {
+        transition: opacity .2s ease-in;
+    }
 }
 
 @-moz-document regexp("https?://hummingbird.me/.*") {
