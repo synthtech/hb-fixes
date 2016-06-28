@@ -246,8 +246,7 @@
         text-rendering: optimizeLegibility !important;
     }
     .dropdown-menu {
-        min-width: initial;
-        margin: initial;
+        min-width: inherit;
         border: none;
         padding: 0;
     }
@@ -298,7 +297,7 @@
         margin-bottom: 30px;
     }
     .review-content {
-        font-size: initial;
+        font-size: inherit;
     }
     .bg-image-wrapper.series {
         opacity: .2;
