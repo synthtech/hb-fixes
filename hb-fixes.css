@@ -485,12 +485,6 @@
     .follow-bubbles li .user-bubble {
         min-height: 69px;
     }
-    .update-panel .view-more {
-        margin-left: 25%;
-    }
-    .update-panel .comment-text {
-        max-height: none;
-    }
     .series-header .middle-column .info-tabs .nav-tabs li.active > a {
         border-bottom: none;
     }
@@ -548,14 +542,9 @@
         from { opacity: 0; }
         to { opacity: 1; }
     }
-    @-webkit-keyframes fadein {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
 
     .responsive-image {
         animation: fadein .6s;
-        -webkit-animation: fadein .6s;
     }
 
     .settings .panel#backup-settings .panel-body .row {
@@ -671,7 +660,6 @@
         border-bottom-left-radius: 0;
     }
     .library-dropdown {
-        background: -webkit-linear-gradient(to bottom, #EEEEEE, #F5F5F5 10%, #FAFAFA 90%, #EEEEEE);
         background: linear-gradient(to bottom, #EEEEEE, #F5F5F5 10%, #FAFAFA 90%, #EEEEEE);
     }
     .library-dropdown .personal-notes-save {
@@ -1026,11 +1014,9 @@
 
     .follow-panel .follow-cover {
         animation: fadein .6s;
-        -webkit-animation: fadein .6s;
     }
     .grid-thumb .thumbnail img {
         animation: fadein .6s;
-        -webkit-animation: fadein .6s;
     }
     .story-actions .nsfw-indicator[data-tooltip]:before {
         bottom: 105%;
@@ -1099,16 +1085,8 @@
         max-width: 100%;
         max-height: 500px;
     }
-    .update-panel .comment-text img {
-        max-height: 500px;
-    }
     .group-wrapper .overlay {
         background-color: rgba(0,0,0,.6);
-    }
-    .update-panel .comment-text video,
-    .update-panel .comment-text progress {
-        max-width: 100%;
-        max-height: 500px;
     }
     .follow-bubbles {
         padding-right: 15px;
