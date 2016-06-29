@@ -66,12 +66,10 @@
 
     html, body {
         font-family: "Lato", sans-serif !important;
-        text-rendering: optimizeLegibility !important;
         background-color: #E0E0E0 !important;
     }
     body input, body button, body select, body textarea {
         font-family: "Lato", sans-serif !important;
-        text-rendering: optimizeLegibility !important;
     }
 
     a {
@@ -201,14 +199,12 @@
 
     html, body {
         font-family: "Lato", sans-serif !important;
-        text-rendering: optimizeLegibility !important;
     }
     body.ember-application, .footer-shadow, body.rails_admin {
         background-color: #E0E0E0;
     }
     h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         font-family: "Lato", sans-serif !important;
-        text-rendering: optimizeLegibility !important;
     }
     .update-panel li a.remove-post {
         color: #999999 !important;
@@ -239,11 +235,9 @@
     }
     .hb-nav .dropdown {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     #recent-toggle {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .dropdown-menu {
         min-width: inherit;
@@ -252,11 +246,9 @@
     }
     .panel-divider {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .library-filter {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .library-dropdown .personal-notes {
         height: 45px;
@@ -266,7 +258,6 @@
     .library-search {
         height: auto;
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .profile-navigation .inline-list .nav-link,
     .profile-navigation .update-panel .genre-list .nav-link,
@@ -277,11 +268,9 @@
     .profile-navigation .update-panel .genre-list .nav-link > a,
     .update-panel .profile-navigation .genre-list .nav-link > a {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .anime-breakdown-panel .breakdown-genrelist li span {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     a:focus {
         text-decoration: none !important;
@@ -347,7 +336,6 @@
     }
     .hummingbird-header-1 .notification-block .single-notification {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
 
     .library-table {
@@ -374,7 +362,6 @@
 
     .follow-button {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .series-content .btn-primary {
         background-color: #F89774;
@@ -516,7 +503,6 @@
     }
     .series-header .right-column .top-buttons .top-button {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .series-header .right-column .top-buttons .btn-group.open .dropdown-menu li:last-child a:hover {
         border-bottom-left-radius: 4px;
@@ -584,7 +570,6 @@
 
     .user-cover-options .follow-widgets .follow-title {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .user-cover-options .user-wrapper .account-info textarea {
         resize: none;
@@ -685,7 +670,6 @@
     }
     .user-cover .cover-photo .edit-cover label {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
         border-radius: 3px;
     }
 
@@ -722,11 +706,9 @@
     }
     .series-metadata {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .series-cast .cast-name small {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .series-header .featured-quote .quote-author {
         margin-bottom: 0;
@@ -847,7 +829,6 @@
 
     .account-form button {
         font-family: "Lato", sans-serif;
-        text-rendering: optimizeLegibility !important;
     }
     .user-dashboard > .row {
         margin-top: 20px;
